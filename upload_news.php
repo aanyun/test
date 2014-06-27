@@ -104,7 +104,7 @@
 		<div class="form-group">
 		<label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">Date:</label>
 		<div class="col-sm-10" style="padding-bottom: 10px;">
-		<input type="date" name="news-date" id="news-date" class="form-control" style="width: 360px;" placeholder="yyyy-mm-dd">
+		<input type="text" name="news-date" id="news-date" class="form-control" style="width: 360px;" placeholder="yyyy-mm-dd">
 		</div>
 		</div>
 
