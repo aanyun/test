@@ -17,7 +17,6 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 <style>
-	
 	.container {
 	padding-top: 30px;
 	margin-left:  20px;
@@ -28,7 +27,7 @@
 	  color: #304EB9;
 	  text-decoration: none;
 	}
-		a:hover {
+	a:hover {
 	  color: #999;
 	  text-decoration: none;
 	}
@@ -203,7 +202,7 @@
 	</section>
 	
 	
-	<section id='successInfo' class='hide'>
+	<section id='successInfo' class=''>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12" style="margin: 0 auto;">
 			<div class="alert alert-success text-center">
