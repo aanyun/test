@@ -5,7 +5,7 @@ if( ini_get('safe_mode') ){
 }else{
     echo "hello";
 }
-echo shell_exec('git pull origin master');
+echo shell_exec('/usr/bin/git pull origin master 2>&1');
 
 
 ?>
