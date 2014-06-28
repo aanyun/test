@@ -87,11 +87,11 @@ class MysqliDb
      *
      * @var string
      */
-    protected $host;
-    protected $username;
-    protected $password;
-    protected $db;
-    protected $port;
+    var $host = 'localhost';
+    var $username = 'root';
+    var $password = '';
+    var $db = 'kaifesh';
+    var $port;
 
     /**
      * @param string $host
@@ -100,12 +100,9 @@ class MysqliDb
      * @param string $db
      * @param int $port
      */
-    public function __construct($host, $username, $password, $db, $port = NULL)
+    public function __construct($port = NULL)
     {
-        $this->host = $host;
-        $this->username = $username;
-        $this->password = $password;
-        $this->db = $db;
+        
         if($port == NULL)
             $this->port = ini_get ('mysqli.default_port');
         else

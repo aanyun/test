@@ -23,7 +23,7 @@
 <body>
 	<?php
 		include "class/MysqliDb.php";
-		$db = new Mysqlidb('localhost', 'root', '', 'kaifesh');
+		$db = new Mysqlidb();
 		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
 		
 		$news = $db->rawQuery("select * from news,publishers where publishers.id=idPublisher order by date desc limit 5 offset ".$current_page*5);
