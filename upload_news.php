@@ -14,6 +14,7 @@
 
     <!-- Add custom CSS here -->
 	<link href="css/font.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 <style>
@@ -103,7 +104,7 @@
 		<div class="form-group">
 		<label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">Date:</label>
 		<div class="col-sm-10" style="padding-bottom: 10px;">
-		<input required type="text" name="news-date" id="news-date" class="form-control" style="width: 360px;" placeholder="yyyy-mm-dd">
+		<input required type="text" name="news-date" id="news-date" class="form-control datepicker" style="width: 360px;" placeholder="yyyy-mm-dd">
 		</div>
 		</div>
 
@@ -112,6 +113,7 @@
 		<label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
 		<textarea required name="news-description" id="news-description" class="form-control" rows="3"  maxlength="235" style="width: 307px;" placeholder="Enter description of news article here. Description must not exceed the maximum of 235 characters."></textarea>
+		<div><small id="counter"></small></div>
 		</div>
 		</div>
 
@@ -220,10 +222,12 @@
     <!-- JavaScript -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.js"></script>
+     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/modern-business.js"></script>
 	<script src="js/main.js"></script>	
 	<script>
 	function submit(){
+		date = $('#news-date').val();
 		title = $('#news-title').val();
 		story = $('#news-description').val();
 		link = $('#news-url').val();
@@ -232,8 +236,14 @@
 			alert("please select publisher");
 			return;
 		}
-		if(title==""||story==""||link==""){
+		if(title==""||story==""||link==""||date==""){
 			alert('please fill in all fields');
+			return;
+		}
+		var eg = /^\d{4}-\d{1,2}-\d{1,2}$/;
+		//alert(eg.test(date));
+		if(!eg.test(date)){
+			alert('Invalid date format');
 			return;
 		}
 		$.post('class/API.php',{
@@ -249,7 +259,24 @@
 		});
 
 	}
-
+	$('.datepicker').datepicker({format:'yyyy-mm-dd'});
+	var characters = 230;
+	$("#news-description").keyup(function(){
+	    if($(this).val().length > characters){
+	        $(this).val($(this).val().substr(0, characters));
+	    }
+	    var remaining = characters -  $(this).val().length;
+	    $("#counter").html("You have <strong>"+  remaining+"</strong> characters remaining");
+	    if(remaining <= 10)
+	    {
+	        $("#counter").css("color","red");
+	    }
+	    else
+	    {
+	        $("#counter").css("color","black");
+	    }
+	});
+	
 	$('.reset').click(function(){
 		$('.form input').val('');
 		$('.form textarea').val('');
