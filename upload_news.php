@@ -290,12 +290,15 @@
 			name: name,
 			img: img
 		},function(data){
-			if(data){
-				jQuery.noConflict();
+			jQuery.noConflict();
+			if($.isNumeric(data)){
+				$('#publisher').append("<option value='"+data+"'>"+name+"</option>");
+				$('#publisher').val(data);
 				$('#newPublisher').modal('hide');
 				$('#add-publisher').val("");
 				$('#preview').html('');
 				$('#photoimg').val('');
+
 			} else {
 				alert("Insert new Publisher error");
 			}
