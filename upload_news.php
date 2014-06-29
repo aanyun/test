@@ -16,7 +16,7 @@
 	<link href="css/font.css" rel="stylesheet">
 	<link href="css/datepicker.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <style>
 	.container {
 	padding-top: 30px;
@@ -144,7 +144,7 @@
 	    <div class="col-sm-9" style="padding-bottom: 10px;">
 	    	<label style="display:none;"></label>
 
-			<a href="#" data-toggle="collapse" data-target="#not-listed" style="font-size: .95em;">
+			<a href="#" data-toggle="modal" data-target="#newPublisher" style="font-size: .95em;">
 			Click here if the publisher is not listed to &nbsp;<strong>ADD A NEW</strong> &nbsp;publisher.
 			</a>
 		</div>
@@ -153,31 +153,45 @@
   
 
 	
-  <div id="not-listed" class="collapse" width="400px;">
-  
-  <hr>
-  
-  <div class="form-group">
-  <p style="font-size: 1.3em; font-weight: bold; margin-left: 15px;">Add a New Publisher:</p>
-		  <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px">Publisher:</label>
-		  <div class="col-sm-9" style="padding-bottom: 10px;">
-		  <input type="text" name="add-publisher" id="add-publisher" class="form-control" style="width: 321px;" placeholder="Name of Publisher Here">
-		  </div>
-		  </div>
-		  
-		  <div class="form-group">
-		  <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Logo:</label>
-		  <div class="col-sm-9" style="padding-bottom: 10px;">
-		  <input type="file" name="add-publisher-file" id="add-publisher-file" style="margin-left: 17px;">
-		  <br>
-		  <div style="font-size: .8em; margin-top: -10px;">
-		  *Must be a JPG file no larger than 240px x 55px.
-		  </div>
-		  </div>
-		  </div>
-		  
-		    <hr>
-	</div>
+
+    	<div class="modal fade" id="newPublisher">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="modal-title">Add a New Publisher</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				  <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px">Publisher:</label>
+				  <div class="col-sm-9" style="padding-bottom: 10px;">
+				  <input type="text" name="add-publisher" id="add-publisher" class="form-control" style="width: 321px;" placeholder="Name of Publisher Here">
+				  </div>
+				  </div>
+				  
+				  <div class="form-group">
+				  <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Logo:</label>
+				  <div class="col-sm-9" style="padding-bottom: 10px;">
+				  	<form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadimg'>
+					<input type="file" name="photoimg" id="photoimg" />
+					</form>
+					<div id='preview'>
+					</div>
+				  <br>
+				  <div style="font-size: .8em; margin-top: -10px;">
+				  *Must be a JPG file no larger than 240px x 55px.
+				  </div>
+				  </div>
+				  </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary" onclick="newPublisher()">Add</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 		
 
   
@@ -209,20 +223,20 @@
 			<div class="col-lg-12 col-md-12 col-sm-12" style="margin: 0 auto;">
 			<div class="alert alert-success text-center">
 			 	<span class="glyphicon glyphicon-ok" style="padding-right: 20px;"></span>
-				You have successfully uploaded a news article to Recent News! <a href="#">Check it out now!</a>
+				You have successfully uploaded a news article to Recent News! <a href="recent-news.php">Check it out now!</a>
 			</div>
 			</div>
 		</div>
 	</section>
-	
+
 	  
     </div> <!-- /container -->
 
 
     <!-- JavaScript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-     <script src="js/bootstrap-datepicker.js"></script>
+    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/modern-business.js"></script>
 	<script src="js/main.js"></script>	
 	<script>
@@ -246,9 +260,9 @@
 			alert('Invalid date format');
 			return;
 		}
-		$.post('class/API.php',{
-			command:'saveNews',
+		$.post('class/API.php?command=saveNews',{
 			title:title,
+			date:date,
 			story:story, 
 			link:link,
 			idPublisher:idPublisher
@@ -258,6 +272,34 @@
 			} else alert(data);
 		});
 
+	}
+	function newPublisher(){
+		name = $('#add-publisher').val();
+		img = $('#preview img').attr('src');
+		
+		if(name == ""){
+			alert('please input publisher name');
+			return;
+		}
+		if(img == ""||img == null){
+			alert('please upload logo img');
+			return;
+		}
+		$.post('class/API.php',{
+			command:'createPublisher',
+			name: name,
+			img: img
+		},function(data){
+			if(data){
+				jQuery.noConflict();
+				$('#newPublisher').modal('hide');
+				$('#add-publisher').val("");
+				$('#preview').html('');
+				$('#photoimg').val('');
+			} else {
+				alert("Insert new Publisher error");
+			}
+		});		
 	}
 	$('.datepicker').datepicker({format:'yyyy-mm-dd'});
 	var characters = 230;
@@ -284,8 +326,25 @@
 	function reset(){
 		$('.form input').val('');
 	}
-	</script>
 
+	</script>
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.form.js"></script>
+
+	<script type="text/javascript" >
+	 $(document).ready(function() { 
+			
+	    $('#photoimg').live('change', function()			{ 
+		    $("#preview").html('');
+		    $("#preview").html('<img src="loader.gif" alt="Uploading...."/>');
+			$("#imageform").ajaxForm({
+				target: '#preview'
+			}).submit();
+
+		});
+	}); 
+	</script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
