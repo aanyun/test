@@ -1,6 +1,6 @@
 /* 
 Custom CSS for...
-'Modern Business' HTML Theme by Start Bootstrap
+'Modern Business' HTML Theme by Start Bootstrap ..
 
 All Start Bootstrap themes are licensed under Apache 2.0. 
 For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com! .
@@ -248,11 +248,37 @@ left:11px;
 
 
 
+
 .testimonial2 {
 height: auto;
 width: auto;
 background: #ecebeb;
 margin: 0 auto;
+margin-top: 20px;
+/*margin-left: 142px;*/
+position: relative;
+}
+
+
+
+.test_quote2 {
+font-size: 1.15em;
+font-family: 'open_sanssemibold';
+color: #494949;
+padding: 25px;
+line-height: 1.15em;
+}
+
+
+.test_guy2 {
+font-size: .9em;
+font-family: 'open_sansregular';
+color: #494949;
+padding-right: 25px;
+padding-left: 25px;
+padding-bottom: 25px;
+margin-top: -25px;
+line-height: 1.2em;
 }
 
 
@@ -370,7 +396,8 @@ font-family: 'open_sanssemibold';
 }
 
 .img2 {
-width: 50%;
+width: 161px;
+height: 97px;
 margin-left: -8px;
 }
 
