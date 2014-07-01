@@ -246,6 +246,17 @@ position: relative;
 left:11px;
 }
 
+
+
+.testimonial2 {
+height: auto;
+width: auto;
+background: #ecebeb;
+margin: 0 auto;
+}
+
+
+
 .test_quote {
 font-size: 1.5em;
 font-family: 'open_sanssemibold';
