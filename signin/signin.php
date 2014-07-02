@@ -8,7 +8,7 @@ $pw = trim(fgets($passwordfile));
 $converter = new Encryption;
 $pw = $converter->decode($pw);
 
-// if( $username != $name ) die(header('Location:index.html?m=1'));
-// if( $password != $pw ) die(header('Location:index.html?m=2'));
+if( $username != $name ) die(header('Location:index.html?m=1'));
+if( $password != $pw ) die(header('Location:index.html?m=2'));
 header('Location:../upload_news.php');
 ?>
