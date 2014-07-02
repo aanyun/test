@@ -1,8 +1,8 @@
 <?php
 include '../class/encrypt.php'; 
-// $username = $_POST['username'];
-// $password = $_POST['password'];
-// $passwordfile = fopen("password.txt", "r") or die("Error");
+$username = $_POST['username'];
+$password = $_POST['password'];
+$passwordfile = fopen("password.txt", "r") or die("Error");
 // $name = trim(fgets($passwordfile));
 // $pw = trim(fgets($passwordfile));
 // $converter = new Encryption;
