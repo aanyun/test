@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
+phpversion();
 include '../class/encrypt.php'; 
 $username = $_POST['username'];
 $password = $_POST['password'];
