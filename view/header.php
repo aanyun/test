@@ -37,7 +37,7 @@
           <ul class="dropdown-menu">
             <li><a href="recent-news.php">Recent News</a></li>
             <li class="divider"></li>
-            <li><a href="press-releases.html">Press Releases</a></li>
+            <li><a href="press-releases.php">Press Releases</a></li>
             <li class="divider"></li>
             <li><a href="#">Photo/Video Archive</a></li>
           </ul>
