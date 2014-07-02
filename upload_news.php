@@ -260,6 +260,9 @@
 			alert('Invalid date format');
 			return;
 		}
+		if (!/^http:\/\//.test(link)) {
+            link = "http://" + link;
+        }
 		$.post('class/API.php?command=saveNews',{
 			title:title,
 			date:date,
