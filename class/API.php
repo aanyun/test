@@ -22,6 +22,22 @@ switch ($command) {
 		if(is_int(News::createNews($data))) echo "success";
 		else echo "Insert Error";
 		break;
+	case 'savePressRelease':
+		if($_POST['title']==""||$_POST['story']==""||$_POST['date']==""||$_POST['link']==""||$_POST['link']=="") {
+			echo "please fill in all fileds";
+			return;
+		}
+		$data = array(
+			"title" => $_POST['title'],
+            "desc" => $_POST['story'],
+            "date" => $_POST['date'],
+            "url" => $_POST['link'],
+		);
+		//print_r($data);
+		$db = new Mysqlidb();
+		echo $db->insert('pressreleases', $data);
+		// else echo "Insert Error";
+		break;
 	case 'uploadimg':
 		$path = "../uploads/";
 
@@ -71,6 +87,44 @@ switch ($command) {
 			exit;
 		}
 		break;
+	case 'uploadpdf':
+		$path = "../uploads/";
+
+		$valid_formats = array("pdf", "html");
+		if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
+		{
+			$name = $_FILES['add-press-release-file']['name'];
+			$size = $_FILES['add-press-release-file']['size'];
+			if(strlen($name))
+				{
+					list($txt, $ext) = explode(".", $name);
+					if(in_array($ext,$valid_formats))
+					{
+					if($size<(1024*1024))
+						{
+							$actual_image_name = time().substr(str_replace(" ", "_", $txt), 5).".".$ext;
+							$tmp = $_FILES['add-press-release-file']['tmp_name'];
+							//echo move_uploaded_file($tmp, $path.$actual_image_name);
+							if(move_uploaded_file($tmp, $path.$actual_image_name))
+								{
+									echo "<div id='pdfurl' url='uploads/".$actual_image_name."'></div>";
+								}
+							else
+								echo "failed";
+						}
+						else
+						echo "ile size max 1 MB";					
+						}
+						else
+						echo "Invalid file format..";	
+				}
+				
+			else
+				echo "Please select PDF..!";
+				
+			exit;
+		}
+		break;
 	case 'createPublisher':
 		$db = new Mysqlidb();
 		if($_POST['name']==""||$_POST['img']=="") {
@@ -81,7 +135,7 @@ switch ($command) {
 			"name"=>$_POST['name'],
 			"logo"=>$_POST['img']
 			);
-		echo is_int($db->insert('publishers', $data));
+		echo $db->insert('publishers', $data);
 		break;
 	default:
 		echo "error";
