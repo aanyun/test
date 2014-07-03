@@ -158,7 +158,7 @@ margin-top: 30px;
 			<div class="col-lg-12 col-md-12 col-sm-12" style="margin: 0 auto;">
 			<div class="alert alert-success text-center">
 			 	<span class="glyphicon glyphicon-ok" style="padding-right: 20px;"></span>
-				You have successfully uploaded a news article to Recent News! <a href="press-releases.php">Check it out now!</a>
+				You have successfully uploaded a news article to Recent News! <a href="media-gallery.php">Check it out now!</a>
 			</div>
 			</div>
 		</div>
