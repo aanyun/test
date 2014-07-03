@@ -9,6 +9,7 @@ $passwordfile = fopen("password.txt", "r") or die("Error");
 $name = trim(fgets($passwordfile));
 $pw = trim(fgets($passwordfile));
 $converter = new Encryption;
+$name = $converter->decode($name);
 $pw = $converter->decode($pw);
 
 if( $username != $name ) die(header('Location:index.html?m=1'));
