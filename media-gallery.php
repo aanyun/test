@@ -58,7 +58,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>
+				</small></p>
 								
             </div>
 
@@ -68,7 +68,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>
+				</small></p>
 				
             </div>
 
@@ -78,7 +78,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>
+				</small></p>
 				
             </div>
 
@@ -88,7 +88,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
@@ -102,7 +102,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
@@ -112,7 +112,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
 				
             </div>
@@ -123,7 +123,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
@@ -133,7 +133,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
@@ -147,7 +147,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
@@ -157,7 +157,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
 				
             </div>
@@ -168,7 +168,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
@@ -178,7 +178,7 @@
                 </a>
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
-				<small></p>				
+				</small></p>				
 				
             </div>
 
