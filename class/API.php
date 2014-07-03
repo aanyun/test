@@ -1,6 +1,9 @@
 <?php
 include "MysqliDb.php";
 include "News.php";
+session_start();
+if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Location:../index.php');
+
 if(isset($_POST['command']))
 	$command = $_POST['command'];
 else $command = $_GET['command'];
