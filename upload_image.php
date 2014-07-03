@@ -136,7 +136,7 @@ margin-top: 30px;
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
 	</div>
 	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
-        <button class="btn btn-md btn-primary btn-block" type="submit" style="width: 136px;">Upload</button>
+        <button class="btn btn-md btn-primary btn-block" type="button" onclick="submit()" style="width: 136px;">Upload</button>
 	</div>
 	
 	 </div>
