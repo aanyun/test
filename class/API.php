@@ -72,7 +72,7 @@ switch ($command) {
 					list($txt, $ext) = explode(".", $name);
 					if(in_array($ext,$valid_formats))
 					{
-					if($size<(1024*1024))
+					if($size<1048576)
 						{
 							$actual_image_name = time().substr(str_replace(" ", "_", $txt), 5).".".$ext;
 							$tmp = $_FILES['photoimg']['tmp_name'];
