@@ -32,13 +32,15 @@
 
             <div class="col-lg-12">
 			
-			   <h1 class="page-header"><strong>Get Involved</strong><br />
-                    <small>There are so many ways you can help support the Kaifesh for Congress campaign!</small>
+			   <h1 class="page-header"><strong>Media Gallery</strong><br />
+                    <small>You can filter results by selecting an appropriate category: Photos, Videos, or View All Media. Click to view maximum size.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Get Involved</li>
+                    <li class="active">Media Gallery (View All Media)</li>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">Videos</a></li>
                 </ol>
 			  
             </div>
@@ -51,53 +53,30 @@
 	                    <div class="row">
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>
+				
+				
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
-            </div>
-
-            <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
-            </div>
-
-            <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
-            </div>
-
-            <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
-            </div>
-
-            <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
@@ -107,25 +86,53 @@
         <div class="row">
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
 
             <div class="col-md-3 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
             </div>
