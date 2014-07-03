@@ -50,11 +50,11 @@
 	            <div class="row">
 				
 				<p>Are you unsure of where to vote? To request information about voter registration and polling place locations, <a href="http://www.elections.il.gov/VotingInformation/RegistrationLookup.aspx" target="_blank">click here.</a>
-           	    <p style="padding-bottom: 35px;">*Portions of these towns or villages are outside of the 8th District. To be sure which district you reside in, <a href="http://www.elections.il.gov/districtlocator/districtofficialsearchbyaddress.aspx" target="_blank">click here.</a></p>
+           	    <p style="padding-bottom: 25px;">*Portions of these towns or villages are outside of the 8th District. To be sure which district you reside in, <a href="http://www.elections.il.gov/districtlocator/districtofficialsearchbyaddress.aspx" target="_blank">click here.</a></p>
 				
 				<div class="row">
 				
-				<div class="col-lg-6">
+				<div class="col-lg-6 drop-move">
 				<iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
 src="http://www.govtrack.us/congress/members/embed/mapframe?state=il&district=8&bounds=-89.199,42.525,-87.06,41.463"></iframe>
 				</div>

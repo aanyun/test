@@ -25,7 +25,7 @@
             <li class="divider"></li>
             <li><a href="endorsements.php">Endorsements</a></li>
 			<li class="divider"></li>
-            <li><a href="#">District #8</a></li>
+            <li><a href="8th-district.php">District #8</a></li>
           </ul>
         </li>
 		  <li>
