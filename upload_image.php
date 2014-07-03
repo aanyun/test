@@ -178,7 +178,7 @@ margin-top: 30px;
 		title = $('#image-title').val();
 		story = $('#image-description').val();
 		link = $('#preview img').attr('src');
-		if(title==""||story==""||link==""){
+		if(title==""||story==""||link==""||link==null){
 			alert('please fill in all fields');
 			return;
 		}
