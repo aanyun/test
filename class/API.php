@@ -26,7 +26,7 @@ switch ($command) {
 		else echo "Insert Error";
 		break;
 	case 'savePressRelease':
-		if($_POST['title']==""||$_POST['story']==""||$_POST['date']==""||$_POST['link']==""||$_POST['link']=="") {
+		if($_POST['title']==""||$_POST['story']==""||$_POST['date']==""||$_POST['link']=="") {
 			echo "please fill in all fileds";
 			return;
 		}
@@ -34,11 +34,26 @@ switch ($command) {
 			"title" => $_POST['title'],
             "desc" => $_POST['story'],
             "date" => $_POST['date'],
-            "url" => $_POST['link'],
+            "url" => $_POST['link']
 		);
 		//print_r($data);
 		$db = new Mysqlidb();
 		echo $db->insert('pressreleases', $data);
+		// else echo "Insert Error";
+		break;
+	case 'saveImg':
+		if($_POST['title']==""||$_POST['story']==""||$_POST['link']=="") {
+			echo "please fill in all fileds";
+			return;
+		}
+		$data = array(
+			"title" => $_POST['title'],
+            "desc" => $_POST['story'],
+            "url" => $_POST['link']
+		);
+		//print_r($data);
+		$db = new Mysqlidb();
+		echo $db->insert('media', $data);
 		// else echo "Insert Error";
 		break;
 	case 'uploadimg':
