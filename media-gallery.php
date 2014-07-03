@@ -59,7 +59,8 @@
             <div class="col-lg-12 get-involved">
             	<?php 
             	foreach ($news as $key => $new) {
-
+            		echo $key%4;
+            		// if($key%4==-1) echo "<div class='row'>";
             	?>
 
 
@@ -75,6 +76,7 @@
 
 
         	<?php 
+        		// if($key%4==1) echo "<div class='row'>";
 				}
 			?>
 		</div>
