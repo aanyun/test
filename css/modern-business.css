@@ -458,6 +458,10 @@ margin-left: 8px;
 margin-left:-90px;
 }
 
+.map-move {
+margin-left: 20px;
+}
+
 @media (max-width: 985px) {
 .drop-move {
 margin-left:0;
@@ -468,7 +472,7 @@ margin-left: 0;
 }
 
 .map-move {
-margin-left: 30px;
+margin-left: 0;
 }
 
 }
