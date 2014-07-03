@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default gradient" role="navigation">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Brand and toggle get grouped for better mobile display . -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -23,13 +23,13 @@
             <li class="divider"></li>
             <li><a href="#">Issues</a></li>
             <li class="divider"></li>
-            <li><a href="#">Endorsements</a></li>
+            <li><a href="endorsements.php">Endorsements</a></li>
 			<li class="divider"></li>
             <li><a href="#">District #8</a></li>
           </ul>
         </li>
 		  <li>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Involved</a>
+          <a href="get-involved.php">Get Involved</a>
           </li>
 		   <li><a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">Contribute</a></li>
 		   <li class="dropdown">

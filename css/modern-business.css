@@ -30,6 +30,12 @@ width: 970px;
 margin: 0 auto;
 }
 
+@media (max-width: 985px) {
+    .wrapper {
+width: 100%;
+}
+}
+
 
 .img-home-portfolio,
 .img-customer,
@@ -438,4 +444,13 @@ padding-top: 25px;;
 font-family: 'open_sanssemibold';
 font-size: 1.15em;
 line-height: 1em;
+}
+
+
+.get-involved {
+margin-left: 8px;
+}
+
+.drop-move {
+margin-left:-90px;
 }

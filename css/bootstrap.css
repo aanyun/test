@@ -799,11 +799,8 @@ left: -110px;
 @media (max-width: 985px) {
   .container {
     width: 100%;
-	padding-top:15px;
+	padding-top:0;
   }
-    .wrapper {
-width: 100%;
-}
 }
 @media (min-width: 992px) {
 }
@@ -4079,6 +4076,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   width: 100%;
   left: 0;
+  top: 0;
 }
   
 }
