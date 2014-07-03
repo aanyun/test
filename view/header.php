@@ -25,7 +25,7 @@
             <li class="divider"></li>
             <li><a href="endorsements.php">Endorsements</a></li>
 			<li class="divider"></li>
-            <li><a href="8th-district.php">District #8</a></li>
+            <li><a href="8th-district.php">8th District</a></li>
           </ul>
         </li>
 		  <li>
@@ -39,7 +39,7 @@
             <li class="divider"></li>
             <li><a href="press-releases.php">Press Releases</a></li>
             <li class="divider"></li>
-            <li><a href="#">Photo/Video Archive</a></li>
+            <li><a href="media-gallery.php">Photo/Video Archive</a></li>
           </ul>
         </li>
 		  <li><a href="#">Contact</a></li>
