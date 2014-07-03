@@ -106,6 +106,7 @@ margin-top: 30px;
 		<label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
 		<textarea name="image-description" id="image-description" class="form-control" rows="3"  maxlength="235" style="width: 307px;" placeholder="Enter description of the image here. Description must not exceed the maximum of 80 characters."></textarea>
+		<div><small id="counter"></small></div>
 		</div>
 		</div>
   
