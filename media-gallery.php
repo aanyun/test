@@ -33,7 +33,7 @@
             <div class="col-lg-12">
 			
 			   <h1 class="page-header"><strong>Media Gallery</strong><br />
-                    <small>You can filter results by selecting an appropriate category: Photos, Videos, or View All Media. Click to view maximum size.</small>
+                    <small>You can filter results by selecting a category below. Click to view maximum size.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
@@ -59,7 +59,26 @@
 				<p class="title"><small><strong>Title</strong><br />
 				text text text text text text text text text text text text text
 				<small></p>
+								
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>
 				
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450">
+                </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>
 				
             </div>
 
@@ -67,18 +86,10 @@
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
-            </div>
-
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
-            </div>
-
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450">
-                </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
         </div>
@@ -89,52 +100,86 @@
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
+				
             </div>
 
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
         </div>
 
         <div class="row">
 
-            <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
+				
             </div>
 
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/750x450">
                 </a>
+				<p class="title"><small><strong>Title</strong><br />
+				text text text text text text text text text text text text text
+				<small></p>				
+				
             </div>
 
         </div>
