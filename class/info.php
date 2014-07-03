@@ -17,7 +17,7 @@ function return_bytes($val) {
     return $val;
 }
 
-return_bytes(ini_get('post_max_size'));
+echo return_bytes(ini_get('post_max_size'));
 
 
 ?>
