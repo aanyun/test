@@ -93,36 +93,36 @@ margin-top: 30px;
     
 	<div class="col-lg-8 col-md-8 col-sm-8 upload-news">
 	  
-	  <div class="form-inline" role="form">
-  <div class="form-group">
-  <p style="font-size: 1.3em; font-weight: bold; margin-left: 15px;">Upload An Image:</p>
-  <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">Title:</label>
-  <div class="col-sm-10" style="padding-bottom: 10px;">
-  <input type="text" name="image-title" id="image-title" class="form-control" style="width: 360px;" placeholder="Title of Image Here">
-  </div>
-  </div>
-
-  <div class="form-group">
-  <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
-  <div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
-  <textarea name="image-description" id="image-description" class="form-control" rows="3"  maxlength="235" style="width: 307px;" placeholder="Enter description of the image here. Description must not exceed the maximum of 80 characters."></textarea>
-  </div>
-  </div>
-  
-	<div class="form-group">
-	<label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Browse:</label>
-	<div class="col-sm-9" style="padding-bottom: 10px;">
-	  	<form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadimg&size=0'>
-		<input type="file" name="photoimg" id="photoimg" />
-		</form>
-		<div id='preview'>
+	<div class="form-inline form" role="form">
+		<div class="form-group">
+		<p style="font-size: 1.3em; font-weight: bold; margin-left: 15px;">Upload An Image:</p>
+		<label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">Title:</label>
+		<div class="col-sm-10" style="padding-bottom: 10px;">
+		<input type="text" name="image-title" id="image-title" class="form-control" style="width: 360px;" placeholder="Title of Image Here">
 		</div>
-	<br>
-	<div style="font-size: .8em; margin-top: -10px;">
-	*Must be a JPG, PNG or GIF filetype only.
-	</div>
-	</div>
-	</div>
+		</div>
+
+		<div class="form-group">
+		<label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+		<textarea name="image-description" id="image-description" class="form-control" rows="3"  maxlength="235" style="width: 307px;" placeholder="Enter description of the image here. Description must not exceed the maximum of 80 characters."></textarea>
+		</div>
+		</div>
+  
+		<div class="form-group">
+		<label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Browse:</label>
+		<div class="col-sm-9" style="padding-bottom: 10px;">
+		  	<form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadimg&size=0'>
+			<input type="file" name="photoimg" id="photoimg" />
+			</form>
+			<div id='preview'>
+			</div>
+		<br>
+		<div style="font-size: .8em; margin-top: -10px;">
+		*Must be a JPG, PNG or GIF filetype only.
+		</div>
+		</div>
+		</div>
 
 
  
@@ -172,6 +172,53 @@ margin-top: 30px;
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/modern-business.js"></script>
 	<script src="js/main.js"></script>	
+	<script>
+	function submit(){
+		title = $('#image-title').val();
+		story = $('#image-description').val();
+		link = $('#preview img').attr('src');
+		if(title==""||story==""||link==""){
+			alert('please fill in all fields');
+			return;
+		}
+		$.post('class/API.php?command=saveImg',{
+			title:title,
+			story:story, 
+			link:link,
+		},function(data){
+			if(data == 'success'){
+				$('#successInfo').removeClass('hide');
+			} else alert(data);
+		});
+
+	}
+
+	var characters = 80;
+	$("#image-description").keyup(function(){
+	    if($(this).val().length > characters){
+	        $(this).val($(this).val().substr(0, characters));
+	    }
+	    var remaining = characters -  $(this).val().length;
+	    $("#counter").html("You have <strong>"+  remaining+"</strong> characters remaining");
+	    if(remaining <= 10)
+	    {
+	        $("#counter").css("color","red");
+	    }
+	    else
+	    {
+	        $("#counter").css("color","black");
+	    }
+	});
+	
+	$('.reset').click(function(){
+		$('.form input').val('');
+		$('.form textarea').val('');
+	});
+	function reset(){
+		$('.form input').val('');
+	}
+
+	</script>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.form.js"></script>
 	<script type="text/javascript" >

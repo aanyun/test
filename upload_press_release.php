@@ -125,8 +125,8 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
 		  <form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadpdf'>
 		  <input type="file" name="add-press-release-file" id="add-press-release-file" style="margin-left: 23px;">
 		  </form>
-		<div id='preview'>
-		</div>
+			<div id='preview'>
+			</div>
 		  <br>
 		  <div style="font-size: .8em; margin-top: -10px;">
 		  *Must be a pdf file or a html file.
