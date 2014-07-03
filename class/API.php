@@ -62,7 +62,7 @@ switch ($command) {
 							//echo move_uploaded_file($tmp, $path.$actual_image_name);
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
-									if (isset($_POST['size'])&&$_POST['size']==0) {
+									if (isset($_GET['size'])&&$_GET['size']==0) {
 										echo "<img src='uploads/".$actual_image_name."'  class='preview'>";
 									}else {	
 										$size = getimagesize($path.$actual_image_name);
