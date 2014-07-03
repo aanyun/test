@@ -33,7 +33,7 @@
             <div class="col-lg-12">
 			
 			   <h1 class="page-header"><strong>8th District</strong><br />
-                    <small>The map below shows the 8th Congressional District boundaries.</h1>
+                    <small>The map below shows the 8th Congressional District boundaries.</h1></small>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
@@ -49,7 +49,7 @@
 
 	            <div class="row">
 
-           	    <p>*Portions of these towns or villages are outside of the 8th District. To be sure which district you reside in, <a href="http://www.elections.il.gov/districtlocator/districtofficialsearchbyaddress.aspx" target="_blank">click here.</a></small></p>
+           	    <p>*Portions of these towns or villages are outside of the 8th District. To be sure which district you reside in, <a href="http://www.elections.il.gov/districtlocator/districtofficialsearchbyaddress.aspx" target="_blank">click here.</a></p>
 				<p>Are you unsure of where to vote? To request information about voter registration and polling place locations, <a href="http://www.elections.il.gov/VotingInformation/RegistrationLookup.aspx" target="_blank">click here.</a>
 				
 				<div class="row">
@@ -61,7 +61,18 @@ src="http://www.govtrack.us/congress/members/embed/mapframe?state=il&district=8&
 				
 				
 				<div class="col-lg-6">
-				test
+				<p>The district includes parts of the following towns and villages:</p>
+				
+					<div class="col-lg-4">
+						test
+					</div>
+					<div class="col-lg-4">
+						test
+					</div>
+					<div class="col-lg-4">
+						test
+					</div>
+				
 				</div>
 				
 				</div>
