@@ -112,7 +112,7 @@ margin-top: 30px;
 	<div class="form-group">
 	<label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Browse:</label>
 	<div class="col-sm-9" style="padding-bottom: 10px;">
-	  	<form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadimg'>
+	  	<form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadimg&size=0'>
 		<input type="file" name="photoimg" id="photoimg" />
 		</form>
 		<div id='preview'>

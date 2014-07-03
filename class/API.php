@@ -62,7 +62,10 @@ switch ($command) {
 							//echo move_uploaded_file($tmp, $path.$actual_image_name);
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
-									$size = getimagesize($path.$actual_image_name);
+									if (isset($_POST['size'])&&$_POST['size']==0) {
+										echo "<img src='uploads/".$actual_image_name."'  class='preview'>";
+									}else {	
+										$size = getimagesize($path.$actual_image_name);
 									    $maxWidth = 240;
     									$maxHeight = 55;
     									if ($size[0] > $maxWidth || $size[1] > $maxHeight)
@@ -70,9 +73,9 @@ switch ($command) {
 									        unlink($file);
 									        echo "Image over max height/width.";
 									    }
-								// mysqli_query($db,"UPDATE users SET profile_image='$actual_image_name' WHERE uid='$session_id'");
 									
 										else echo "<img src='uploads/".$actual_image_name."'  class='preview'>";
+									}
 								}
 							else
 								echo "failed";
