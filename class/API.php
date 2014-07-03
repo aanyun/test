@@ -76,7 +76,7 @@ switch ($command) {
 						{
 							$actual_image_name = time().substr(str_replace(" ", "_", $txt), 5).".".$ext;
 							$tmp = $_FILES['photoimg']['tmp_name'];
-							//echo move_uploaded_file($tmp, $path.$actual_image_name);
+							echo move_uploaded_file($tmp, $path.$actual_image_name);
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
 									if (isset($_GET['size'])&&$_GET['size']==0) {
