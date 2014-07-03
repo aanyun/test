@@ -16,7 +16,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="dropdown" class="drop-move">
+        <li class="dropdown drop-move">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meet Larry<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#" class="custom">About</a></li>
