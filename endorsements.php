@@ -36,7 +36,7 @@
                     <small>Want to endorse Larry Kaifesh? <a href="mailto:larry@kaifeshforcongress.com">Contact Us!</a></small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Endorsements</li>
                 </ol>

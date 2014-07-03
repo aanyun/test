@@ -44,7 +44,7 @@
                     <small>Subscribe to our mailing list to get the latest campaign updates!</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Recent News</li>
                 </ol>
