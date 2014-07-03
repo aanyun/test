@@ -187,7 +187,8 @@ margin-top: 30px;
 			story:story, 
 			link:link,
 		},function(data){
-			if(data == 'success'){
+			if(data%1===0){
+				reset();
 				$('#successInfo').removeClass('hide');
 			} else alert(data);
 		});
@@ -212,11 +213,12 @@ margin-top: 30px;
 	});
 	
 	$('.reset').click(function(){
-		$('.form input').val('');
-		$('.form textarea').val('');
+		reset();
 	});
 	function reset(){
 		$('.form input').val('');
+		$('.form textarea').val('');
+		$('#preview').html('');
 	}
 
 	</script>
