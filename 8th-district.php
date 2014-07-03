@@ -48,9 +48,9 @@
 			            <div class="col-lg-12">
 
 	            <div class="row">
-
-           	    <p>*Portions of these towns or villages are outside of the 8th District. To be sure which district you reside in, <a href="http://www.elections.il.gov/districtlocator/districtofficialsearchbyaddress.aspx" target="_blank">click here.</a></p>
+				
 				<p>Are you unsure of where to vote? To request information about voter registration and polling place locations, <a href="http://www.elections.il.gov/VotingInformation/RegistrationLookup.aspx" target="_blank">click here.</a>
+           	    <p style="padding-bottom: 35px;">*Portions of these towns or villages are outside of the 8th District. To be sure which district you reside in, <a href="http://www.elections.il.gov/districtlocator/districtofficialsearchbyaddress.aspx" target="_blank">click here.</a></p>
 				
 				<div class="row">
 				
@@ -64,13 +64,47 @@ src="http://www.govtrack.us/congress/members/embed/mapframe?state=il&district=8&
 				<p>The district includes parts of the following towns and villages:</p>
 				
 					<div class="col-lg-4">
-						test
+						Addison*<br />
+						Algonquin*<br />
+						Arlington Heights*<br />
+						Barrington*<br />
+						Barrington Hills*<br />
+						Bartlett*<br />
+						Bensenville*<br />
+						Bloomingdale<br />
+						Buffalo Grove*<br />
+						Carol Stream*<br />
+						Carpentersville*<br />
+						Des Plaines*<br />
+						Dundee*
 					</div>
 					<div class="col-lg-4">
-						test
+						East Dundee*<br />
+						Elgin*<br />
+						Elk Grove Village<br />
+						Elmhurst*<br />
+						Glen Ellyn*<br />
+						Glendale Heights*<br />
+						Hanover Park<br />
+						Hoffman Estates*<br />
+						Itasca<br />
+						Lombard*<br />
+						Medinah<br />
+						Mount Prospect*<br />
+						Oak Brook*<br />
 					</div>
 					<div class="col-lg-4">
-						test
+						Oakbrook Terrace*<br />
+						Palatine<br />
+						Rolling Meadows*<br />
+						Roselle<br />
+						Schaumburg<br />
+						South Barrington*<br />
+						South Elgin*<br />
+						Streamwood<br />
+						Villa Park*<br />
+						Wheeling*<br />
+						Wood Dale*<br />
 					</div>
 				
 				</div>
