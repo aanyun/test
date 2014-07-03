@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Location:signin/index.php');
+if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Location:signin/index.html');
 ?>
 <!DOCTYPE html>
 <html lang="en">
