@@ -91,7 +91,7 @@ switch ($command) {
 									        echo "Image over max height/width.";
 									    }
 									
-										else echo "<img src='uploads/".$actual_image_name."'  class='preview'>";
+										else echo "<img src='uploads/".$actual_image_name."'  class='preview img-responsive'>";
 									}
 								}
 							else
