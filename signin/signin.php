@@ -14,5 +14,8 @@ $pw = $converter->decode($pw);
 
 if( $username != $name ) die(header('Location:index.html?m=1'));
 if( $password != $pw ) die(header('Location:index.html?m=2'));
+
+session_start();
+$_SESSION['kaifesh_auth'] = true;
 header('Location:../upload_news.php');
 ?>
