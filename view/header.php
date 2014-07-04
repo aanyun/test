@@ -19,7 +19,7 @@
         <li class="dropdown drop-move">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meet Larry<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#" class="custom">About</a></li>
+            <li><a href="about-larry.php" class="custom">About</a></li>
             <li class="divider"></li>
             <li><a href="#">Issues</a></li>
             <li class="divider"></li>

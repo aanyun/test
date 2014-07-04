@@ -1809,9 +1809,7 @@ textarea.form-control {
 input[type="date"] {
   line-height: 34px;
 }
-.form-group {
-  margin-bottom: 15px;
-}
+
 .radio,
 .checkbox {
   display: block;
@@ -3765,6 +3763,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .active {
   display: block;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 0 0 4px 4px;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -5984,3 +5987,40 @@ td.visible-print {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+     /* CUSTOM STYLES FOR MEDIUM SCREENS THAT ARE AT LEAST 768px OR MORE */
+@media only screen and (min-width: 767px) {
+   .hide-768plus {
+    display: none !important; }
+  }
+     /* CUSTOM STYLES FOR MEDIUM SCREENS THAT ARE AT LEAST 768px OR LESS */
+@media only screen and (max-width: 767px) {
+   .hide-768minus {
+    display: none !important; }
+  }
+	
+	/* CUSTOM STYLES FOR MEDIUM SCREENS THAT ARE AT LEAST 940px OR MORE */
+@media only screen and (min-width: 959px) {
+	 .hide-960plus {
+    display: none !important; }
+	}
+	
+/* CUSTOM STYLES FOR MEDIUM SCREENS THAT ARE AT LEAST 940px OR LESS */
+@media only screen and (max-width: 959px) {
+	 .hide-960minus {
+    display: none !important; }
+	}
+
+	/* CUSTOM STYLES FOR MEDIUM SCREENS THAT ARE AT LEAST 940px OR MORE */
+@media only screen and (min-width: 1200px) {
+	 .hide-1200plus {
+    display: none !important; }
+	}
+	
+/* CUSTOM STYLES FOR MEDIUM SCREENS THAT ARE AT LEAST 940px OR LESS */
+@media only screen and (max-width: 1200px) {
+	 .hide-1200minus {
+    display: none !important; }
+	}
+

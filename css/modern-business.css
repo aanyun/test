@@ -21,6 +21,16 @@ body {
   background-size: cover;
 }
 
+
+
+@media only screen and (max-width: 1200px) {
+body {
+  background: #797d91; 
+ overflow-x: hidden;
+}
+	
+	}
+
 .wrapper {
 background-color: #fff;
   -moz-box-shadow: 0px 0px 10px #000000;
@@ -47,7 +57,7 @@ box-shadow: 0px 0px 0px #000000;
 }
 
 .tab-pane {
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 /* Page Sections */
@@ -328,6 +338,12 @@ padding-top: 5px;
 }
 
 
+.subscribeBtn {
+position: absolute; 
+top: 107px;
+}
+
+
 
 .adjust1 {
 padding-right: 30px;
@@ -338,7 +354,7 @@ margin-left: 35px;
 padding: 0;
 }
 
-hr.divideConnect {
+.divideConnect {
 border: 0;
 height: 0;
 width: 320px;
@@ -347,6 +363,34 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 margin-top: 15px;
 margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 1200px) {
+.divideConnect{
+width: 0px;
+}
+
+.subscribe {
+width: 350px;
+height: auto;
+background: #f1f1f1;
+margin-left: 15px;
+padding-left: 50px;
+padding-right: 30px;
+padding-bottom: 30px;
+ border-radius: 4px;
+}
+
+.subscribeBtn {
+position: absolute; 
+top: 228px;
+}
+
+
+.fix {
+padding-top: 15px;
+}
+}
+
 
 .connect {
 margin-top: -10px;
@@ -487,4 +531,20 @@ left: 20px;
 
 .click-btn {
 width: 230px;
+}
+
+
+
+.about {
+padding-top: 15px;
+}
+
+#service-five {
+height: 281px;
+}
+
+@media only screen and (max-width: 600px) {
+#service-five {
+height: auto;
+}
 }
