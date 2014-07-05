@@ -163,11 +163,23 @@
     <script src="js/main.js"></script>	
     <script>
     function submit(){
-      if($('.form input,textarea').val=='') {
-        alert('please fill in all fields');
-        return;
-      }
-    
+    title = $('#video-title').val();
+    story = $('#video-description').val();
+    link = $('#video-url').val();
+    if(title==""||story==""||link==""){
+      alert('please fill in all fields');
+      return;
+    }
+    $.post('class/API.php?command=savevideo',{
+      title:title,
+      story:story, 
+      link:link,
+    },function(data){
+      if(data%1===0){
+        reset();
+        $('#successInfo').removeClass('hide');
+      } else alert(data);
+    });
 
     }
     var characters = 80;
