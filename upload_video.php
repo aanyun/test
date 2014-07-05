@@ -13,9 +13,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-	<link href="css/font.css" rel="stylesheet">
+	  <link href="css/font.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<style>
 	
 	.container {
@@ -27,19 +27,19 @@
 	a {
   color: #304EB9;
   text-decoration: none;
-}
-	a:hover {
-  color: #999;
-  text-decoration: none;
-}
+  }
+  	a:hover {
+    color: #999;
+    text-decoration: none;
+  }
 
-.alert {
-width: 83%;
-font-size: 1.2em;
-margin-top: 10px;
-}
+  .alert {
+  width: 83%;
+  font-size: 1.2em;
+  margin-top: 10px;
+  }
 
-</style>
+  </style>
 	
 </head>
 
@@ -100,6 +100,7 @@ margin-top: 10px;
   <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
   <div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
   <textarea name="video-description" id="video-description" class="form-control" rows="3"  maxlength="80" style="width: 307px;" placeholder="Enter description of video here. Description must not exceed the maximum of 80 characters."></textarea>
+  <div><small id="counter"></small></div>
   </div>
   </div>
   
@@ -138,19 +139,16 @@ margin-top: 10px;
 	</section>
 	
 	
-	<section>
-	            <div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12" style="margin: 0 auto;">
-
-	<div class="alert alert-success text-center">
-	
-	  <span class="glyphicon glyphicon-ok" style="padding-right: 20px;"></span>
-
-You have successfully uploaded a new video to the Media Gallery! <a href="#">Check it out now!</a>
-		</div>
-		</div>
-</div>
-</section>
+  <section id='successInfo' class='hide'>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12" style="margin: 0 auto;">
+      <div class="alert alert-success text-center">
+        <span class="glyphicon glyphicon-ok" style="padding-right: 20px;"></span>
+        You have successfully uploaded a news article to Recent News! <a href="media-gallery.php">Check it out now!</a>
+      </div>
+      </div>
+    </div>
+  </section>
 	
 	  
     </div> <!-- /container -->
@@ -161,9 +159,26 @@ You have successfully uploaded a new video to the Media Gallery! <a href="#">Che
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
-	<script src="js/jquery-1.9.1.js"></script>
-	<script src="js/main.js"></script>	
-
+	 <script src="js/jquery-1.9.1.js"></script>
+	 <script src="js/main.js"></script>	
+   <script>
+    var characters = 80;
+    $("#video-description").keyup(function(){
+        if($(this).val().length > characters){
+            $(this).val($(this).val().substr(0, characters));
+        }
+        var remaining = characters -  $(this).val().length;
+        $("#counter").html("You have <strong>"+  remaining+"</strong> characters remaining");
+        if(remaining <= 10)
+        {
+            $("#counter").css("color","red");
+        }
+        else
+        {
+            $("#counter").css("color","black");
+        }
+    });
+   </script>
 </body>
 
 </html>
