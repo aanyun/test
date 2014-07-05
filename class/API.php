@@ -58,6 +58,22 @@ switch ($command) {
 		echo $db->insert('media', $data);
 		// else echo "Insert Error";
 		break;
+	case 'savevideo':
+		if($_POST['title']==""||$_POST['story']==""||$_POST['link']=="") {
+			echo "please fill in all fileds";
+			return;
+		}
+		$data = array(
+			"title" => $_POST['title'],
+            "desc" => $_POST['story'],
+            "url" => $_POST['link'],
+            "type"=>1
+		);
+		//print_r($data);
+		$db = new Mysqlidb();
+		echo $db->insert('media', $data);
+		// else echo "Insert Error";
+		break;
 	case 'uploadimg':
 		$path = "../uploads/";
 
