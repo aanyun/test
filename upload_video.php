@@ -87,29 +87,29 @@
     
 	<div class="col-lg-8 col-md-8 col-sm-8 upload-news">
 	  
-	  <form class="form-inline" role="form">
-  <div class="form-group">
-  <p style="font-size: 1.3em; font-weight: bold; margin-left: 15px;">Upload A Video (URL Only!):</p>
-  <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">Title:</label>
-  <div class="col-sm-10" style="padding-bottom: 10px;">
-  <input type="text" name="video-title" id="video-title" class="form-control" style="width: 360px;" placeholder="Title of Video Here">
-  </div>
-  </div>
-  
-  <div class="form-group">
-  <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
-  <div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
-  <textarea name="video-description" id="video-description" class="form-control" rows="3"  maxlength="80" style="width: 307px;" placeholder="Enter description of video here. Description must not exceed the maximum of 80 characters."></textarea>
-  <div><small id="counter"></small></div>
-  </div>
-  </div>
-  
+	<div class="form form-inline" role="form">
     <div class="form-group">
-  <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">URL:</label>
-  <div class="col-sm-10" style="padding-bottom: 10px;">
-  <input type="text" name="video-url" id="video-url" class="form-control" style="width: 360px;" placeholder="https://www.vimeo.com/1234567">
-  </div>
-  </div>
+    <p style="font-size: 1.3em; font-weight: bold; margin-left: 15px;">Upload A Video (URL Only!):</p>
+    <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">Title:</label>
+    <div class="col-sm-10" style="padding-bottom: 10px;">
+    <input type="text" name="video-title" id="video-title" class="form-control" style="width: 360px;" placeholder="Title of Video Here">
+    </div>
+    </div>
+    
+    <div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label" style="margin-top: 5px;">Description:</label>
+    <div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+    <textarea name="video-description" id="video-description" class="form-control" rows="3"  maxlength="80" style="width: 307px;" placeholder="Enter description of video here. Description must not exceed the maximum of 80 characters."></textarea>
+    <div><small id="counter"></small></div>
+    </div>
+    </div>
+    
+    <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top: 5px;">URL:</label>
+    <div class="col-sm-10" style="padding-bottom: 10px;">
+    <input type="text" name="video-url" id="video-url" class="form-control" style="width: 360px;" placeholder="https://www.vimeo.com/1234567">
+    </div>
+    </div>
 
 
  
@@ -121,16 +121,16 @@
   
   	<div class="col-lg-5 col-md-6 col-sm-12 ">
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
-	</div>
-	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
-        <button class="btn btn-md btn-primary btn-block" type="submit" style="width: 136px;">Upload</button>
-	</div>
+  	</div>
+  	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
+      <button class="btn btn-md btn-primary btn-block" type="button" onclick='submit()' style="width: 136px;">Upload</button>
+  	</div>
 	
 	  </div>
 	  
 
 	
-</form>
+</div>
 
 	  </div>
 
@@ -159,9 +159,17 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
-	 <script src="js/jquery-1.9.1.js"></script>
-	 <script src="js/main.js"></script>	
-   <script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/main.js"></script>	
+    <script>
+    function submit(){
+      if($('.form input,textarea').val=='') {
+        alert('please fill in all fields');
+        return;
+      }
+    
+
+    }
     var characters = 80;
     $("#video-description").keyup(function(){
         if($(this).val().length > characters){
