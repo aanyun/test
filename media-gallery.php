@@ -16,7 +16,8 @@
     <link href="css/modern-business.css" rel="stylesheet">
 	<link href="css/font.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		
 	
 </head>
 
@@ -57,6 +58,7 @@
 			
 			
             <div class="col-lg-12 get-involved">
+				<ul class="gallery clearfix">
 
             	<?php 
             	foreach ($news as $key => $new) {
@@ -65,7 +67,8 @@
             	?>
 
 
-                <div class="col-md-3 portfolio-item">
+                <li class="col-md-3 portfolio-item">
+
                 <?php 
                 if($new['type']==1){
                 ?>	
@@ -75,7 +78,7 @@
 				<?php
 				}else {
 				?>
-	                <a href="#">
+	                <a href="<?php echo $new['url']?>" rel="prettyPhoto[mixed]">
 	                    <img class="img-responsive" src="<?php echo $new['url']?>">
 	                </a>
 	            <?php
@@ -85,13 +88,14 @@
 					<?php echo $new['desc']?>
 					</small></p>				
 				
-            	</div>
+            	</li>
 
 
         	<?php 
         		if($key%4==3) echo "</div>";
 				}
 			?>
+		</ul>
 		</div>
 		<div class="col-lg-12 text-center">
 			<ul class="pagination pagination-sm">
@@ -256,6 +260,11 @@
     <script src="js/modern-business.js"></script>
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/main.js"></script>	
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(".gallery a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+	</script>
+
 
 </body>
 
