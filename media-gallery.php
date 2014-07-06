@@ -67,7 +67,7 @@
             	?>
 
 
-                <li class="col-md-3 portfolio-item">
+                <li class="col-md-4 portfolio-item">
 
                 <?php 
                 if($new['type']==1){
@@ -102,7 +102,7 @@
 
 
         	<?php 
-        		if($key%4==3) echo "</div>";
+        		if($key%3==2) echo "</div>";
 				}
 			?>
 		</ul>
