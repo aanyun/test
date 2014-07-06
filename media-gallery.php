@@ -48,8 +48,8 @@
                     <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Media Gallery (View All Media)</li>
-					<li><a href="#">Photos</a></li>
-					<li><a href="#">Videos</a></li>
+					<li><a href="#">Photos</a><a href="#">Videos</a></li>
+					
                 </ol>
 			  
             </div>
