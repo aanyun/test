@@ -69,7 +69,7 @@
                 <?php 
                 if($new['type']==1){
                 ?>	
-	                <iframe width="420" height="345"
+	                <iframe width="200" height="125"
 					src="<?=$now['url']?>">
 					</iframe>
 				<?php
