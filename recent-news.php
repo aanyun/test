@@ -123,7 +123,7 @@ ini_set("display_errors", 1);
                 					echo $num['cnt'];
                                 	if($num['cnt']>0)
                                 	echo "<li><a href='recent-news.php?date=".date('Y-m',strtotime('-'.$i.' month'))."'>".date('F Y',strtotime("-".$i." month"))."</a></li>";
-                            		else echo "<li><a href=''>".date('F Y',strtotime("-".$i." month"))."</a></li>";
+                            		else echo "<li><a disabled>".date('F Y',strtotime("-".$i." month"))."</a></li>";
                             	}
                                 ?>
                             </ul>
