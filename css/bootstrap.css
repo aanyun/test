@@ -603,6 +603,14 @@ a.bg-danger:hover {
   padding-bottom: 5px;
   margin: 60px 0 10px;
 }
+
+@media only screen and (max-width: 768px){
+.page-header {
+  padding-bottom: 5px;
+  margin: 0 0 10px;
+}
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -3591,6 +3599,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   padding: 10px 15px;
 }
+
+@media only screen and (max-width: 850px){
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+}
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
@@ -3879,6 +3896,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 18px;
   line-height: 20px;
 }
+
+@media only screen and (max-width: 985px) {
+.navbar-brand {
+width: 150px;
+}
+}
+
+@media only screen and (max-width: 850px){
+.navbar-brand {
+width: 120px;
+}
+}
+
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -3948,6 +3979,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-nav > li {
     float: left;
@@ -3961,6 +3993,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: -15px;
   }
 }
+
+@media only screen and (max-width: 985px) {
+  .navbar-nav > li {
+	 padding-right: 0;
+  }
+  }
+
 @media (min-width: 768px) {
   .navbar-left {
     float: left !important;
