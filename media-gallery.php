@@ -72,12 +72,7 @@
                 <?php 
                 if($new['type']==1){
                 	if(strpos($new['url'], 'watch')!== false){
-                	echo "ok"; 
 	               	$new['url'] = preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","https://www.youtube.com/embed/$1",$new['url']);
-                	
-
-
-                	//echo $new['url'];
                 	}
                 ?>	
 	                <iframe width="200" height="150"
