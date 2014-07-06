@@ -70,7 +70,7 @@
                 if($new['type']==1){
                 ?>	
 	                <iframe width="200" height="125"
-					src="<?php echo $now['url']?>">
+					src="<?php echo $new['url']?>">
 					</iframe>
 				<?php
 				}else {
