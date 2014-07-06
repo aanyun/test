@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Location:signin/index.html');
@@ -53,7 +54,7 @@ margin-top: 30px;
   <div class="container">
 <section>	
 	<!-- Notes for Management side of things: We will need 2 text fields in the admin form for title and description. 
-	The description field needs to have a max-limit of 80 characters. There will be a button to “Upload” the image. 
+	The description field needs to have a max-limit of 80 characters. There will be a button to â€œUploadâ€ the image. 
 	Filetypes are restricted to JPG, PNG and GIF files only. -->
 	
 			 <div class="row">
