@@ -78,7 +78,7 @@
 	                	}
                 ?>	
                 	<a href='<?php echo $videolink?>' rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
-	                <iframe width="200" height="150"
+	                <iframe width="100%" height="100%"
 					src='<?php echo $new["url"]?>'>
 					</iframe>
 					</a>
