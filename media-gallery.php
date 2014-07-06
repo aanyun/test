@@ -71,10 +71,11 @@
 
                 <?php 
                 if($new['type']==1){
-                	$videolink = $new['url'];
-                	if(strpos($new['url'], 'watch')!== false){
-	               	$new['url'] = preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","https://www.youtube.com/embed/$1",$new['url']);
-                	}
+                	if(strpos($new['url'], 'youtube')!== false){
+	                	$videolink = $new['url'];
+	                	if(strpos($new['url'], 'watch')!== false){
+		               	$new['url'] = preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","https://www.youtube.com/embed/$1",$new['url']);
+	                	}
                 ?>	
                 	<a href='<?php echo $videolink?>' rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
 	                <iframe width="200" height="150"
@@ -82,6 +83,9 @@
 					</iframe>
 					</a>
 				<?php
+					} else {
+						echo $new['url'];
+					}
 				}else {
 				?>
 	                <a href="<?php echo $new['url']?>" rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
