@@ -110,44 +110,12 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="list-unstyled archives">
-                                <li><a href="#">July 2014</a>
-                                </li>
-                                <li><a href="#">June 2014</a>
-                                </li>
-                                <li><a href="#">May 2014</a>
-                                </li>
-                                <li><a href="#">April 2014</a>
-                                </li>
-							    <li><a href="#">March 2014</a>
-                                </li>
-								<li><a href="#">February 2014</a>
-                                </li>
-								<li><a href="#">January 2014</a>
-                                </li>
-								<li>December 2013
-                                </li>
-								<li><a href="#wild-animals">November 2013</a>
-                                </li>
-								<li>September 2013
-                                </li>
-								<li>August 2013
-                                </li>
-								<li>July 2013
-                                </li>
-								<li>June 2013
-                                </li>
-								<li>May 2013
-                                </li>
-								<li>April 2013
-                                </li>
-								<li>March 2013
-                                </li>
-								<li>February 2013
-                                </li>
-								<li>January 2013
-                                </li>
-								<li><a href="#">August 2004</a>
-                                </li>
+                                <?php 
+                                
+                                for($i=0;$i<12;$++){
+                                	echo "<li><a href='".date('Y-m')."'>".date('M Y')."</a></li>";
+                            	}
+                                ?>
                             </ul>
                         </div>
                     </div>
