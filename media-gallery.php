@@ -75,7 +75,7 @@
                 	echo "ok"; 
 	                //echo preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","<iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/$1\" frameborder=\"0\" allowfullscreen></iframe>",$new['url']);
                 	
-					 $search = '#<a(.*?)(?:href="https?://)?(?:www\.)?(?:youtu\.be/|youtube\.com(?:/embed/|/v/|/watch?.*?v=))([\w\-]{10,12}).*<\/a>#x';
+					 $search = '#https?://)?(?:www\.)?(?:youtu\.be/|youtube\.com(?:/embed/|/v/|/watch?.*?v=))([\w\-]{10,12}).*s#x';
 					 $replace = '<center><iframe width="560" height="315" src="http://www.youtube.com/embed/$2" frameborder="0" allowfullscreen></iframe></center>';
 					 $new['url'] = preg_replace($search, $replace, $new['url']);
 
