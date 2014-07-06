@@ -26,7 +26,7 @@
 		$db = new Mysqlidb();
 		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
 		
-		$news = $db->rawQuery("select * from media where 1 order by id desc limit 5 offset ".$current_page*5);
+		$news = $db->rawQuery("select * from media where 1 order by id desc limit 12 offset ".$current_page*12);
 
 	?>
 <div class="wrapper">
@@ -89,7 +89,7 @@
                 else echo '<li><a href="media-gallery.php?page='.$current_page.'">« Last</a></li>';
 
                 $num = $db->getOne("media","count(*) as cnt");
-                $pages = ceil($num['cnt']/5);
+                $pages = ceil($num['cnt']/12);
                 for( $i = 1; $i <= $pages ; $i++){
                 	if( $i==$current_page+1) echo '<li class="active"><a href="media-gallery.php?page='.$i.'">'.$i.'</a></li>';
                 	else echo '<li><a href="media-gallery.php?page='.$i.'">'.$i.'</a></li>';
