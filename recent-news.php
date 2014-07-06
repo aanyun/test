@@ -87,17 +87,17 @@ ini_set("display_errors", 1);
                 <?php 
 
                 if( $current_page == 0 ) echo '<li class="disabled"><a href="javascript:void(0)">« Last</a></li>';
-                else echo '<li><a href="recent-news.php?page='.$current_page.'">« Last</a></li>';
+                else echo '<li><a href="recent-news.php?date='.$date.'&page='.$current_page.'">« Last</a></li>';
                 $db->where ("date like ?",array('%'.$date.'%'));
                 $num = $db->getOne("news","count(*) as cnt");
                 $pages = ceil($num['cnt']/5);
                 for( $i = 1; $i <= $pages ; $i++){
                 	if( $i==$current_page+1) echo '<li class="active"><a href="recent-news.php?page='.$i.'">'.$i.'</a></li>';
-                	else echo '<li><a href="recent-news.php?page='.$i.'">'.$i.'</a></li>';
+                	else echo '<li><a href="recent-news.php?date='.$date.'&page='.$i.'">'.$i.'</a></li>';
                 }
 
 				if( $current_page == $pages-1 ) echo '<li class="disabled"><a href="javascript:void(0)">Next »</a></li>';
-                else echo '<li><a href="recent-news.php?page='.($current_page+2).'">Next »</a></li>';
+                else echo '<li><a href="recent-news.php?date='.$date.'&page='.($current_page+2).'">Next »</a></li>';
 
                 ?>
 
