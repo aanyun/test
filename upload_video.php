@@ -191,6 +191,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       title = $('#video-title').val('');
       story = $('#video-description').val('');
       link = $('#video-url').val('');
+      $('#counter').html('');
     }
     var characters = 80;
     $("#video-description").keyup(function(){
