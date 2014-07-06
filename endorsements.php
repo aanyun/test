@@ -56,8 +56,6 @@
 					echo "<p>".$value."</p>";
 				}
 				?>
-				Congressman Jim Jordan <span style="font-size: .9em;">(R-OH)</span><br />
-				Congressman John Kline <span style="font-size: .9em;">(R-MN)</span>
 				
 				<h2>Organizations:</h2>
 			   
