@@ -112,7 +112,7 @@
                             <ul class="list-unstyled archives">
                                 <?php 
                                 
-                                for($i=0;$i<12;$++){
+                                for($i=0;$i<12;$i++){
                                 	echo "<li><a href='".date('Y-m')."'>".date('M Y')."</a></li>";
                             	}
                                 ?>
