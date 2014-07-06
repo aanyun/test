@@ -48,7 +48,7 @@
                     <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Media Gallery (View All Media)</li>
-					<li><a href="#">Photos</a> | <a href="#">Videos</a></li>
+					<li><a href="javascript:photoonly()">Photos</a> | <a href="javascript:videoonly()">Videos</a></li>
 					
                 </ol>
 			  
@@ -273,6 +273,11 @@
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		$(".gallery a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',social_tools:false,gallery_markup: ''});
+		function photoonly(){
+			$('.gallery li').addClass('hide');
+			$('.gallery img').parent().parent().removeClass('hide');
+		}
+
 	</script>
 
 
