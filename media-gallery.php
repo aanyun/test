@@ -26,8 +26,8 @@
 		include "class/MysqliDb.php";
 		$db = new Mysqlidb();
 		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
-		
-		$news = $db->rawQuery("select * from media where 1 order by id desc limit 12 offset ".$current_page*12);
+		$type = (isset($_GET['type'])&& $_GET['type']!='')? $_GET['type']:'0,1';
+		$news = $db->rawQuery("select * from media where type in (".$type.") order by id desc limit 12 offset ".$current_page*12);
 
 	?>
 <div class="wrapper">
@@ -48,7 +48,7 @@
                     <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Media Gallery (View All Media)</li>
-					<li><a href="javascript:photoonly()">Photos</a> | <a href="javascript:videoonly()">Videos</a></li>
+					<li><a href="media-gallery.php?type=0">Photos</a> | <a href="media-gallery.php?type=1">Videos</a></li>
 					
                 </ol>
 			  
@@ -273,11 +273,6 @@
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		$(".gallery a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',social_tools:false,gallery_markup: ''});
-		function photoonly(){
-			$('.gallery li').addClass('hide');
-			$('.gallery img').parent().parent().removeClass('hide');
-		}
-
 	</script>
 
 
