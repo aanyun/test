@@ -63,7 +63,7 @@
             	<?php 
             	foreach ($news as $key => $new) {
             		
-            		if($key%4==0) echo "<div class='row'>";
+            		if($key%3==0) echo "<div class='row'>";
             	?>
 
 
