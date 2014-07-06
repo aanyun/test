@@ -47,8 +47,7 @@
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Media Gallery (View All Media)</li>
-					<li><a href="media-gallery.php?type=0">Photos</a> | <a href="media-gallery.php?type=1">Videos</a></li>
+                    <li class="active"><a href="media-gallery.php">Media Gallery (View All Media)</a> | <a href="media-gallery.php?type=0">Photos</a> | <a href="media-gallery.php?type=1">Videos</a></li>
 					
                 </ol>
 			  
