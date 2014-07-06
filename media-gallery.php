@@ -139,7 +139,7 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 subscribe">
+                <div class="col-lg-8 col-md-6 col-sm-6 subscribe">
                     <h2><strong>Stay Updated</strong><span style="font-size: 17px; color: #494949;"> &ndash; Subscribe for the latest campaign updates!</span></h3>
                     
 					
@@ -149,7 +149,7 @@
 						<label class="sr-only">First Name</label>
 						<input name="firstName" class="form-control" placeholder="First Name">
 					  </div>
-					  <div class="form-group">
+					  <div class="form-group fix">
 						<label class="sr-only">Last Name</label>
 						<input name="lastName" class="form-control" placeholder="Last Name">
 					  </div>
@@ -162,7 +162,7 @@
 							<label class="sr-only">Zip Code</label>
 							<input name="zipCode" class="form-control-sm" placeholder="Zip Code">
 						  </div>
-						  <span style="position: relative; top: 8px;">
+						  <span class="subscribeBtn">
 						  <button type="submit" class="btn btn-danger" style="margin-left: -8px;">Submit</button>
 						</span>
 					  </div> <!-- /.row --> 
@@ -170,7 +170,7 @@
 					
 					
                 </div>
-                <div class="col-lg-4 col-md-4 connect adjust2">
+                <div class="col-lg-4 col-md-6 col-sm-6 connect adjust2">
 					<h2><strong>Stay Connected</strong><span style="font-size: 17px; color: #494949;"> with Larry Kaifesh!</span></h3>
 					<hr class="divideConnect"> </hr>
 					
@@ -197,8 +197,12 @@
 					</a>
 
 						<div style="margin-top: 15px;">
-					<button type="button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-					<button type="button" class="btn btn-lg btn-danger">Get Involved</button>
+						<form action="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
+						</form>
+						<form action="get-involved.php" target="_blank">
+					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
+						</form>
 						</div>
                 </div>
             </div>
@@ -217,20 +221,29 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 hide-1200minus">
 				<div class="paidforby">Paid for by Kaifesh for Congress</div>
-				<p class="subfooter">636 E. Irving Park Road<br />
+
+				<p class="subfooter ">804 E Nerge Rd.<br />
 					Roselle, IL 60172<br />
 					Office: 847-380-6915<br />
 					After hours: 224-800-8065</p>
+					
+
                 </div>
-				<div class="col-lg-4 subfooter-center">
+				<div class="col-lg-4 col-md-12 hide-1200minus subfooter-center">
                     <p>Copyright &copy; Kaifesh for Congress 2014.</p>
 					<img src="img/kaifesh_logo.png" class="img2" alt="Kaifesh for Congress">
 				</div>
-				<div class="col-lg-4 subfooter-right">
+				<div class="col-lg-4 hide-1200minus subfooter-right">
                     <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
                 </div>
+				
+				 <div class="col-md-4 col-md-push-4 hide-1200plus text-center">
+				 <span class="subfooter">Copyright &copy; Kaifesh for Congress 2014.</span><br />
+				 <img src="img/kaifesh_logo.png" class="img2" alt="Kaifesh for Congress" style="margin-top: 18px;">
+				</div>
+				
             </div>
             <!-- /.row -->
 
