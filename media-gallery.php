@@ -57,6 +57,7 @@
 			
 			
             <div class="col-lg-12 get-involved">
+
             	<?php 
             	foreach ($news as $key => $new) {
             		
@@ -65,12 +66,24 @@
 
 
                 <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="<?php echo $new['url']?>">
-                </a>
-				<p class="title"><small><strong><?php echo $new['title']?></strong><br />
-				<?php echo $new['desc']?>
-				</small></p>				
+                <?php 
+                if($new['type']==1){
+                ?>	
+	                <iframe width="420" height="345"
+					src="<?=$now['url']?>">
+					</iframe>
+				<?php
+				}else {
+				?>
+	                <a href="#">
+	                    <img class="img-responsive" src="<?php echo $new['url']?>">
+	                </a>
+	            <?php
+	        	}
+	            ?>
+					<p class="title"><small><strong><?php echo $new['title']?></strong><br />
+					<?php echo $new['desc']?>
+					</small></p>				
 				
             	</div>
 
