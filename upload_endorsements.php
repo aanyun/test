@@ -61,7 +61,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
     
 	<div class="col-lg-8 col-md-8 col-sm-8 upload-endorsements">
 	  
-	
+	<a href='view/congress_member.txt' >Download Congress Members List</a>
 	  
 
 	
