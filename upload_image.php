@@ -60,36 +60,9 @@ margin-top: 30px;
 			 <div class="row">
 	
 		<div class="col-lg-4 col-md-4 col-sm-4 upload-news">
-                <div class="well">
-	<ul class="list-group">
-  <li class="list-group-item">
-    <span class="badge">
-	  <span class="glyphicon glyphicon-link"></span>
-	</span>
-    <a href="upload_news.html">Upload a News Article</a>
-  </li>
-    <li class="list-group-item" style="margin-top: 15px;">
-    <span class="badge">
-	  <span class="glyphicon glyphicon-upload"></span>
-	</span>
-    <a href="upload_press_release.html">Upload a Press Release</a>
-  </li>
-   <li class="list-group-item" style="margin-top: 15px;">
-    <span class="badge">
-	  <span class="glyphicon glyphicon-picture"></span>
-	</span>
-    <a href="upload_image.html">Upload an Image</a>
-  </li>
-     <li class="list-group-item" style="margin-top: 15px;">
-    <span class="badge">
-	  <span class="glyphicon glyphicon-film"></span>
-	</span>
-    <a href="upload_video.html">Upload a Video</a>
-  </li>
-  
-</ul>
-</div>
-</div>
+			<?php include "view/admin_menu.php";?>
+
+		</div>
 	
     
 	<div class="col-lg-8 col-md-8 col-sm-8 upload-news">
