@@ -23,7 +23,7 @@
 <body>
 <div class="wrapper">
     <div class="container">
-    	<?php include "view/header.php";?>
+  		<?php include "view/header.php"; ?>
 	</div> <!-- / .container -->
 
 
@@ -42,11 +42,9 @@
                     <li class="active">Meet Larry</li>
                 </ol>
 			
-			
-				<img src="img/about_main1.jpg" style="padding-right: 13px;">
-
-				<img src="img/about_main2.jpg">
-			  
+				
+				<img src="img/about.png" class="img-responsive">
+			    
 			  
             </div>
 			
@@ -197,8 +195,12 @@
 					</a>
 
 						<div style="margin-top: 15px;">
-					<button type="button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-					<button type="button" class="btn btn-lg btn-danger">Get Involved</button>
+						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
+						</a>
+						<a href="get-involved.php" target="_blank">
+					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
+						</a>
 						</div>
                 </div>
             </div>
