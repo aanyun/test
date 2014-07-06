@@ -71,11 +71,10 @@
 
                 <?php 
                 if($new['type']==1){
+                	if(strpos($new['url'], 'watch')!== false) 
+	                preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","<iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/$1\" frameborder=\"0\" allowfullscreen></iframe>",$new['url']);
                 ?>	
 	                <iframe width="200" height="125"
-	                <?php if(strpos($new['url'], 'watch')!== false) {
-	                	preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","<iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/$1\" frameborder=\"0\" allowfullscreen></iframe>",$new['url']);
-	                }?>
 					src="<?php echo $new['url']?>">
 					</iframe>
 				<?php
