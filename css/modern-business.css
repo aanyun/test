@@ -370,19 +370,23 @@ width: 0px;
 }
 
 .subscribe {
-width: 350px;
+width: 300px;
 height: auto;
 background: #f1f1f1;
 margin-left: 15px;
-padding-left: 50px;
+padding-left: 30px;
 padding-right: 30px;
 padding-bottom: 30px;
  border-radius: 4px;
 }
 
+.subscribe h2 {
+	font-size:1.2em;
+}
+
 .subscribeBtn {
 position: absolute; 
-top: 228px;
+top: 218px;
 }
 
 
@@ -392,11 +396,23 @@ padding-top: 15px;
 }
 
 @media only screen and (max-width: 767px) {
-
+.subscribe {
+	margin: 0 auto;
+}
 .subscribeBtn {
 position: absolute; 
-top: 228px;
-right: 70px;
+top: 219px;
+right: 40px;
+}
+
+.connect {
+	margin: 0 auto;
+	width: 360px;
+	left: 20px;
+}
+
+.connect h2 {
+display:none;
 }
 
 
