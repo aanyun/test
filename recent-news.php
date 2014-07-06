@@ -113,7 +113,7 @@
                                 <?php 
                                 
                                 for($i=0;$i<12;$i++){
-                                	echo "<li><a href='".date('Y-m')."'>".date('M Y')."</a></li>";
+                                	echo "<li><a href='".date('Y-m',strtotime('-'.$i.' month'))."'>".date('M Y',strtotime("-".$i." month"))."</a></li>";
                             	}
                                 ?>
                             </ul>
