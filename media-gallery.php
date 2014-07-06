@@ -84,7 +84,7 @@
 				<?php
 				}else {
 				?>
-	                <a href="<?php echo $new['url']?>" rel="prettyPhoto[mixed]">
+	                <a href="<?php echo $new['url']?>" rel="prettyPhoto[mixed]" title="<?php echo $new['title']?>">
 	                    <img class="img-responsive" src="<?php echo $new['url']?>">
 	                </a>
 	            <?php
