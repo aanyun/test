@@ -262,7 +262,7 @@
 	<script src="js/main.js"></script>	
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script>
-		$(".gallery a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',social_tools:false});
+		$(".gallery a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',social_tools:false});
 	</script>
 
 
