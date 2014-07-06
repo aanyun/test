@@ -26,6 +26,7 @@
 		$db = new Mysqlidb();
 		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
 		$date = (isset($_GET['date'])&& $_GET['date']!='')? $_GET['date']:'';
+		echo "select * from news,publishers where publishers.id=idPublisher and date like '%".$date."%' order by date desc,news.id desc limit 5 offset ".$current_page*5;
 		$news = $db->rawQuery("select * from news,publishers where publishers.id=idPublisher order by date desc,news.id desc limit 5 offset ".$current_page*5);
 
 	?>
