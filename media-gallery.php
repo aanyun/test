@@ -83,7 +83,7 @@
                 	echo $new['url'];
                 	}
                 ?>	
-	                <iframe width="200" height="125"
+	                <iframe width="200" height="150"
 					src="<?php echo $new['url']?>">
 					</iframe>
 				<?php
