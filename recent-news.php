@@ -88,7 +88,7 @@ ini_set("display_errors", 1);
 
                 if( $current_page == 0 ) echo '<li class="disabled"><a href="javascript:void(0)">« Last</a></li>';
                 else echo '<li><a href="recent-news.php?page='.$current_page.'">« Last</a></li>';
-
+                $db->where ("date like ?",array('%'.$date.'%'));
                 $num = $db->getOne("news","count(*) as cnt");
                 $pages = ceil($num['cnt']/5);
                 for( $i = 1; $i <= $pages ; $i++){
