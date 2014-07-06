@@ -63,7 +63,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
 	  
 	<a href='view/congress_member.txt' target="_blank">Download Congress Members List</a>
 	   <form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadcl'>
-      Download Congress Members List
+      Upload Congress Members List
       <input type="file" name="add-press-release-file" id="add-cl-file" style="margin-left: 23px;">
       </form>
       <div id='preview'>
@@ -90,50 +90,21 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
     <script src="js/modern-business.js"></script>
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/main.js"></script>	
-    <script>
-    function submit(){
-    title = $('#video-title').val();
-    story = $('#video-description').val();
-    link = $('#video-url').val();
-    if(title==""||story==""||link==""){
-      alert('please fill in all fields');
-      return;
-    }
-    $.post('class/API.php?command=savevideo',{
-      title:title,
-      story:story, 
-      link:link,
-    },function(data){
-      if(data%1===0){
-        reset();
-        $('#successInfo').removeClass('hide');
-      } else alert(data);
-    });
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.form.js"></script>
+  <script type="text/javascript" >
+   $(document).ready(function() { 
+      
+      $('#add-cl-file').live('change', function()      { 
+        $("#preview").html('');
+        $("#preview").html('<img src="loader.gif" alt="Uploading...."/>');
+      $("#imageform").ajaxForm({
+        target: '#preview'
+      }).submit();
 
-    }
-    function reset(){
-      title = $('#video-title').val('');
-      story = $('#video-description').val('');
-      link = $('#video-url').val('');
-      $('#counter').html('');
-    }
-    var characters = 80;
-    $("#video-description").keyup(function(){
-        if($(this).val().length > characters){
-            $(this).val($(this).val().substr(0, characters));
-        }
-        var remaining = characters -  $(this).val().length;
-        $("#counter").html("You have <strong>"+  remaining+"</strong> characters remaining");
-        if(remaining <= 10)
-        {
-            $("#counter").css("color","red");
-        }
-        else
-        {
-            $("#counter").css("color","black");
-        }
     });
-   </script>
+  }); 
+  </script>
 </body>
 
 </html>

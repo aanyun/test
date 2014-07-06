@@ -126,6 +126,44 @@ switch ($command) {
 			exit;
 		}
 		break;
+	case 'uploadcl':
+		$path = "../view/";
+
+		$valid_formats = array("txt");
+		if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
+		{
+			$name = $_FILES['add-press-release-file']['name'];
+			$size = $_FILES['add-press-release-file']['size'];
+			if(strlen($name))
+				{
+					list($txt, $ext) = explode(".", $name);
+					if(in_array($ext,$valid_formats))
+					{
+					if($size<(1024*1024))
+						{
+							
+							$tmp = $_FILES['add-press-release-file']['tmp_name'];
+							if(file_exists($path.'congress_member.txt')) unlink($path.'congress_member.txt');
+							if(move_uploaded_file($tmp, $path.'congress_member.txt'))
+								{
+									echo "success";
+								}
+							else
+								echo "failed";
+						}
+						else
+						echo "ile size max 1 MB";					
+						}
+						else
+						echo "Invalid file format..";	
+				}
+				
+			else
+				echo "Please select txt..!";
+				
+			exit;
+		}
+		break;
 	case 'uploadpdf':
 		$path = "../uploads/";
 
