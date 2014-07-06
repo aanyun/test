@@ -120,8 +120,8 @@ ini_set("display_errors", 1);
                                 for($i=0;$i<12;$i++){
                                 	$db->where ("date like ?",array('%'.date('Y-m',strtotime('-'.$i.' month')).'%'));
                 					$num = $db->getOne("news","count(*) as cnt");
-                					echo $num;
-                                	if($num>0)
+
+                                	if($num['cnt']>0)
                                 	echo "<li><a href='recent-news.php?date=".date('Y-m',strtotime('-'.$i.' month'))."'>".date('F Y',strtotime("-".$i." month"))."</a></li>";
                             		else echo "<li><a href=''>".date('F Y',strtotime("-".$i." month"))."</a></li>";
                             	}
