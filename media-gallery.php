@@ -76,7 +76,7 @@
 	               	$new['url'] = preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","https://www.youtube.com/embed/$1",$new['url']);
                 	}
                 ?>	
-                	<a href="<?php echo addslashes($videolink)?>" rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
+                	<a href='<?php echo $videolink?>' rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
 	                <iframe width="200" height="150"
 					src='<?php echo $new["url"]?>'>
 					</iframe>
