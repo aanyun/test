@@ -108,42 +108,17 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="list-unstyled archives">
-                                <li>July 2014
-                                </li>
-                                <li>June 2014
-                                </li>
-                                <li><a href="#">May 2014</a>
-                                </li>
-                                <li>April 2014
-                                </li>
-							    <li>March 2014
-                                </li>
-								<li><a href="#">February 2014</a>
-                                </li>
-								<li><a href="#">January 2014</a>
-                                </li>
-								<li>December 2013
-                                </li>
-								<li><a href="#wild-animals">November 2013</a>
-                                </li>
-								<li>September 2013
-                                </li>
-								<li>August 2013
-                                </li>
-								<li>July 2013
-                                </li>
-								<li>June 2013
-                                </li>
-								<li>May 2013
-                                </li>
-								<li>April 2013
-                                </li>
-								<li>March 2013
-                                </li>
-								<li>February 2013
-                                </li>
-								<li>January 2013
-                                </li>
+                                <?php 
+                                
+                                for($i=0;$i<12;$i++){
+                                	$db->where ("date like ?",array('%'.date('Y-m',strtotime('-'.$i.' month')).'%'));
+                					$num = $db->getOne("pressreleases","count(*) as cnt");
+                					
+                                	if($num['cnt']>0)
+                                	echo "<li><a href='press-releases.php?date=".date('Y-m',strtotime('-'.$i.' month'))."'>".date('F Y',strtotime("-".$i." month"))."</a></li>";
+                            		else echo "<li>".date('F Y',strtotime("-".$i." month"))."</li>";
+                            	}
+                                ?>
                             </ul>
                         </div>
                     </div>
