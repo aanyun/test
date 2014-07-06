@@ -50,6 +50,10 @@
 			
 			   <div class="col-lg-5" style="padding-right: 20px;">
 				<h2>Members of Congress:</h2>
+				<?php 
+				$con_mems = file('view/congress_member.txt');
+				print_r($con_mems);
+				?>
 				Congressman Jim Jordan <span style="font-size: .9em;">(R-OH)</span><br />
 				Congressman John Kline <span style="font-size: .9em;">(R-MN)</span>
 				
