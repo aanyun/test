@@ -78,7 +78,7 @@
                 ?>	
                 	<a href="<?php echo addslashes($videolink)?>" rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
 	                <iframe width="200" height="150"
-					src='<?php echo addslashes($new["url"])?>'>
+					src='<?php echo $new["url"]?>'>
 					</iframe>
 					</a>
 				<?php
