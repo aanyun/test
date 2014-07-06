@@ -64,25 +64,25 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
     <span class="badge">
 	  <span class="glyphicon glyphicon-link"></span>
 	</span>
-    <a href="upload_news.html">Upload a News Article</a>
+    <a href="upload_news.php">Upload a News Article</a>
   </li>
     <li class="list-group-item" style="margin-top: 15px;">
     <span class="badge">
 	  <span class="glyphicon glyphicon-upload"></span>
 	</span>
-    <a href="upload_press_release.html">Upload a Press Release</a>
+    <a href="upload_press_release.php">Upload a Press Release</a>
   </li>
    <li class="list-group-item" style="margin-top: 15px;">
     <span class="badge">
 	  <span class="glyphicon glyphicon-picture"></span>
 	</span>
-    <a href="upload_image.html">Upload an Image</a>
+    <a href="upload_image.php">Upload an Image</a>
   </li>
      <li class="list-group-item" style="margin-top: 15px;">
     <span class="badge">
 	  <span class="glyphicon glyphicon-film"></span>
 	</span>
-    <a href="upload_video.html">Upload a Video</a>
+    <a href="upload_video.php">Upload a Video</a>
   </li>
   
 </ul>
