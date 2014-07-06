@@ -30,9 +30,9 @@ ini_set("display_errors", 1);
 		$db = new Mysqlidb();
 		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
 		$date = (isset($_GET['date'])&& $_GET['date']!='')? $_GET['date']:'';
-		$query = "select * from news,publishers where publishers.id=idPublisher and date='".$date."' order by date desc,news.id desc limit 5 offset ".$current_page*5;
+		$query = "select * from news,publishers where publishers.id=idPublisher and date=".$date." order by date desc,news.id desc limit 5 offset ".$current_page*5;
 		//echo $query;
-		//$news = $db->rawQuery($query);
+		$news = $db->rawQuery($query);
 
 	?>
 <div class="wrapper">
