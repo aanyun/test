@@ -391,6 +391,14 @@ padding-top: 15px;
 }
 }
 
+@media only screen and (max-width: 767px) {
+.subscribeBtn {
+position: absolute; 
+top: 228px;
+right: 70px;
+}
+}
+
 
 .connect {
 margin-top: -10px;
