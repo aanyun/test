@@ -25,8 +25,8 @@
 		include "class/MysqliDb.php";
 		$db = new Mysqlidb();
 		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
-		
-		$news = $db->rawQuery("select * from pressreleases where 1 order by date desc,id desc limit 5 offset ".$current_page*5);
+		$date = (isset($_GET['date'])&& $_GET['date']!='')? $_GET['date']:"";
+		$news = $db->rawQuery("select * from pressreleases where date like ? order by date desc,id desc limit 5 offset ".$current_page*5,array('%'.$date.'%'));
 
 	?>
 <div class="wrapper">
