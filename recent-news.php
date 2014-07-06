@@ -213,12 +213,12 @@ ini_set("display_errors", 1);
 					</a>
 
 						<div style="margin-top: 15px;">
-						<form action="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-						</form>
-						<form action="get-involved.php" target="_blank">
+						</a>
+						<a href="get-involved.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
-						</form>
+						</a>
 						</div>
                 </div>
             </div>
