@@ -173,7 +173,7 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 					<tbody>
 				<?php 
 				$officials = fopen('view/officials.xls');
-				while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+				while (($data = fgetcsv($officials, 1000, ",")) !== FALSE) {
 					echo "<tr>";
 					foreach ($data as $key => $value) {
 						echo "<td>".$value."</td>";
