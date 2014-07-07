@@ -43,7 +43,7 @@ ini_set("display_errors", 1);
 
         <div class="row">
 
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9 col-sm-12">
 
 			   <h1 class="page-header"><strong>Recent News</strong><br />
                     <small>Subscribe to our mailing list to get the latest campaign updates!</small>
@@ -155,7 +155,7 @@ ini_set("display_errors", 1);
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12 subscribe">
+                <div class="col-lg-8 col-md-6 col-sm-12 subscribe">
                     <h2><strong>Stay Updated</strong><span style="font-size: 17px; color: #494949;"> &ndash; Subscribe for the latest campaign updates!</span></h3>
                     
 					
