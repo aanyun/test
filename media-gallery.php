@@ -56,7 +56,7 @@
 			</div>
 			
 			
-            <div class="col-lg-12 get-involved">
+            <div class="col-lg-12 media-gallery">
 				<ul class="gallery clearfix">
 
             	<?php 
