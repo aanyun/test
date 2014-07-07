@@ -172,9 +172,13 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 					
 					<tbody>
 				<?php 
-				$con_mems = file('view/officials.xls');
-				foreach ($con_mems as $key => $value) {
-					echo "<tr><td>".$value."</td></tr>";
+				$officials = fopen('view/officials.xls');
+				while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+					echo "<tr>";
+					foreach ($data as $key => $value) {
+						echo "<td>".$value."</td>";
+					}
+					echo "</tr>";
 				}
 				?>						
 					</tbody>
