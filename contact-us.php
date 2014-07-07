@@ -45,7 +45,7 @@
 			
 			</div>
 			
-			<div class="col-lg-12">
+			<div class="col-lg-12" style="padding-bottom: 40px;">
  <form action="submit-contact-us.php" method="post" id="contact" >
 		<div class="form-inline form" role="form">
 		<div class="form-group">
@@ -64,28 +64,28 @@
 		
 		<div class="form-group">
 		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
 		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
 		</div>
 		</div>
 		
 		<div class="form-group">
 		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
 		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
 		</div>
 		</div>
 		
 		<div class="form-group">
 		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
 		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
 		</div>
 		</div>
 		
 		<div class="form-group">
 		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
 		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
 		</div>
 		</div>
@@ -93,7 +93,7 @@
 		<div class="form-group">
 		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
-		<input type="textarea" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Email Address">
+		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions">
 		</div>
 		</div>		
 		
