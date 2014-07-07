@@ -97,7 +97,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       
       $('#add-cl-file').live('change', function()      { 
         $("#preview").html('');
-        $("#preview").html('<img src="loader.gif" alt="Uploading...."/>');
+        $("#preview").html('<img src="img/loader.gif" alt="Uploading...."/>');
       $("#imageform").ajaxForm({
         target: '#preview'
       }).submit();

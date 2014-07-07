@@ -7,7 +7,7 @@ class news{
 		$data = array(
 			"headline" => $data['headline'],
             "story" => $data['story'],
-            "date" => date('Y-m-d H:i:s'),
+            "date" => $data['date'],
             "link" => $data['link'],
             "idPublisher"=>$data['idPublisher']
 		    );
