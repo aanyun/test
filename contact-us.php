@@ -50,7 +50,7 @@
 		<div class="form-inline form" role="form">
 		<div class="form-group">
 		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
-		<div class="col-sm-10" style="padding-bottom: 10px;">
+		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<input type="text" name="first-name" id="first-name" class="form-control" style="width: 360px;" placeholder="First Name">
 		</div>
 		</div>
@@ -64,6 +64,7 @@
 			
 			
     <div class="form-group">
+    <div class="row">
 
   
   	<div class="col-lg-5 col-md-6 col-sm-12 ">
@@ -71,6 +72,8 @@
 	</div>
 	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
         <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
+	</div>
+	
 	</div>
 	
 	 </div>
