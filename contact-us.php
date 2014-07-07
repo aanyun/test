@@ -46,21 +46,58 @@
 			</div>
 			
 			<div class="col-lg-12">
-			
+ <form action="submit-contact-us.php" method="post" id="contact" >
 		<div class="form-inline form" role="form">
 		<div class="form-group">
 		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
-		<input type="text" name="first-name" id="first-name" class="form-control" style="width: 360px;" placeholder="First Name">
+		<input type="text" name="fname" id="fname" class="form-control" style="width: 360px;" placeholder="First Name">
 		</div>
 		</div>
 
 		<div class="form-group">
 		<label for="inputLastName" class="col-sm-3 control-label" style="margin-top: 5px;">Last Name:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
-		<input type="text" name="last-name" id="last-name" class="form-control" style="width: 360px;" placeholder="Last Name">
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="lname" id="lname" class="form-control" style="width: 360px;" placeholder="Last Name">
 		</div>
 		</div>
+		
+		<div class="form-group">
+		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="textarea" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Email Address">
+		</div>
+		</div>		
+		
+		
 			
 <div class="row">	
     <div class="form-group">
@@ -74,7 +111,7 @@
 	
 	</div>
 </div>	
-			
+</form>		
 			
 			</div>
 
