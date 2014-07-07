@@ -171,102 +171,12 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 					</thead>
 					
 					<tbody>
-					<tr>
-					<td>Hon. Ranndy Ramey</td>
-					<td>Chairman Wayne Township Republican Organization</td>
-					</tr>
-					<tr>
-					<td>Arthur Woods</td>
-					<td>Wood Dale Alderman Ward 2</td>
-					</tr>
-					<tr>
-					<td>Barry Ketter</td>
-					<td>DuPage Zoning Board of Appeals</td>
-					</tr>
-					<tr>
-					<td>Charles Donnelly</td>
-					<td>DuPage Airport Authority Commissioner</td>
-					</tr>
-					<tr>
-					<td>Chris Kachiroubas</td>
-					<td>DuPage Clerk of the Circuit Court</td>
-					</tr>		
-					<tr>
-					<td>Chris Kain</td>
-					<td>Addison Township Assessor</td>
-					</tr>
-					<tr>
-					<td>Christine Winger</td>
-					<td>Wood Dale Alderman Ward 3</td>
-					</tr>
-					<tr>
-					<td>David J. Molitor</td>
-					<td>Milton Township Trustee</td>
-					</tr>
-					<tr>
-					<td>Don Holod</td>
-					<td>Addison Township Trustee</td>
-					</tr>
-					<tr>
-					<td>Donald Puchalski</td>
-					<td>DuPage County Board District 1</td>
-					</tr>
-					<tr>
-					<td>George Dunham</td>
-					<td>Village of Schaumburg Trustee</td>
-					</tr>	
-					<tr>
-					<td>Gus Leventis</td>
-					<td>Addison Township Trustee</td>
-					</tr>	
-					<tr>
-					<td>John Lawson</td>
-					<td>Schaumburg Township Assessor</td>
-					</tr>				
-					<tr>
-					<td>John W. Valle</td>
-					<td>York Township Supervisor</td>
-					</tr>
-					<tr>
-					<td>Kathryn Durante</td>
-					<td>Addison Township Supervisor</td>
-					</tr>
-					<tr>
-					<td>Mark Nowak</td>
-					<td>Addison Township Trustee</td>
-					</tr>
-					<tr>
-					<td>Marsha Murphy</td>
-					<td>Dupage County Forest Preserve District 1</td>
-					</tr>
-					<tr>
-					<td>Matthew Lozich</td>
-					<td>Addison Township Trustee</td>
-					</tr>
-					<tr>
-					<td>Nanci L. Vanderweel</td>
-					<td>Elk Grove Township Supervisor</td>
-					</tr>
-					<tr>
-					<td>Pamela Joy Moretti</td>
-					<td>Addison Township Clerk</td>
-					</tr>				
-					<tr>
-					<td>Richard Kaske</td>
-					<td>Addison Township Highway Commissioner</td>
-					</tr>
-					<tr>
-					<td>Robert Taglia</td>
-					<td>Villa Park Trustee</td>
-					</tr>
-					<tr>
-					<td>Sam Tornatore</td>
-					<td>DuPage County Board District 1</td>
-					</tr>			
-					<tr>
-					<td>Sean T. Noonan</td>
-					<td>DuPage County Board District 2</td>
-					</tr>							
+				<?php 
+				$con_mems = file('view/officials.xls');
+				foreach ($con_mems as $key => $value) {
+					echo "<tr><td>".$value."</td></tr>";
+				}
+				?>						
 					</tbody>
 					
 					

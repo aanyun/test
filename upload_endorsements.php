@@ -67,6 +67,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       <input type="file" name="add-press-release-file" id="add-cl-file" style="margin-left: 23px;">
 
       </form>
+      
       <hr>
       <a href='view/officials.xls' target="_blank">Download 8th District Elected Officials List</a>
       <form id="ofform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadof'>
