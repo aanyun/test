@@ -129,7 +129,7 @@ switch ($command) {
 	case 'uploadof':
 		$path = "../view/";
 
-		$valid_formats = array("xls");
+		$valid_formats = array("csv");
 		if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
 		{
 			$name = $_FILES['add-press-release-file']['name'];
@@ -143,8 +143,8 @@ switch ($command) {
 						{
 							
 							$tmp = $_FILES['add-press-release-file']['tmp_name'];
-							if(file_exists($path.'officials.xls')) unlink($path.'officials.xls');
-							if(move_uploaded_file($tmp, $path.'officials.xls'))
+							if(file_exists($path.'officials.csv')) unlink($path.'officials.csv');
+							if(move_uploaded_file($tmp, $path.'officials.csv'))
 								{
 									echo "success";
 								}
@@ -159,7 +159,7 @@ switch ($command) {
 				}
 				
 			else
-				echo "Please select xls..!";
+				echo "Please select csv file..!";
 				
 			exit;
 		}
