@@ -62,10 +62,8 @@
 		</div>
 		</div>
 			
-			
+<div class="row">	
     <div class="form-group">
-    <div class="row">
-
   
   	<div class="col-lg-5 col-md-6 col-sm-12 ">
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
@@ -75,9 +73,7 @@
 	</div>
 	
 	</div>
-	
-	 </div>
-			
+</div>	
 			
 			
 			</div>
