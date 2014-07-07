@@ -93,7 +93,7 @@
 		<div class="form-group">
 		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
-		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions">
+		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions"></textarea>
 		</div>
 		</div>		
 		

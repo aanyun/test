@@ -42,7 +42,7 @@
             <li><a href="media-gallery.php">Photo/Video Archive</a></li>
           </ul>
         </li>
-		  <li><a href="#">Contact</a></li>
+		  <li><a href="contact-us.php">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
