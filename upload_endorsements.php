@@ -67,9 +67,10 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       <input type="file" name="add-press-release-file" id="add-cl-file" style="margin-left: 23px;">
 
       </form>
-
-      <form id="ofform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadcl'>
-      Upload Congress Members List
+      <hr>
+      <a href='view/officials.xls' target="_blank">Download 8th District Elected Officials List</a>
+      <form id="ofform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadof'>
+      Upload Officials List
       <input type="file" name="add-press-release-file" id="add-of-file" style="margin-left: 23px;">
       
       </form>
@@ -107,6 +108,15 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
         $("#preview").html('');
         $("#preview").html('<img src="img/loader.gif" alt="Uploading...."/>');
       $("#imageform").ajaxForm({
+        target: '#preview'
+      }).submit();
+
+    });
+
+      $('#add-of-file').live('change', function()      { 
+        $("#preview").html('');
+        $("#preview").html('<img src="img/loader.gif" alt="Uploading...."/>');
+      $("#ofform").ajaxForm({
         target: '#preview'
       }).submit();
 
