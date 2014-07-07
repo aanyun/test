@@ -61,11 +61,19 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
     
 	<div class="col-lg-8 col-md-8 col-sm-8 upload-endorsements">
 	  
-	<a href='view/congress_member.txt' target="_blank">Download Congress Members List</a>
+	   <a href='view/congress_member.txt' target="_blank">Download Congress Members List</a>
 	   <form id="imageform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadcl'>
       Upload Congress Members List
       <input type="file" name="add-press-release-file" id="add-cl-file" style="margin-left: 23px;">
+
       </form>
+
+      <form id="ofform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadcl'>
+      Upload Congress Members List
+      <input type="file" name="add-press-release-file" id="add-of-file" style="margin-left: 23px;">
+      
+      </form>
+
       <div id='preview'>
       </div>  
 
