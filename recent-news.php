@@ -11,7 +11,7 @@ ini_set("display_errors", 1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website</title>
+    <title>Kaifesh for Congress Official Website | Recent News</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

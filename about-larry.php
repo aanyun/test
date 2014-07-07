@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Endorsements</title>
+    <title>Kaifesh for Congress Official Website | About Larry</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">

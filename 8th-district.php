@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Get Involved</title>
+    <title>Kaifesh for Congress Official Website | 8th District</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">

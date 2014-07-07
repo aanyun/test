@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website</title>
+    <title>Kaifesh for Congress Official Website | Press Releases</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 
         <div class="row">
 
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9 col-sm-12">
 
 			   <h1 class="page-header"><strong>Press Releases</strong><br />
                     <small>Subscribe to our mailing list to get the latest campaign updates!</small>
@@ -101,7 +101,7 @@
             </div>
 
 
-            <div class="col-lg-3 right-column">
+            <div class="col-lg-3 col-md-3 hide-960minus right-column">
                 <!-- /well -->
                 <div class="well">
                     <h2 style="margin-top: 0;"><strong>View Archives:</strong></h2>
