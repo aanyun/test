@@ -49,7 +49,7 @@
 			
 		<div class="form-inline form" role="form">
 		<div class="form-group">
-		<label for="inputFirstName" class="col-sm-2 control-label" style="margin-top: 5px;">First Name:</label>
+		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
 		<div class="col-sm-10" style="padding-bottom: 10px;">
 		<input type="text" name="first-name" id="first-name" class="form-control" style="width: 360px;" placeholder="First Name">
 		</div>
