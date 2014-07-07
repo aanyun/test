@@ -120,7 +120,7 @@
 			
 			</div>
 			
-			<div class="col-lg-12" style="padding-bottom: 40px;">
+			<div class="col-lg-12 text-center" style="padding-bottom: 40px;">
 .
 					<h2>Thank you for contacting Kaifesh for Congress!<br />We will get back to you as soon as possible.</h2>
 			</div>
