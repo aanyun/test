@@ -1,6 +1,16 @@
 <?php
 
-		if(isset($_POST['contact_email'])) {
+//nobot
+if($_GET['action'] == 'contact' && !empty($_POST['noBot'])){
+	echo "<error>
+					<status>fail</status>
+					<reason>You are a bot!!</reason>
+		</error>";
+	die();
+}
+
+
+		switch ($_GET['action']) {
 		   
 			// Where it goes
 			$email_to = "shadyandlucky@gmail.com";
