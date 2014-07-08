@@ -50,6 +50,7 @@
 			<div class="col-lg-12" style="padding-bottom: 40px;">
  <form action="submit-contact-us.php" method="post" id="contact" >
 		<div class="form-inline form" role="form">
+		<input type="hidden" id="noBot" value="" />
 		<div class="form-group">
 		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">

@@ -1,87 +1,3 @@
-<?php
-
-//nobot
-if(!empty($_POST['noBot'])){
-	echo "<error>
-					<status>fail</status>
-					<reason>You are a bot!!</reason>
-		</error>";
-	die();
-}
-
-		else(isset($_POST['contact_email'])) {
-		   
-			// Where it goes
-			$email_to = "shadyandlucky@gmail.com";
-			$email_subject = "Kaifesh for Congress Contact Us form request";
-			
-			$fname  = $_POST['fname']; // required
-			$lname  = $_POST['lname']; // required
-			$addr1  = $_POST['addr1']; // required
-			$city  = $_POST['city']; // required
-			$zip  = $_POST['zip']; // required
-			$contact_email  = $_POST['contact_email']; // required
-			$comments  = $_POST['comments']; // required
-			$header = "From: ". $contact_email;
-			function died($error) {
-				// Error Codes
-				echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-				echo "Please go back and fill out all of the required information.<br /><br />";
-				die();
-			}
-			 
-			// validation expected data exists
-			if( empty($_POST['fname']) ||
-				empty($_POST['lname']) ||
-				empty($_POST['addr1']) ||
-				empty($_POST['city']) ||
-				//empty($_POST['zip']) ||
-				empty($_POST['contact_email']) ||
-				empty($_POST['comments'])) 
-				{
-				//died('Please fill in all required sections. If the section does not apply, please put "N/A."');    
-                $return['msg'] = "Please fill in all required sections. If the section does not apply, please put N/A.";	
-				returnArray($return);			
-				} else {
-			
-					$email_message = "Form details below. \n\n\n";
-					
-					function clean_string($string) {
-						$bad = array("content-type","bcc:","to:","cc:","href");
-						return str_replace($bad,"",$string);
-					}    
-					
-					$email_message .= "First Name: ".clean_string($fname)."\r\n";
-					$email_message .= "Last Name: ".clean_string($lname)."\r\n";
-					$email_message .= "Contact E-Mail: ".clean_string($contact_email)."\r\n";
-					$email_message .= "\n";
-					$email_message .= "Address: ".clean_string($addr1)."\r\n";
-					$email_message .= "City: ".clean_string($city)."\r\n";
-					$email_message .= "Zip Code: ".clean_string($zip)."\r\n";
-					$email_message .= "\n";
-					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
-					
-					mail($email_to, $email_subject, $email_message, $header);
-					
-			}
-		}
-		    		
-
-
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,14 +7,14 @@ if(!empty($_POST['noBot'])){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Get Involved</title>
+    <title>Kaifesh for Congress Official Website | Contact</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/font.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 	
@@ -116,23 +32,93 @@ if(!empty($_POST['noBot'])){
 
             <div class="col-lg-12">
 			
-			   <h1 class="page-header"><strong>Contact Us</strong><br />
-                    <small>Please fill out the form below to contact Larry Kaifesh. All fields are required.</small>
+			   <h1 class="page-header"><strong>Volunteer</strong><br />
+                    <small>Please fill out the form below to become a volunteer for Team Kaifesh.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Contact</li>
+                    <li class="active">Volunteer</li>
                 </ol>
 			  
-            </div>
+            </div> <!-- / .12 -->
 			
-			</div>
+			</div> <!-- /.row -->
 			
-			<div class="col-lg-12 text-center" style="padding-bottom: 40px;">
-.
-					<h2>Thank you for contacting Kaifesh for Congress!<br />We will get back to you as soon as possible.</h2>
-			</div>
+			
+			
+			<div class="col-lg-12" style="padding-bottom: 40px;">
+ <form action="submit-volunteeer.php" method="post" id="contact" >
+		<div class="form-inline form" role="form">
+		<input type="hidden" id="noBot" value="" />
+		<div class="form-group">
+		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="fname" id="fname" class="form-control" style="width: 360px;" placeholder="First Name">
+		</div>
+		</div> <!-- / .form-group -->
+
+		<div class="form-group">
+		<label for="inputLastName" class="col-sm-3 control-label" style="margin-top: 5px;">Last Name:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="lname" id="lname" class="form-control" style="width: 360px;" placeholder="Last Name">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
+		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
+		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
+		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions"></textarea>
+		</div>
+		</div>		<!-- / .form-group -->
+		
+		
+			
+<div class="row">	
+    <div class="form-group">
+  
+  	<div class="col-lg-5 col-md-6 col-sm-12 ">
+  		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
+	</div>
+	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
+        <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
+	</div>
+	
+	</div> <!-- / .form-group -->
+</div><!-- /. row -->
+	
+</div>	<!-- /.form-inline -->
+</form>		
+			
+			</div> <!-- / .12 -->
 
 			
 			
@@ -149,35 +135,7 @@ if(!empty($_POST['noBot'])){
 
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6 subscribe">
-                    <h2><strong>Stay Updated</strong><span style="font-size: 17px; color: #494949;"> &ndash; Subscribe for the latest campaign updates!</span></h3>
-                    
-					
-					<form class="form-inline" role="form">
-					<div class="row" style="margin:0;">
-					  <div class="form-group adjust1">
-						<label class="sr-only">First Name</label>
-						<input name="firstName" class="form-control" placeholder="First Name">
-					  </div>
-					  <div class="form-group fix">
-						<label class="sr-only">Last Name</label>
-						<input name="lastName" class="form-control" placeholder="Last Name">
-					  </div>
-
-						  <div class="form-group adjust1" style="padding-top: 15px;">
-							<label class="sr-only">Email Address</label>
-							<input name="emailAddress" class="form-control" placeholder="Email Address">
-						  </div>
-						  <div class="form-group" style="padding-top: 15px;">
-							<label class="sr-only">Zip Code</label>
-							<input name="zipCode" class="form-control-sm" placeholder="Zip Code">
-						  </div>
-						  <span class="subscribeBtn">
-						  <button type="submit" class="btn btn-danger" style="margin-left: -8px;">Submit</button>
-						</span>
-					  </div> <!-- /.row --> 
-					</form>
-					
-					
+                	<?php include "view/subscribeform.php";?>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 connect adjust2">
 					<h2><strong>Stay Connected</strong><span style="font-size: 17px; color: #494949;"> with Larry Kaifesh!</span></h3>
@@ -206,16 +164,20 @@ if(!empty($_POST['noBot'])){
 					</a>
 
 						<div style="margin-top: 15px;">
+						<div class="col-lg-6" style="padding: 0;">
 						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
 						</a>
+						</div>
+						<div class="col-lg-6" style="padding: 0;">
 						<a href="get-involved.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
 						</a>
 						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+						</div>
+                </div> <!-- / .4 -->
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->
@@ -295,4 +257,3 @@ if(!empty($_POST['noBot'])){
 </body>
 
 </html>
-
