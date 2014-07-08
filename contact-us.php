@@ -88,7 +88,7 @@
 		
 		<div class="form-group">
 		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
+		<div class="col-sm-8" id="inputEmail">
 		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
 		</div>
 		</div> <!-- / .form-group -->
