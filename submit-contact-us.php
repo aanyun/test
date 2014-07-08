@@ -1,6 +1,6 @@
 <?php
 
-if( !empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
+if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
 			$email_to = "shadyandlucky@gmail.com";
