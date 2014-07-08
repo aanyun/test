@@ -1,16 +1,6 @@
 <?php
 
-//nobot
-if ($_POST['noBot'] != '') {
-	echo "<error>
-					<status>fail</status>
-					<reason>You are a bot!!</reason>
-		</error>";
-	die();
-}
-
-
-		else (isset($_POST['contact_email'])) {
+if( !empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
 			$email_to = "shadyandlucky@gmail.com";
@@ -66,9 +56,16 @@ if ($_POST['noBot'] != '') {
 					
 			}
 		}
-		    		
-
-
+		
+		
+		else {
+			echo "<error>
+					<status>fail</status>
+					<reason>You are a bot!!</reason>
+				</error>";
+			die();
+			}
+							
 ?>
 
 
