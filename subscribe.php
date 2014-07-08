@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 require 'src/Ctct/autoload.php';
 use Ctct\ConstantContact;
 use Ctct\Components\Contacts\Contact;
