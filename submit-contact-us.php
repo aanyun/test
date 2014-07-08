@@ -15,7 +15,6 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 			$contact_email  = $_POST['contact_email']; // required
 			$comments  = $_POST['comments']; // required
 			$header = "From: ". $contact_email;
-			$header = "Return-Path: ". $from_email;
 			function died($error) {
 				// Error Codes
 				echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -54,7 +53,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					$email_message .= "\n";
 					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
 					
-					mail($email_to, $email_subject, $email_message, $header);
+					mail($email_to, $email_subject, $email_message, $from_email, $header);
 					
 			}
 		}
