@@ -33,7 +33,7 @@ if (isset($_POST['email']) && strlen($_POST['email']) > 1) {
 
             $contact = new Contact();
             $contact->addEmail($_POST['email']);
-            $contact->addList(1);
+            $contact->addList('General Interest');
             $contact->first_name = $_POST['fn'];
             $contact->last_name = $_POST['ln'];
             $returnContact = $cc->addContact(ACCESS_TOKEN, $contact); 
