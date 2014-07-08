@@ -43,11 +43,7 @@ if (isset($_POST['email']) && strlen($_POST['email']) > 1) {
         }
 
         if (isset($returnContact)) {
-        	if($returnContact['id']==null||$returnContact['id']==''){
-        		header('Location:subscribe_success.php');
-        	}else{
-				header('Location:subscribe_fail.php');
-        	}
+				header('Location:subscribe_success.php');
     	} else{
 				header('Location:subscribe_fail.php');
         }
