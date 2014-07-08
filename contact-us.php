@@ -67,21 +67,21 @@
 		
 		<div class="form-group">
 		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
+		<div class="col-sm-8" id="inputAddress">
 		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
 		</div>
 		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+		<div class="col-sm-8" id="inputCity">
 		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
 		</div>
 		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
+		<div class="col-sm-8" id="inputZip">
 		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
 		</div>
 		</div> <!-- / .form-group -->
@@ -105,10 +105,10 @@
 <div class="row">	
     <div class="form-group">
   
-  	<div class="col-lg-5 col-md-6 col-sm-12 ">
+  	<div class="col-lg-5 col-md-6 col-sm-6">
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
 	</div>
-	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
+	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-6">
         <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
 	</div>
 	
@@ -164,12 +164,12 @@
 					</a>
 
 						<div style="margin-top: 15px;">
-						<div class="col-lg-6" style="padding: 0;">
+						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
 						</a>
 						</div>
-						<div class="col-lg-6" style="padding: 0;">
+						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="get-involved.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
 						</a>
