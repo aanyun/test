@@ -1,6 +1,8 @@
 <?php
+
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
+
 require 'src/Ctct/autoload.php';
 use Ctct\ConstantContact;
 use Ctct\Components\Contacts\Contact;
@@ -14,7 +16,11 @@ define("ACCESS_TOKEN", "4d3a3913-15ac-42b7-9b01-c3edc9e2f062");
 $cc = new ConstantContact(APIKEY);
 //echo $response = $cc->getContactByEmail(ACCESS_TOKEN, 'anyunww@gmail.com');
 // attempt to fetch lists in the account, catching any exceptions and printing the errors to screen
+$lists = $cc->getLists(ACCESS_TOKEN);
 
+foreach ($lists as $list) {
+    echo '<option value="'.$list->id.'">'.$list->name.'</option>';
+}
 if (isset($_POST['email']) && strlen($_POST['email']) > 1) {
     $action = "Getting Contact By Email Address";
     try {
@@ -44,17 +50,12 @@ if (isset($_POST['email']) && strlen($_POST['email']) > 1) {
         }
 
         if (isset($returnContact)) {
-				header('Location:subscribe_success.php');
-    	} else{
-				header('Location:subscribe_fail.php');
-        }
+        echo json_encode($returnContact); 
+    	} else echo "error";
         
     // catch any exceptions thrown during the process and print the errors to screen
     } catch (CtctException $ex) {
-        echo '<span class="label label-important">Error '.$action.'</span>';
-        echo '<div class="container alert-error"><pre class="failure-pre">';
-        print_r($ex->getErrors()); 
-        echo '</pre></div>';
+    	echo "error";
         die();
     }
 } 
