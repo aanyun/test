@@ -1,7 +1,7 @@
 <h2><strong>Stay Updated</strong><span style="font-size: 17px; color: #494949;"> &ndash; Subscribe for the latest campaign updates!</span></h3>
 
 
-<form class="form-inline" role="form">
+<div class="form-inline" role="form">
 <div class="row" style="margin:0;">
   <div class="form-group adjust1">
 	<label class="sr-only">First Name</label>
@@ -21,7 +21,33 @@
 		<input name="zipCode" class="form-control-sm" placeholder="Zip Code">
 	  </div>
 	  <span style="position: relative; top: 8px;">
-	  <button type="submit" class="btn btn-danger" style="margin-left: -8px;">Submit</button>
+	  <button type="button" id='subscrbesubmit' class="btn btn-danger" style="margin-left: -8px;">Submit</button>
 	</span>
   </div> <!-- /.row --> 
-</form>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+
+$('#subscrbesubmit').click(function(){
+	alert();
+	fn = $('input[name="firstName"]').val();
+	ln = $('input[name="lastName"]').val();
+	email = $('input[name="emailAddress"]').val();
+	zip = $('input[name="zipCode"]').val();
+
+
+	$.post('class/API.php',{
+		command: "Subscribe",
+		fn:fn,
+		ln:ln,
+		zip:zip,
+		email:email
+	},function(data){
+
+	});
+
+});
+</script>
