@@ -46,6 +46,10 @@ $('#subscrbesubmit').click(function(){
 		email:email
 	},function(data){
 		if(data.id){
+			fn = $('input[name="firstName"]').val('');
+			ln = $('input[name="lastName"]').val('');
+			email = $('input[name="emailAddress"]').val('');
+			zip = $('input[name="zipCode"]').val('');
 			alert('Success');
 		}else{
 			alert('');
