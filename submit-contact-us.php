@@ -1,7 +1,7 @@
 <?php
 
 //nobot
-if (!empty($_POST['noBot'])){
+if ($_POST['noBot'] != '') {
 	echo "<error>
 					<status>fail</status>
 					<reason>You are a bot!!</reason>
