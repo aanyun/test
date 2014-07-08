@@ -45,8 +45,12 @@ $('#subscrbesubmit').click(function(){
 		zip:zip,
 		email:email
 	},function(data){
-		alert(data);
-	});
+		if(data.id){
+			alert('Success');
+		}else{
+			alert('');
+		}
+	},'json');
 
 });
 </script>
