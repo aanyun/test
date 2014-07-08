@@ -163,12 +163,16 @@
 					</a>
 
 						<div style="margin-top: 15px;">
+						<div class="col-lg-6" style="padding: 0;">
 						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
 						</a>
+						</div>
+						<div class="col-lg-6" style="padding: 0;">
 						<a href="get-involved.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
 						</a>
+						</div>
 						</div>
                 </div> <!-- / .4 -->
             </div> <!-- /.row -->
