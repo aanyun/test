@@ -105,10 +105,10 @@
 <div class="row">	
     <div class="form-group">
   
-  	<div class="col-lg-5 col-md-6 col-sm-6 ">
+  	<div class="col-lg-5 col-md-6 col-sm-12 ">
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
 	</div>
-	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-6">
+	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
         <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
 	</div>
 	
