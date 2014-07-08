@@ -44,8 +44,8 @@ if (isset($_POST['email']) && strlen($_POST['email']) > 1) {
 
             $contact = $response->results[0];
             $contact->addList('1');
-            $contact->first_name = $_POST['first_name'];
-            $contact->last_name = $_POST['last_name'];
+            $contact->first_name = $_POST['fn'];
+            $contact->last_name = $_POST['ln'];
             $returnContact = $cc->updateContact(ACCESS_TOKEN, $contact);  
         }
 
