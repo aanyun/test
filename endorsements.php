@@ -82,39 +82,39 @@
 
 
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Allen West Guardian Fund<br />
+				Allen West Guardian Fund
 				</p>				
 				
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Elgin Township Republican Organization<br />
+				Elgin Township Republican Organization
 				</p>
 				
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Addison Township Republican Organization<br />
+				Addison Township Republican Organization
 				</p>
 
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Barrington Township Republican Organization<br />
+				Barrington Township Republican Organization
 				</p>
 				
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Wheeling Township Republican Organization<br />
+				Wheeling Township Republican Organization
 				</p>
 				
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Schaumburg Township Republican Organization<br />
+				Schaumburg Township Republican Organization
 				</p>
 				
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Hanover Township Republican Organization<br />
+				Hanover Township Republican Organization
 				</p>
 				
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Elk Grove Township Republican Organization<br />
+				Elk Grove Township Republican Organization
 				</p>
 
 			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Hanover Elects Responsive Officials (HERO)<br />
+				Hanover Elects Responsive Officials (HERO)
 				</p>
 				
 				</div>
