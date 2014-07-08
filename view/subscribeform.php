@@ -39,8 +39,7 @@ $('#subscrbesubmit').click(function(){
 	zip = $('input[name="zipCode"]').val();
 
 
-	$.post('class/API.php',{
-		command: "Subscribe",
+	$.post('subscribe.php',{
 		fn:fn,
 		ln:ln,
 		zip:zip,
