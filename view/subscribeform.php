@@ -32,7 +32,7 @@
 
 
 $('#subscrbesubmit').click(function(){
-	alert();
+	
 	fn = $('input[name="firstName"]').val();
 	ln = $('input[name="lastName"]').val();
 	email = $('input[name="emailAddress"]').val();
@@ -45,7 +45,7 @@ $('#subscrbesubmit').click(function(){
 		zip:zip,
 		email:email
 	},function(data){
-
+		alert(data);
 	});
 
 });
