@@ -96,7 +96,7 @@
 							</li>
 
 							<li id="tablink">
-								<a class="contact" href="javascript:void(0)">Health Care / PPACA</a>
+								<a class="contact" href="javascript:void(0)">Healthcare / PPACA</a>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus, minima, impedit ratione dolor nulla ullam eum inventore aspernatur nihil quaerat vitae consequuntur debitis aliquam voluptates tenetur nisi rem corporis.</p>
 							</li>
 							<li id="tablink">
