@@ -41,9 +41,11 @@
                     <li class="active">Contact</li>
                 </ol>
 			  
-            </div>
+            </div> <!-- / .12 -->
 			
-			</div>
+			</div> <!-- /.row -->
+			
+			
 			
 			<div class="col-lg-12" style="padding-bottom: 40px;">
  <form action="submit-contact-us.php" method="post" id="contact" >
@@ -53,49 +55,49 @@
 		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<input type="text" name="fname" id="fname" class="form-control" style="width: 360px;" placeholder="First Name">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 
 		<div class="form-group">
 		<label for="inputLastName" class="col-sm-3 control-label" style="margin-top: 5px;">Last Name:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<input type="text" name="lname" id="lname" class="form-control" style="width: 360px;" placeholder="Last Name">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
 		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
 		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
 		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
 		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions"></textarea>
 		</div>
-		</div>		
+		</div>		<!-- / .form-group -->
 		
 		
 			
@@ -109,11 +111,13 @@
         <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
 	</div>
 	
-	</div>
-</div>	
+	</div> <!-- / .form-group -->
+</div><!-- /. row -->
+	
+</div>	<!-- /.form-inline -->
 </form>		
 			
-			</div>
+			</div> <!-- / .12 -->
 
 			
 			
@@ -166,9 +170,9 @@
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
 						</a>
 						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+                </div> <!-- / .4 -->
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->
