@@ -38,13 +38,14 @@ $('#subscrbesubmit').click(function(){
 	email = $('input[name="emailAddress"]').val();
 	zip = $('input[name="zipCode"]').val();
 
-
+	$('#subscrbesubmit').attr('disabled',true);
 	$.post('subscribe.php',{
 		fn:fn,
 		ln:ln,
 		zip:zip,
 		email:email
 	},function(data){
+		$('#subscrbesubmit').attr('disabled',false);
 		if(data.id){
 			fn = $('input[name="firstName"]').val('');
 			ln = $('input[name="lastName"]').val('');
