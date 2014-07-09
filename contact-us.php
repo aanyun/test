@@ -162,10 +162,11 @@
 					<a href="mailto:larry@kaifeshforcongress.com">
 						<img src="img/email_icon.png" class="position: relative; top: -3px;">
 					</a>
-            </div> <!-- /.row -->
-			
-			
-						<div class="row" style="margin-top: 15px;">
+                </div> <!-- / .4 -->
+				            </div> <!-- /.row -->
+				            <div class="row">
+				
+						<div class="col-lg-4 col-md-6 col-sm-6 connect" style="margin-top: 15px;">
 						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
@@ -177,8 +178,8 @@
 						</a>
 						</div>
 						</div>
-                </div> <!-- / .4 -->
 
+            </div> <!-- /.row -->
            
 
         </div>
