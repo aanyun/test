@@ -116,7 +116,7 @@
 						<p><strong>Education:</strong><br />
 						<ul>
 						<li>B.A. in Psychology from Indiana University</li>
-						<li>M.A. in National Security and Strategic Studies from the United States Naval War College</li>
+						<li>M.A. in National Security & Strategic Studies from the United States Naval War College</li>
 						</ul></p>
 						
 						<p><strong>Military Awards:</strong><br />
@@ -128,10 +128,7 @@
 						</ul>
 						</p>
 						
-						<p>He currently resides in Carpentersville, where he attends St. Monica's Catholic Church.</p>
-						
-						<p><a href="endorsements.php">View all endorsements for Larry Kaifesh.</a></p>
-							
+						<p>He currently resides in Carpentersville, where he attends St. Monica's Catholic Church.</p>						
 							
 						</div>
 					
