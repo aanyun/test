@@ -14,7 +14,7 @@
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/font.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 	
@@ -101,7 +101,7 @@
             </div>
 
 
-            <div class="col-lg-3 col-md-3 hide-960minus right-column">
+            <div class="col-lg-3 col-md-3 col-sm-3 hide-960minus right-column">
                 <!-- /well -->
                 <div class="well">
                     <h2 style="margin-top: 0;"><strong>View Archives:</strong></h2>
@@ -177,20 +177,26 @@
 					</a>
 
 						<div style="margin-top: 15px;">
-						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-						</a>
+						
+						
+		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
+		<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+  		<button class="btn btn-lg btn-primary btn-block" type="reset" style="width: 158px;">Contribute</button>
+		</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 space" style="padding: 0;">
+		<a href="get-involved.php" target="_blank">
+        <button class="btn btn-lg btn-danger btn-block" type="submit button" onclick="submit()" style="width: 158px;">Get Involved</button>
+		</a>
+		</div>
+						
+						
+
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-						<a href="get-involved.php" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
-						</a>
-						</div>
-						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+						
+                </div> <!-- / .4 -->
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->

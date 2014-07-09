@@ -108,7 +108,7 @@ ini_set("display_errors", 1);
             </div>
 
 
-            <div class="col-lg-3 col-md-3 hide-960minus right-column">
+            <div class="col-lg-3 col-md-3 col-sm-3 hide-960minus right-column">
                 <!-- /well -->
                 <div class="well">
                     <h2 style="margin-top: 0;"><strong>View Archives:</strong></h2>

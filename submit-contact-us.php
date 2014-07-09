@@ -128,7 +128,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-					<li>Contact</li>
+					<li><a href="contact-us.php">Contact</a></li>
                     <li class="active">Thank You!</li>
                 </ol>
 			  
