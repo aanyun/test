@@ -83,7 +83,9 @@
 					</a>
 				<?php
 					} else {
+						if(strpos($new['url'], 'object')!== false)
 						echo $new['url'];
+						else echo "<iframe width=\"100%\" height=\"100%\" src='".$new['url']."'></iframe>"
 					}
 				}else {
 				?>
