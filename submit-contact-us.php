@@ -61,7 +61,11 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					$email_message .= "\n";
 					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
 					ini_set('sendmail_from', $_POST['contact_email']);
-					mail($email_to, $email_subject, $email_message, 'From: ' . $_POST['contact_email']. "\r\n","-f ".$_POST['contact_email']);
+					    $headers = 'From: '.$_POST['fname'].$_POST['lname'].' '.$_POST['contact_email']."\r\n" ;
+					    $headers .='X-Mailer: PHP/' . phpversion();
+					    $headers .= "MIME-Version: 1.0\r\n";
+					    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+					mail($email_to, $email_subject, $email_message, $headers,"-f ".$_POST['contact_email']);
 					
 			}
 		}
