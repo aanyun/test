@@ -58,90 +58,19 @@
 				?>
 				
 				<h2>Organizations:</h2>
-			   
-			   	<a href="javascript:void(0)" data-toggle="collapse" data-target="#allen-west">
-				Allen West Guardian Fund<br />
-				</a>
-				<div class="collapse" id="allen-west">
-				"The Kaifesh campaign received a check for $5000 at a meet and greet luncheon held at the Capitol Hill Club in Washington D.C. The Fund was established in January of 2013 as a Political Action Committee (PAC) to support conservative military veteran and minority Republicans running for state and federal office."
-				</div>
-				
-				<a href="javascript:void(0)" data-toggle="collapse" data-target="#indian-american">
-				Indian American Republican Organization<br />
-				</a>
-				<div class="collapse in" id="indian-american">
-				"The 8th Congressional District is a critical race in 2014 and the IARO wanted to endorse a candidate who can win in November. Our board carefully considered each candidate's qualifications, viability and issue positions. In a unanimous decision, our board felt that Larry Kaifesh is the best choice in IL-8."
-				</div>
-				
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Elgin Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="elgin-township">
-				insert quote here
-				</div> -->
-				
-				<a href="javascript:void(0)" data-toggle="collapse" data-target="#palatine-township">
-				Palatine Township Republican Organization<br />
-				</a>
-				<div class="collapse in" id="palatine-township">
-				"Members of the Palatine Township Republican Organization (PTRO) in Cook County voted to endorse Larry Kaifesh with 83% of the vote - the highest margin of any candidate, including Governor."
-				</div>
-				
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Addison Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="addison-township">
-				insert quote here
-				</div> -->
-
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Barrington Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="barrington-township">
-				insert quote here
-				</div> -->
-				
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Wheeling Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="wheeling-township">
-				insert quote here
-				</div> -->
-				
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Schaumburg Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="schaumburg-township">
-				insert quote here
-				</div> -->
-				
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Hanover Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="hanover-township">
-				insert quote here
-				</div>-->
-				
-				<a href="javascript:void(0)" style="pointer-events:none;">
-				Elk Grove Township Republican Organization<br />
-				</a>
-				<!--<div class="collapse" id="elk-grove">
-				insert quote here
-				</div>-->
-				
-				<a href="javascript:void(0)" style="pointer-events: none;">
-				Hanover Elects Responsive Officials (HERO)<br />
-				</a>
-				<!--<div class="collapse" id="hero">
-				insert quote here
-				</div>-->
-
-				<a href="javascript:void(0)" data-toggle="collapse" data-target="#combat-veterans">
-				Combat Veterans for Congress<br />
-				</a>
-				<div class="collapse in" id="combat-veterans">
-				"The Combat Veterans For Congress PAC is endorsing the 89th Combat Veterans For Congress; he is a fiscally conservative candidate who will work to rein in the out of control spending by irresponsible members of Congress and the Obama administration, will work to reduce the national debt, and will work toward unleashing the private sector to grow once again, create jobs, and stimulate private sector business investment.  He believes in an efficient government that serves the people and upholds the highest standards of integrity and transparency."
-				</div>		
+			   	<?php 
+				if (($handle = fopen("view/organization.csv", "r")) !== FALSE) {
+					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {					
+						if($data[1]==''){
+							echo '<a href="javascript:void(0)" style="pointer-events:none;">'.$data[0].'</a><br/>';
+						} else {
+							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.$data[0].'">'.$data[0].'</a><br/>';
+							echo '<div class="collapse" id="'.$data[0].'">'.$data[1].'</div>';
+						}
+					}
+				}
+				?>	
+			   	
 				
 				
 				</div>
