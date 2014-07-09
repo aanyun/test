@@ -109,8 +109,25 @@
 						
 						<img src="img/about5.png" align="right" style="padding-left: 20px; position:relative; top: 3px;">
 						
-						<p>Larry Kaifesh holds a B.A. in Psychology from Indiana University and a M.A. in National Security and Strategic Studies from the United States Naval War College.</p>
+						<!--<p>Larry Kaifesh holds a B.A. in Psychology from Indiana University and a M.A. in National Security and Strategic Studies from the United States Naval War College.</p>
 						<p>His military awards include the Bronze Star, Navy Commendation Medal with "V" for Valor in combat, Defense Meritorious Service Medal, Meritorious Service Medal, and Navy Achievement Medal.</p>
+						<p>He currently resides in Carpentersville, where he attends St. Monica's Catholic Church.</p> -->
+						
+						<p><strong>Education:</strong><br />
+						<ul>
+						<li>B.A. in Psychology from Indiana University</li>
+						<li>M.A. in National Security and Strategic Studies from the United States Naval War College</li>
+						</ul></p>
+						
+						<p><strong>Military Awards:</strong><br />
+						<ul>
+						<li>Bronze Star</li>
+						<li>Navy Commendation Medal with "V" for Valor in combat</li>
+						<li>Defense Meritorious Service Medal</li>
+						<li>Navy Achievement Medal</li>
+						</ul>
+						</p>
+						
 						<p>He currently resides in Carpentersville, where he attends St. Monica's Catholic Church.</p>
 						
 						<p><a href="endorsements.php">View all endorsements for Larry Kaifesh.</a></p>
@@ -217,7 +234,7 @@
 					<img src="img/kaifesh_logo.png" class="img2" alt="Kaifesh for Congress">
 				</div>
 				<div class="col-lg-4 hide-1200minus subfooter-right">
-                    <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+                    <p><a href="#">Privacy Policy</a> | <a href="contact-us.php">Contact</a></p>
                 </div>
 				
 				 <div class="col-md-4 col-md-push-4 hide-1200plus text-center">

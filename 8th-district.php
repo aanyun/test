@@ -209,8 +209,8 @@ src="http://www.govtrack.us/congress/members/embed/mapframe?state=il&district=8&
 					<img src="img/kaifesh_logo.png" class="img2" alt="Kaifesh for Congress">
 				</div>
 				<div class="col-lg-4 hide-1200minus subfooter-right">
-                    <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
-                </div>
+                    <p><a href="#">Privacy Policy</a> | <a href="contact-us.php">Contact</a></p>
+					</div>
 				
 				 <div class="col-md-4 col-md-push-4 hide-1200plus text-center">
 				 <span class="subfooter">Copyright &copy; Kaifesh for Congress 2014.</span><br />
