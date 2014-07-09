@@ -107,13 +107,13 @@
             </div>
 
             <div class="col-md-4 col-md-6 col-sm-6 portfolio-item">
-				<form action="request-sign.php">
+				<a href="request-sign.php">
                     <img class="img-responsive" src="img/involved5.png">
-                </form>
+                </a>
                 <p>Put a sign in your yard and represent Team Kaifesh to your neighborhood.</p>				
 				<div class="click">
 				<form action="request-sign.php">
-					<button type="button" class="btn btn-lg btn-danger click-btn">Request a Sign</button>
+					<button type="submit button" class="btn btn-lg btn-danger click-btn">Request a Sign</button>
 				</form>
 				</div>
 				
