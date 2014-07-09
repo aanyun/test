@@ -78,7 +78,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       <br>
       <hr>
       <a href='view/organization.csv' target="_blank">Download Organization List</a>
-      <form id="orgform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadorg'>
+      <form id="organization" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadorg'>
       Upload Organization List
       <input type="file" name="add-organization-file" id="add-of-file" style="margin-left: 23px;">
       
@@ -127,6 +127,15 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
         $("#preview").html('');
         $("#preview").html('<img src="img/loader.gif" alt="Uploading...."/>');
       $("#ofform").ajaxForm({
+        target: '#preview'
+      }).submit();
+
+    });
+
+    $('#add-organization-file').live('change', function()      { 
+        $("#preview").html('');
+        $("#preview").html('<img src="img/loader.gif" alt="Uploading...."/>');
+      $("#organization").ajaxForm({
         target: '#preview'
       }).submit();
 
