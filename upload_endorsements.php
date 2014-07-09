@@ -67,7 +67,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       <input type="file" name="add-press-release-file" id="add-cl-file" style="margin-left: 23px;">
 
       </form>
-      
+      <br>
       <hr>
       <a href='view/officials.csv' target="_blank">Download 8th District Elected Officials List</a>
       <form id="ofform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadof'>
@@ -75,6 +75,15 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
       <input type="file" name="add-press-release-file" id="add-of-file" style="margin-left: 23px;">
       
       </form>
+      <br>
+      <hr>
+      <a href='view/organization.csv' target="_blank">Download Organization List</a>
+      <form id="orgform" method="post" enctype="multipart/form-data" action='class/API.php?command=uploadorg'>
+      Upload Organization List
+      <input type="file" name="add-organization-file" id="add-of-file" style="margin-left: 23px;">
+      
+      </form>
+
 
       <div id='preview'>
       </div>  
