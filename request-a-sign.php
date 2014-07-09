@@ -49,7 +49,7 @@
 			
 			
 			<div class="col-lg-12" style="padding-bottom: 40px;">
- <form action="submit-yard-sign.php" method="post" id="sign" >
+ <form action="submit-sign.php" method="post" id="sign" >
 		<div class="form-inline form" role="form">
 		<input type="hidden" id="noBot" value="" />
 		<div class="form-group">
