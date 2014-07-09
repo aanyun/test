@@ -15,8 +15,8 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 			$contact_email  = $_POST['contact_email']; // required
 			$comments  = $_POST['comments']; // required
 			
-			
-			$header = "From: ". $contact_email ."\r\n";
+			ini_set('sendmail_from', 'anyunww@gmail.com');
+			$header = "From: anyunww@gmail.com\r\n";
 			$header .= "Reply-To: larry@kaifeshforcongress.com\r\n";
 			$header .= "Return-Path: larry@kaifeshforcongress.com\r\n";
 			$header = "MIME-Version: 1.0\r\n";
