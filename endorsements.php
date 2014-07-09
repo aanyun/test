@@ -58,48 +58,20 @@
 				?>
 				
 				<h2>Organizations:</h2>
-				
-				<a href="javascript:void(0)" data-toggle="collapse" data-target="#indian-american">
-				Indian American Republican Organization<br />
-				</a>
-				<div class="collapse in" id="indian-american">
-				"The 8th Congressional District is a critical race in 2014 and the IARO wanted to endorse a candidate who can win in November. Our board carefully considered each candidate's qualifications, viability and issue positions. In a unanimous decision, our board felt that Larry Kaifesh is the best choice in IL-8."
-				</div>
-				
-				<a href="javascript:void(0)" data-toggle="collapse" data-target="#palatine-township">
-				Palatine Township Republican Organization<br />
-				</a>
-				<div class="collapse in" id="palatine-township">
-				"Members of the Palatine Township Republican Organization (PTRO) in Cook County voted to endorse Larry Kaifesh with 83% of the vote - the highest margin of any candidate, including Governor."
-				</div>	
-				
-				<a href="javascript:void(0)" data-toggle="collapse" data-target="#combat-veterans">
-				Combat Veterans for Congress<br />
-				</a>
-				<div class="collapse in" id="combat-veterans">
-				"The Combat Veterans For Congress PAC is endorsing the 89th Combat Veterans For Congress; he is a fiscally conservative candidate who will work to rein in the out of control spending by irresponsible members of Congress and the Obama administration, will work to reduce the national debt, and will work toward unleashing the private sector to grow once again, create jobs, and stimulate private sector business investment.  He believes in an efficient government that serves the people and upholds the highest standards of integrity and transparency."
-				</div>		
 
-
-			   	<p style="color: #7c2323; pointer-events: none;" class="di-organization">
-				Allen West Guardian Fund <br />
-				
-				Elgin Township Republican Organization<br />
-
-				Addison Township Republican Organization<br />
-
-				Barrington Township Republican Organization<br />
-
-				Wheeling Township Republican Organization<br />
-
-				Schaumburg Township Republican Organization<br />
-
-				Hanover Township Republican Organization<br />
-
-				Elk Grove Township Republican Organization<br />
-
-				Hanover Elects Responsive Officials (HERO)
-				</p>
+			   	<?php 
+				if (($handle = fopen("view/organization.csv", "r")) !== FALSE) {
+					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {					
+						if($data[1]==''){
+							echo '<a href="javascript:void(0)" style="pointer-events:none;">'.$data[0].'</a><br/>';
+						} else {
+							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.$data[0].'">'.$data[0].'</a><br/>';
+							echo '<div class="collapse in" id="'.$data[0].'">'.$data[1].'</div>';
+						}
+					}
+				}
+				?>	
+			   	
 				
 				</div>
 				
