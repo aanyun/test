@@ -15,7 +15,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 			$contact_email  = $_POST['contact_email']; // required
 			$comments  = $_POST['comments']; // required
 			
-			ini_set('sendmail_from', 'anyunww@gmail.com');
+			
 			$header = "From: anyunww@gmail.com\r\n";
 			$header .= "Reply-To: larry@kaifeshforcongress.com\r\n";
 			$header .= "Return-Path: larry@kaifeshforcongress.com\r\n";
@@ -60,8 +60,8 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					$email_message .= "Zip Code: ".clean_string($zip)."\r\n";
 					$email_message .= "\n";
 					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
-					
-					mail($email_to, $email_subject, $email_message, null,"-f ".$_POST['contact_email']);
+					ini_set('sendmail_from', 'anyunww@gmail.com');
+					mail($email_to, $email_subject, $email_message, 'From: ' . $_POST['contact_email']. "\r\n","-f ".$_POST['contact_email']);
 					
 			}
 		}
