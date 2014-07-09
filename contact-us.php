@@ -14,7 +14,7 @@
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/font.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 	
@@ -41,79 +41,84 @@
                     <li class="active">Contact</li>
                 </ol>
 			  
-            </div>
+            </div> <!-- / .12 -->
 			
-			</div>
+			</div> <!-- /.row -->
+			
+			
 			
 			<div class="col-lg-12" style="padding-bottom: 40px;">
  <form action="submit-contact-us.php" method="post" id="contact" >
 		<div class="form-inline form" role="form">
+		<input type="hidden" id="noBot" value="" />
 		<div class="form-group">
 		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<input type="text" name="fname" id="fname" class="form-control" style="width: 360px;" placeholder="First Name">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 
 		<div class="form-group">
 		<label for="inputLastName" class="col-sm-3 control-label" style="margin-top: 5px;">Last Name:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<input type="text" name="lname" id="lname" class="form-control" style="width: 360px;" placeholder="Last Name">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
+		<div class="col-sm-8" id="inputAddress">
 		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+		<div class="col-sm-8" id="inputCity">
 		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
+		<div class="col-sm-8" id="inputZip">
 		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
+		<div class="col-sm-8" id="inputEmail">
 		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
 		</div>
-		</div>
+		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
 		<div class="col-sm-8" style="padding-bottom: 10px;">
 		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions"></textarea>
 		</div>
-		</div>		
+		</div>		<!-- / .form-group -->
 		
 		
 			
 <div class="row">	
     <div class="form-group">
   
-  	<div class="col-lg-5 col-md-6 col-sm-12 ">
+  	<div class="col-lg-5 col-md-6 col-sm-6">
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
 	</div>
-	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
+	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-6">
         <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
 	</div>
 	
-	</div>
-</div>	
+	</div> <!-- / .form-group -->
+</div><!-- /. row -->
+	
+</div>	<!-- /.form-inline -->
 </form>		
 			
-			</div>
+			</div> <!-- / .12 -->
 
 			
 			
@@ -157,18 +162,25 @@
 					<a href="mailto:larry@kaifeshforcongress.com">
 						<img src="img/email_icon.png" class="position: relative; top: -3px;">
 					</a>
-
-						<div style="margin-top: 15px;">
+                </div> <!-- / .4 -->
+				            </div> <!-- /.row -->
+				            <div class="row">
+				
+						<div class="col-lg-4 col-md-6 col-sm-6 connect" style="margin-top: 15px;">
+						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
 						</a>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="get-involved.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
 						</a>
 						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+						</div>
+
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->

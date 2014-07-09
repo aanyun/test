@@ -7,14 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Endorsements</title>
+    <title>Kaifesh for Congress Official Website | Volunteer</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/font.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 	
@@ -32,97 +32,96 @@
 
             <div class="col-lg-12">
 			
-			   <h1 class="page-header"><strong>Endorsements</strong><br />
-                    <small>Want to endorse Larry Kaifesh? <a href="mailto:larry@kaifeshforcongress.com">Contact Us!</a></small>
+			   <h1 class="page-header"><strong>Volunteer</strong><br />
+                    <small>Please fill out the form below to become a volunteer for Team Kaifesh.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Endorsements</li>
+                    <li class="active">Volunteer</li>
                 </ol>
 			  
-            </div>
+            </div> <!-- / .12 -->
 			
-			</div>
+			</div> <!-- /.row -->
 			
-	        <div class="row">
+			
+			
+			<div class="col-lg-12" style="padding-bottom: 40px;">
+ <form action="submit-volunteeer.php" method="post" id="contact" >
+		<div class="form-inline form" role="form">
+		<input type="hidden" id="noBot" value="" />
+		<div class="form-group">
+		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="fname" id="fname" class="form-control" style="width: 360px;" placeholder="First Name">
+		</div>
+		</div> <!-- / .form-group -->
+
+		<div class="form-group">
+		<label for="inputLastName" class="col-sm-3 control-label" style="margin-top: 5px;">Last Name:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<input type="text" name="lname" id="lname" class="form-control" style="width: 360px;" placeholder="Last Name">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
+		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
+		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
+		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
+		</div>
+		</div> <!-- / .form-group -->
+		
+		<div class="form-group">
+		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
+		<div class="col-sm-8" style="padding-bottom: 10px;">
+		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions"></textarea>
+		</div>
+		</div>		<!-- / .form-group -->
+		
 		
 			
-			   <div class="col-lg-5" style="padding-right: 20px;">
-				<h2>Members of Congress:</h2>
-				<?php 
-				$con_mems = file('view/congress_member.txt');
-				foreach ($con_mems as $key => $value) {
-					echo "<p>".$value."</p>";
-				}
-				?>
-				
-				<h2>Organizations:</h2>
+<div class="row">	
+    <div class="form-group">
+  
+  	<div class="col-lg-5 col-md-6 col-sm-12 ">
+  		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
+	</div>
+	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
+        <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
+	</div>
+	
+	</div> <!-- / .form-group -->
+</div><!-- /. row -->
+	
+</div>	<!-- /.form-inline -->
+</form>		
+			
+			</div> <!-- / .12 -->
 
-			   	<?php 
-				if (($handle = fopen("view/organization.csv", "r")) !== FALSE) {
-					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {					
-						if($data[1]==''){
-							echo '<a href="javascript:void(0)" style="pointer-events:none;">'.$data[0].'</a><br/>';
-						} else {
-							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.$data[0].'">'.$data[0].'</a><br/>';
-							echo '<div class="collapse in" id="'.$data[0].'">'.$data[1].'</div>';
-						}
-					}
-				}
-				?>	
-			   	
-				
-				</div>
-				
-				<div class="col-lg-7">
-				
-				<div class="testimonial2">
-						<p class="test_quote2">"Larry's commitment to conservative values and experience as a compassionate leader in the U.S. Marine Corps 
-							make him an outstanding candidate, and he will fight for the issues important to voters in 
-							Illinois' 8th congressional district."</p>
-						<p class="test_guy2">&mdash; John Kline, 25-year veteran of the U.S. Marine Corps, Member 
-of Congress (MN-2), and Chairman of the House Committee on Education and the Workforce. </p>				
-					
-					</div>
-				
-				
-					<h2 style="padding-top: 15px;">8th District Elected Officials:</h2>
-					
-					<div class="table-responsive">
-						
-					<table class="table table-bordered table-hover">
-					<thead class="header">
-					<tr>
-					<th>Name:</th>
-					<th>Title:</th>
-					</tr>
-					</thead>
-					
-					<tbody>
-				<?php 
-				if (($handle = fopen("view/officials.csv", "r")) !== FALSE) {
-				while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-					echo "<tr>";
-					foreach ($data as $key => $value) {
-						echo "<td>".$value."</td>";
-					}
-					echo "</tr>";
-				}
-			}
-				?>						
-					</tbody>
-					
-					
-					</table>
-					</div> <!-- /.table-res-->
-						
-					</div> <!-- /.8 -->
-				
-				
-				
-				</div> <!-- /.row-->
-				
+			
+			
 
     </div>
     <!-- /.container -->
@@ -136,7 +135,7 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6 subscribe">
-					<?php include "view/subscribeform.php";?>	
+                	<?php include "view/subscribeform.php";?>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 connect adjust2">
 					<h2><strong>Stay Connected</strong><span style="font-size: 17px; color: #494949;"> with Larry Kaifesh!</span></h3>
@@ -176,9 +175,9 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 						</a>
 						</div>
 						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+                </div> <!-- / .4 -->
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->

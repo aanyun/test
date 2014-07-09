@@ -191,6 +191,10 @@ footer {
 
 
 
+
+/*Custom page Styles */
+
+
 ul.tab.light {
 	list-style: none;
 	margin-top: 40px;
@@ -586,3 +590,37 @@ height: 281px;
 height: auto;
 }
 }
+
+
+
+/* Custom Form adjustments */
+
+
+
+#inputEmail {
+padding-bottom: 10px; 
+margin-left: 7px;
+}
+
+#inputZip {
+padding-bottom: 10px; 
+margin-left: 3px;
+}
+
+#inputCity {
+padding-bottom: 10px; 
+margin-left: 10px;
+}
+
+#inputAddress {
+padding-bottom: 10px; 
+margin-left: 4px;
+}
+
+
+@media only screen and (max-width: 768px) {
+#inputEmail, #inputZip, #inputCity, #inputAddress {
+margin-left: 0;
+}
+}
+

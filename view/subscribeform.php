@@ -7,7 +7,7 @@
 	<label class="sr-only">First Name</label>
 	<input name="firstName" class="form-control" placeholder="First Name">
   </div>
-  <div class="form-group">
+  <div class="form-group fix">
 	<label class="sr-only">Last Name</label>
 	<input name="lastName" class="form-control" placeholder="Last Name">
   </div>
@@ -20,7 +20,7 @@
 		<label class="sr-only">Zip Code</label>
 		<input name="zipCode" class="form-control-sm" placeholder="Zip Code">
 	  </div>
-	  <span style="position: relative; top: 8px;">
+	  <span class="subscribeBtn">
 	  <button type="button" id='subscrbesubmit' class="btn btn-danger" style="margin-left: -8px;">Submit</button>
 	</span>
   </div> <!-- /.row --> 

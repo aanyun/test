@@ -1,10 +1,11 @@
 <?php
 
-		if(isset($_POST['contact_email'])) {
+if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
 			$email_to = "shadyandlucky@gmail.com";
 			$email_subject = "Kaifesh for Congress Contact Us form request";
+			$email_from = "larry@kaifeshforcongress.com";
 			
 			$fname  = $_POST['fname']; // required
 			$lname  = $_POST['lname']; // required
@@ -13,7 +14,15 @@
 			$zip  = $_POST['zip']; // required
 			$contact_email  = $_POST['contact_email']; // required
 			$comments  = $_POST['comments']; // required
-			$header = "From: ". $contact_email;
+			
+			
+			$header = "From: ". $contact_email ."\r\n";
+			$header .= "Reply-To: larry@kaifeshforcongress.com\r\n";
+			$header .= "Return-Path: larry@kaifeshforcongress.com\r\n";
+			$header = "MIME-Version: 1.0\r\n";
+			$header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+			
+			
 			function died($error) {
 				// Error Codes
 				echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -56,9 +65,16 @@
 					
 			}
 		}
-		    		
-
-
+		
+		
+		else {
+			echo "<error>
+					<status>fail</status>
+					<reason>You are a bot!!</reason>
+				</error>";
+			die();
+			}
+							
 ?>
 
 

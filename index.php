@@ -96,7 +96,7 @@
 							</li>
 
 							<li id="tablink">
-								<a class="contact" href="javascript:void(0)">Health Care / PPACA</a>
+								<a class="contact" href="javascript:void(0)">Healthcare / PPACA</a>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus, minima, impedit ratione dolor nulla ullam eum inventore aspernatur nihil quaerat vitae consequuntur debitis aliquam voluptates tenetur nisi rem corporis.</p>
 							</li>
 							<li id="tablink">
@@ -169,12 +169,16 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 					</a>
 
 						<div style="margin-top: 15px;">
+						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
 						</a>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
 						<a href="get-involved.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
 						</a>
+						</div>
 						</div>
                 </div>
             </div>
