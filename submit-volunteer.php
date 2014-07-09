@@ -1,3 +1,93 @@
+<?php
+
+if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
+		   
+			// Where it goes
+			$email_to = "shadyandlucky@gmail.com";
+			$email_subject = "Kaifesh for Congress Volunteer form request";
+			
+			$fname  = $_POST['fname']; // required
+			$lname  = $_POST['lname']; // required
+			$addr1  = $_POST['addr1']; // required
+			$city  = $_POST['city']; // required
+			$zip  = $_POST['zip']; // required
+			$contact_email  = $_POST['contact_email']; // required
+			$comments  = $_POST['comments']; // required
+			
+			
+			$header = "From: ". $contact_email ."\r\n";
+			$header .= "Reply-To: volunteer@kaifeshforcongress.com\r\n";
+			$header .= "Return-Path: volunteer@kaifeshforcongress.com\r\n";
+			$header = "MIME-Version: 1.0\r\n";
+			$header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+			
+			
+			function died($error) {
+				// Error Codes
+				echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+				echo "Please go back and fill out all of the required information.<br /><br />";
+				die();
+			}
+			 
+			// validation expected data exists
+			if( empty($_POST['fname']) ||
+				empty($_POST['lname']) ||
+				empty($_POST['addr1']) ||
+				empty($_POST['city']) ||
+				//empty($_POST['zip']) ||
+				empty($_POST['contact_email']) ||
+				empty($_POST['comments'])) 
+				{
+				//died('Please fill in all required sections. If the section does not apply, please put "N/A."');    
+                $return['msg'] = "Please fill in all required sections. If the section does not apply, please put N/A.";	
+				returnArray($return);			
+				} else {
+			
+					$email_message = "Form details below. \n\n\n";
+					
+					function clean_string($string) {
+						$bad = array("content-type","bcc:","to:","cc:","href");
+						return str_replace($bad,"",$string);
+					}    
+					
+					$email_message .= "First Name: ".clean_string($fname)."\r\n";
+					$email_message .= "Last Name: ".clean_string($lname)."\r\n";
+					$email_message .= "Contact E-Mail: ".clean_string($contact_email)."\r\n";
+					$email_message .= "\n";
+					$email_message .= "Address: ".clean_string($addr1)."\r\n";
+					$email_message .= "City: ".clean_string($city)."\r\n";
+					$email_message .= "Zip Code: ".clean_string($zip)."\r\n";
+					$email_message .= "\n";
+					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
+					
+					mail($email_to, $email_subject, $email_message, $header);
+					
+			}
+		}
+		
+		
+		else {
+			echo "<error>
+					<status>fail</status>
+					<reason>You are a bot!!</reason>
+				</error>";
+			die();
+			}
+							
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +97,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Contact</title>
+    <title>Kaifesh for Congress Official Website | Volunteer</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -32,100 +122,31 @@
 
             <div class="col-lg-12">
 			
-			   <h1 class="page-header"><strong>Contact Us</strong><br />
-                    <small>Please fill out the form below to contact Larry Kaifesh. All fields are required.</small>
+			   <h1 class="page-header"><strong>Volunteer</strong><br />
+                    <small>Please fill out the form below to become a volunteer for Team Kaifesh. All fields are required.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Contact</li>
+					<li>Volunteer</li>
+                    <li class="active">Thank You!</li>
                 </ol>
 			  
-            </div> <!-- / .12 -->
+            </div>
 			
-			</div> <!-- /.row -->
+			</div>
 			
-			
-			
-			<div class="col-lg-12" style="padding-bottom: 40px;">
- <form action="submit-contact-us.php" method="post" id="contact" >
-		<div class="form-inline form" role="form">
-		<input type="hidden" id="noBot" value="" />
-		<div class="form-group">
-		<label for="inputFirstName" class="col-sm-3 control-label" style="margin-top: 5px;">First Name:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
-		<input type="text" name="fname" id="fname" class="form-control" style="width: 360px;" placeholder="First Name">
-		</div>
-		</div> <!-- / .form-group -->
+			<div class="col-lg-12 text-center" style="padding-bottom: 40px;">
+.
+					<h2>Thank you for contacting Kaifesh for Congress!<br />We will get back to you as soon as possible.</h2>
+			</div>
 
-		<div class="form-group">
-		<label for="inputLastName" class="col-sm-3 control-label" style="margin-top: 5px;">Last Name:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
-		<input type="text" name="lname" id="lname" class="form-control" style="width: 360px;" placeholder="Last Name">
-		</div>
-		</div> <!-- / .form-group -->
-		
-		<div class="form-group">
-		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
-		<div class="col-sm-8" id="inputAddress">
-		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
-		</div>
-		</div> <!-- / .form-group -->
-		
-		<div class="form-group">
-		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
-		<div class="col-sm-8" id="inputCity">
-		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
-		</div>
-		</div> <!-- / .form-group -->
-		
-		<div class="form-group">
-		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
-		<div class="col-sm-8" id="inputZip">
-		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
-		</div>
-		</div> <!-- / .form-group -->
-		
-		<div class="form-group">
-		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
-		<div class="col-sm-8" id="inputEmail">
-		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
-		</div>
-		</div> <!-- / .form-group -->
-		
-		<div class="form-group">
-		<label for="inputComments" class="col-sm-3 control-label" style="margin-top: 5px;">Comments:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px;">
-		<textarea type="text" name="comments" id="comments" class="form-control" style="width: 360px;" placeholder="Comments and Questions"></textarea>
-		</div>
-		</div>		<!-- / .form-group -->
-		
-		
-			
-<div class="row">	
-    <div class="form-group" style="margin-left: 15px;">
-  
-  	<div class="col-lg-5 col-md-6 col-sm-6">
-  		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
-	</div>
-	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-6 space">
-        <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
-	</div>
-	
-	</div> <!-- / .form-group -->
-</div><!-- /. row -->
-	
-</div>	<!-- /.form-inline -->
-</form>		
-			
-			</div> <!-- / .12 -->
 			
 			
 
     </div>
     <!-- /.container -->
 
-	
 	
 	
 	
@@ -263,3 +284,4 @@
 </body>
 
 </html>
+

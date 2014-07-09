@@ -33,7 +33,7 @@
             <div class="col-lg-12">
 			
 			   <h1 class="page-header"><strong>Volunteer</strong><br />
-                    <small>Please fill out the form below to become a volunteer for Team Kaifesh.</small>
+                    <small>Please fill out the form below to become a volunteer for Team Kaifesh. All fields are required.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
@@ -47,8 +47,9 @@
 			
 			
 			
+			
 			<div class="col-lg-12" style="padding-bottom: 40px;">
- <form action="submit-volunteeer.php" method="post" id="contact" >
+ <form action="submit-volunteer.php" method="post" id="volunteer" >
 		<div class="form-inline form" role="form">
 		<input type="hidden" id="noBot" value="" />
 		<div class="form-group">
@@ -67,28 +68,28 @@
 		
 		<div class="form-group">
 		<label for="inputAddress" class="col-sm-3 control-label" style="margin-top: 5px;">Address:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 4px;">
+		<div class="col-sm-8" id="inputAddress">
 		<input type="text" name="addr1" id="addr1" class="form-control" style="width: 360px;" placeholder="Address">
 		</div>
 		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputCity" class="col-sm-3 control-label" style="margin-top: 5px;">City:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 10px;">
+		<div class="col-sm-8" id="inputCity">
 		<input type="text" name="city" id="city" class="form-control" style="width: 360px;" placeholder="City">
 		</div>
 		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputZip" class="col-sm-3 control-label" style="margin-top: 5px;">Zip Code:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 3px;">
+		<div class="col-sm-8" id="inputZip">
 		<input type="text" name="zip" id="zip" class="form-control" maxlength="5" style="width: 360px;" placeholder="Zip Code">
 		</div>
 		</div> <!-- / .form-group -->
 		
 		<div class="form-group">
 		<label for="inputEmail" class="col-sm-3 control-label" style="margin-top: 5px;">Email:</label>
-		<div class="col-sm-8" style="padding-bottom: 10px; margin-left: 7px;">
+		<div class="col-sm-8" id="inputEmail">
 		<input type="text" name="contact_email" id="contact_email" class="form-control" style="width: 360px;" placeholder="Email Address">
 		</div>
 		</div> <!-- / .form-group -->
@@ -103,12 +104,12 @@
 		
 			
 <div class="row">	
-    <div class="form-group">
+    <div class="form-group" style="margin-left: 15px;">
   
-  	<div class="col-lg-5 col-md-6 col-sm-12 ">
+  	<div class="col-lg-5 col-md-6 col-sm-6">
   		<button class="btn btn-md btn-default btn-block" type="reset" style="width: 136px;">Reset</button>
 	</div>
-	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-12">
+	<div class="col-lg-5 col-lg-push-1 col-md-6 col-sm-6 space">
         <button class="btn btn-md btn-primary btn-block" type="submit button" onclick="submit()" style="width: 136px;">Submit</button>
 	</div>
 	
@@ -119,7 +120,6 @@
 </form>		
 			
 			</div> <!-- / .12 -->
-
 			
 			
 
@@ -129,13 +129,40 @@
 	
 	
 	
+	
 	    <div class="section">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6 subscribe">
-                	<?php include "view/subscribeform.php";?>
+																<h2><strong>Stay Updated</strong><span style="font-size: 17px; color: #494949;"> &ndash; Subscribe for the latest campaign updates!</span></h3>
+
+
+											<div class="form-inline" role="form">
+											<div class="row" style="margin:0;">
+											  <div class="form-group adjust1">
+												<label class="sr-only">First Name</label>
+												<input name="firstName" class="form-control" placeholder="First Name">
+											  </div>
+											  <div class="form-group fix">
+												<label class="sr-only">Last Name</label>
+												<input name="lastName" class="form-control" placeholder="Last Name">
+											  </div>
+
+												  <div class="form-group adjust1" style="padding-top: 15px;">
+													<label class="sr-only">Email Address</label>
+													<input name="emailAddress" class="form-control" placeholder="Email Address">
+												  </div>
+												  <div class="form-group" style="padding-top: 15px;">
+													<label class="sr-only">Zip Code</label>
+													<input name="zipCode" class="form-control-sm" placeholder="Zip Code">
+												  </div>
+												  <span class="subscribeBtn">
+												  <button type="button" id='subscrbesubmit' class="btn btn-danger" style="margin-left: -8px;">Submit</button>
+												</span>
+											  </div> <!-- /.row --> 
+											</div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 connect adjust2">
 					<h2><strong>Stay Connected</strong><span style="font-size: 17px; color: #494949;"> with Larry Kaifesh!</span></h3>
@@ -164,17 +191,23 @@
 					</a>
 
 						<div style="margin-top: 15px;">
-						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-						</a>
+						
+						
+		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
+		<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+  		<button class="btn btn-lg btn-primary btn-block" type="reset" style="width: 158px;">Contribute</button>
+		</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 space" style="padding: 0;">
+		<a href="get-involved.php" target="_blank">
+        <button class="btn btn-lg btn-danger btn-block" type="submit button" onclick="submit()" style="width: 158px;">Get Involved</button>
+		</a>
+		</div>
+						
+						
+
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-						<a href="get-involved.php" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
-						</a>
-						</div>
-						</div>
+						
                 </div> <!-- / .4 -->
             </div> <!-- /.row -->
            

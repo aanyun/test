@@ -5,7 +5,6 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 			// Where it goes
 			$email_to = "shadyandlucky@gmail.com";
 			$email_subject = "Kaifesh for Congress Contact Us form request";
-			$email_from = "larry@kaifeshforcongress.com";
 			
 			$fname  = $_POST['fname']; // required
 			$lname  = $_POST['lname']; // required
@@ -98,14 +97,14 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Get Involved</title>
+    <title>Kaifesh for Congress Official Website | Contact</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/font.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 	
@@ -129,7 +128,8 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Contact</li>
+					<li>Contact</li>
+                    <li class="active">Thank You!</li>
                 </ol>
 			  
             </div>
@@ -150,41 +150,14 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 	
 	
 	
+	
 	    <div class="section">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6 subscribe">
-                    <h2><strong>Stay Updated</strong><span style="font-size: 17px; color: #494949;"> &ndash; Subscribe for the latest campaign updates!</span></h3>
-                    
-					
-					<form class="form-inline" role="form">
-					<div class="row" style="margin:0;">
-					  <div class="form-group adjust1">
-						<label class="sr-only">First Name</label>
-						<input name="firstName" class="form-control" placeholder="First Name">
-					  </div>
-					  <div class="form-group fix">
-						<label class="sr-only">Last Name</label>
-						<input name="lastName" class="form-control" placeholder="Last Name">
-					  </div>
-
-						  <div class="form-group adjust1" style="padding-top: 15px;">
-							<label class="sr-only">Email Address</label>
-							<input name="emailAddress" class="form-control" placeholder="Email Address">
-						  </div>
-						  <div class="form-group" style="padding-top: 15px;">
-							<label class="sr-only">Zip Code</label>
-							<input name="zipCode" class="form-control-sm" placeholder="Zip Code">
-						  </div>
-						  <span class="subscribeBtn">
-						  <button type="submit" class="btn btn-danger" style="margin-left: -8px;">Submit</button>
-						</span>
-					  </div> <!-- /.row --> 
-					</form>
-					
-					
+					<?php include "view/subscribeform.php";?>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 connect adjust2">
 					<h2><strong>Stay Connected</strong><span style="font-size: 17px; color: #494949;"> with Larry Kaifesh!</span></h3>
@@ -213,16 +186,26 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					</a>
 
 						<div style="margin-top: 15px;">
-						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-						</a>
-						<a href="get-involved.php" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
-						</a>
+						
+						
+		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
+		<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+  		<button class="btn btn-lg btn-primary btn-block" type="reset" style="width: 158px;">Contribute</button>
+		</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 space" style="padding: 0;">
+		<a href="get-involved.php" target="_blank">
+        <button class="btn btn-lg btn-danger btn-block" type="submit button" onclick="submit()" style="width: 158px;">Get Involved</button>
+		</a>
+		</div>
+						
+						
+
 						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+						
+                </div> <!-- / .4 -->
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->
