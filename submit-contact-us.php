@@ -61,7 +61,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					$email_message .= "\n";
 					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
 					
-					mail($email_to, $email_subject, $email_message, null,"-f larry@kaifeshforcongress.com");
+					mail($email_to, $email_subject, $email_message, null,"-f ".$_POST['contact_email']);
 					
 			}
 		}
