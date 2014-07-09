@@ -14,7 +14,7 @@
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/font.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
 	
@@ -138,7 +138,7 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6 subscribe">
-					<?php include "view/subscribeform.php";?>	
+					<?php include "view/subscribeform.php";?>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 connect adjust2">
 					<h2><strong>Stay Connected</strong><span style="font-size: 17px; color: #494949;"> with Larry Kaifesh!</span></h3>
@@ -167,20 +167,26 @@ of Congress (MN-2), and Chairman of the House Committee on Education and the Wor
 					</a>
 
 						<div style="margin-top: 15px;">
-						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-						<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-primary" style="margin-right: 11px;">Contribute</button>
-						</a>
+						
+						
+		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
+		<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+  		<button class="btn btn-lg btn-primary btn-block" type="reset" style="width: 158px;">Contribute</button>
+		</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 space" style="padding: 0;">
+		<a href="get-involved.php" target="_blank">
+        <button class="btn btn-lg btn-danger btn-block" type="submit button" onclick="submit()" style="width: 158px;">Get Involved</button>
+		</a>
+		</div>
+						
+						
+
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-						<a href="get-involved.php" target="_blank">
-					<button type="submit button" class="btn btn-lg btn-danger">Get Involved</button>
-						</a>
-						</div>
-						</div>
-                </div>
-            </div>
-            <!-- /.row -->
+						
+                </div> <!-- / .4 -->
+            </div> <!-- /.row -->
+           
 
         </div>
         <!-- /.container -->
