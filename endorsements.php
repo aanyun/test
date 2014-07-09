@@ -60,6 +60,7 @@
 				<h2>Organizations:</h2>
 
 			   	<?php 
+			   	ini_set("auto_detect_line_endings", true);
 				if (($handle = fopen("view/organization.csv", "r")) !== FALSE) {
 					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 					print_r($data);					
