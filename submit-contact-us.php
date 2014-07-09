@@ -60,7 +60,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					$email_message .= "Zip Code: ".clean_string($zip)."\r\n";
 					$email_message .= "\n";
 					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
-					ini_set('sendmail_from', 'anyunww@gmail.com');
+					ini_set('sendmail_from', $_POST['contact_email']);
 					mail($email_to, $email_subject, $email_message, 'From: ' . $_POST['contact_email']. "\r\n","-f ".$_POST['contact_email']);
 					
 			}
