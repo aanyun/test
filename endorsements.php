@@ -60,13 +60,15 @@
 				<h2>Organizations:</h2>
 
 			   	<?php 
+			   	ini_set("auto_detect_line_endings", true);
 				if (($handle = fopen("view/organization.csv", "r")) !== FALSE) {
-					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {					
+					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+					//print_r($data);					
 						if($data[1]==''){
 							echo '<a href="javascript:void(0)" style="pointer-events:none;">'.$data[0].'</a><br/>';
 						} else {
-							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.$data[0].'">'.$data[0].'</a><br/>';
-							echo '<div class="collapse in" id="'.$data[0].'">'.$data[1].'</div>';
+							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.str_replace(' ','_',$data[0]).'">'.$data[0].'</a><br/>';
+							echo '<div class="collapse in" id="'.str_replace(' ','_',$data[0]).'">'.$data[1].'</div>';
 						}
 					}
 				}
