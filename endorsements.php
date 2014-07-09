@@ -63,7 +63,7 @@
 			   	ini_set("auto_detect_line_endings", true);
 				if (($handle = fopen("view/organization.csv", "r")) !== FALSE) {
 					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-					print_r($data);					
+					//print_r($data);					
 						if($data[1]==''){
 							echo '<a href="javascript:void(0)" style="pointer-events:none;">'.$data[0].'</a><br/>';
 						} else {
