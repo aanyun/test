@@ -67,8 +67,8 @@
 						if($data[1]==''){
 							echo '<a href="javascript:void(0)" style="pointer-events:none;">'.$data[0].'</a><br/>';
 						} else {
-							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.$data[0].'">'.$data[0].'</a><br/>';
-							echo '<div class="collapse in" id="'.$data[0].'">'.$data[1].'</div>';
+							echo '<a href="javascript:void(0)" data-toggle="collapse" data-target="#'.str_replace(' ','_',$data[0]).'">'.$data[0].'</a><br/>';
+							echo '<div class="collapse in" id="'.str_replace(' ','_',$data[0]).'">'.$data[1].'</div>';
 						}
 					}
 				}
