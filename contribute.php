@@ -46,7 +46,7 @@
 			</div>
 			
 			
-			    <div class="col-lg-4 col-md-12 col-lg-12 text-center">
+			    <div class="col-lg-3 col-md-12 col-lg-12 text-center" style="padding-right: 10px;">
 
 	            <div class="row">
 				
@@ -63,7 +63,7 @@
 				
 				</div>
 				
-				<div class="col-lg-3 col-md-12 col-lg-12">
+				<div class="col-lg-6 col-md-12 col-lg-12">
 				
 	            <div class="row">
 				<div class="paypal-submit">
@@ -96,7 +96,7 @@
 				
 				</div>
 				
-				<div class="col-lg-3 col-md-12 col-lg-12 text-center">
+				<div class="col-lg-3 col-md-12 col-lg-12 text-center" style="padding-left: 10px;">
 				
 				<div class="row">
 				
