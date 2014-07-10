@@ -46,7 +46,7 @@
 			</div>
 			
 			
-			            <div class="col-lg-12 text-center">
+			    <div class="col-lg-4 text-center">
 
 	            <div class="row">
 				
@@ -61,7 +61,9 @@
 				
 				</div>
 				
+				</div>
 				
+				<div class="col-lg-4">
 				
 	            <div class="row">
 				<div class="paypal-submit">
@@ -92,17 +94,22 @@
 				</div>
 				</div>
 				
+				</div>
+				
+				<div class="col-lg-4 text-center">
 				
 				<div class="row">
 				
-				<h2 style="color: >Please make checks payable to "Kaifesh for Congress"<br />
+				<h2 style="color: #333;">Please make checks payable to "Kaifesh for Congress"<br />
 				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
 				Please <a href="img/contribution_form.jpg" target="_blank">download this form</a>, fill it out, and send it with your contribution.</h2><br />
 				
 				</div>
 				
 
-						</div>
+				</div>
+				
+				
     </div>
     <!-- /.container -->
 
