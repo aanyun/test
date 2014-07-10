@@ -11,7 +11,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress ADMIN | Upload a Press Release</title>
+    <title>ADMIN | Kaifesh for Congress | Upload a Press Release</title>
 	
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

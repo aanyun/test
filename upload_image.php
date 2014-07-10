@@ -13,7 +13,7 @@ if(!isset($_SESSION['kaifesh_auth'])||!$_SESSION['kaifesh_auth']) header('Locati
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress ADMIN | Upload an Image</title>
+    <title>ADMIN | Kaifesh for Congress | Upload an Image</title>
 	
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -94,7 +94,7 @@ margin-top: 30px;
 			</div>
 		<br>
 		<div style="font-size: .8em; margin-top: -10px;">
-		*Must be a JPG, PNG or GIF filetype only.
+		*Must be a JPG, PNG or GIF filetype only. File size must be 1 MB or less.
 		</div>
 		</div>
 		</div>
