@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Get Involved</title>
+    <title>Kaifesh for Congress Official Website | Privacy Policy</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -32,13 +32,13 @@
 
             <div class="col-lg-12">
 			
-			   <h1 class="page-header"><strong>Get Involved</strong><br />
-                    <small>There are so many ways you can help support the Kaifesh for Congress campaign!</small>
+			   <h1 class="page-header"><strong>Privacy Policy</strong><br />
+                    <small>This legal document discloses how a visitor's personal information will be gathered and used.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active">Get Involved</li>
+                    <li class="active">Privacy Policy</li>
                 </ol>
 			  
             </div>
@@ -149,7 +149,7 @@
 					<img src="img/kaifesh_logo.png" class="img2" alt="Kaifesh for Congress">
 				</div>
 				<div class="col-lg-4 hide-1200minus subfooter-right">
-                    <p><a href="#">Privacy Policy</a> | <a href="contact-us.php">Contact</a></p>
+                    <p><a href="privacy_policy.php">Privacy Policy</a> | <a href="contact-us.php">Contact</a></p>
 					</div>
 				
 				 <div class="col-md-4 col-md-push-4 hide-1200plus text-center">

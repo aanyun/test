@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kaifesh for Congress Official Website | Media Gallery</title>
+    <title>Kaifesh for Congress Official Website | Contribute</title>
 
     <!-- Bootstrap core CSS .. -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -16,20 +16,11 @@
     <link href="css/modern-business.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
-		
+	
 	
 </head>
 
 <body>
-	<?php
-		include "class/MysqliDb.php";
-		$db = new Mysqlidb();
-		$current_page = (isset($_GET['page'])&& $_GET['page']!='')? $_GET['page']-1:0;
-		$type = (isset($_GET['type'])&& $_GET['type']!='')? $_GET['type']:'0,1';
-		$news = $db->rawQuery("select * from media where type in (".$type.") order by id desc limit 12 offset ".$current_page*12);
-
-	?>
 <div class="wrapper">
     <div class="container">
     	<?php include "view/header.php";?>
@@ -41,14 +32,13 @@
 
             <div class="col-lg-12">
 			
-			   <h1 class="page-header"><strong>Media Gallery</strong><br />
-                    <small>You can filter results by selecting a category below. Click to view maximum size.</small>
+			   <h1 class="page-header"><strong>Contribute</strong><br />
+                    <small>Thank you for your support! Please choose your method of contribution below.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Home</a>
                     </li>
-                    <li class="active"><a href="media-gallery.php">Media Gallery (View All Media)</a> | <a href="media-gallery.php?type=0">Photos</a> | <a href="media-gallery.php?type=1">Videos</a></li>
-					
+                    <li class="active">Contribute</li>
                 </ol>
 			  
             </div>
@@ -56,83 +46,59 @@
 			</div>
 			
 			
-            <div class="col-lg-12 media-gallery">
-				<ul class="gallery clearfix">
+			            <div class="col-lg-12 text-center">
 
-            	<?php 
-            	foreach ($news as $key => $new) {
-            		
-            		if($key%3==0) echo "<div class='row'>";
-            	?>
-
-
-                <li class="col-md-4 portfolio-item">
-
-                <?php 
-                if($new['type']==1){
-                	if(strpos($new['url'], 'youtube')!== false){
-	                	$videolink = $new['url'];
-	                	if(strpos($new['url'], 'watch')!== false){
-		               	$new['url'] = preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","https://www.youtube.com/embed/$1",$new['url']);
-	                	}
-                ?>	
-                	<a href='<?php echo $videolink?>' rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
-	                <iframe width="100%" height="100%"
-					src='<?php echo $new["url"]?>'>
-					</iframe>
-					</a>
-				<?php
-					} else {
-						if(strpos($new['url'], 'object')!== false)
-						echo $new['url'];
-						else echo "<iframe width=\"100%\" height=\"100%\" src='".$new['url']."'></iframe>";
-					}
-				}else {
-				?>
-	                <a href="<?php echo $new['url']?>" rel="prettyPhoto[mixed]" alt="<?php echo $new['title']?>" title="<?php echo $new['desc']?>">
-	                    <img class="img-responsive" src="<?php echo $new['url']?>">
-	                </a>
-	            <?php
-	        	}
-	            ?>
-					<p class="title"><small><strong><?php echo $new['title']?></strong><br />
-					<?php echo $new['desc']?>
-					</small></p>				
+	            <div class="row">
 				
-            	</li>
+				
+				<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+				<img src="img/kaifesh_logo.png"><br />
+				<h2>The Offician Kaifesh for Congress<br />
+				Secured Online Contribution Form</h2>
+				</a>
+				
+				<hr>
+				
+				</div>
+				
+				<!--<div class="row">
+				
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="QRTMGGHF8QHSS">
+					<table>
+					<tr><td><input type="hidden" name="on0" value="Employer">Employer</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+					<tr><td><input type="hidden" name="on1" value="Occupation">Occupation</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+					</table>
+					<input type="image" src="http://hstrial-kkaifesh1111.homestead.com/red-submit-button-hi1.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+					
+					
+					<hr>
+				
+				</div> -->
+				
+				
+				<div class="row">
+				
+				<h2>Please make checks payable to "Kaifesh for Congress"<br />
+				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
+				Please fill out this form and send it with your contribution.</h2><br />
+				
+				<img src="img/contribution_form.jpg">
+				
+				
+				</div>
+				
 
+						</div>
+</div>
 
-        	<?php 
-        		if($key%3==2) echo "</div>";
-				}
-			?>
-		</ul>
-		</div>
-		<div class="col-lg-12 text-center">
-			<ul class="pagination pagination-sm">
-                
-                <?php 
-
-                if( $current_page == 0 ) echo '<li class="disabled"><a href="javascript:void(0)">« Last</a></li>';
-                else echo '<li><a href="media-gallery.php?page='.$current_page.'">« Last</a></li>';
-
-                $num = $db->getOne("media","count(*) as cnt");
-                $pages = ceil($num['cnt']/12);
-                for( $i = 1; $i <= $pages ; $i++){
-                	if( $i==$current_page+1) echo '<li class="active"><a href="media-gallery.php?page='.$i.'">'.$i.'</a></li>';
-                	else echo '<li><a href="media-gallery.php?page='.$i.'">'.$i.'</a></li>';
-                }
-
-				if( $current_page == $pages-1 ) echo '<li class="disabled"><a href="javascript:void(0)">Next »</a></li>';
-                else echo '<li><a href="media-gallery.php?page='.($current_page+2).'">Next »</a></li>';
-
-                ?>
-
-            </ul>
-		</div>
     </div>
     <!-- /.container -->
 
+	
 	
 	
 	
@@ -197,6 +163,7 @@
 
     </div>
     <!-- /.section -->
+	
 	
 	
         <footer>
@@ -266,11 +233,6 @@
     <script src="js/modern-business.js"></script>
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/main.js"></script>	
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-		$(".gallery a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',social_tools:false,gallery_markup: ''});
-	</script>
-
 
 </body>
 

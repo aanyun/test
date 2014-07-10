@@ -129,8 +129,10 @@
 
 				<iframe width="210" height="118" src="https://www.youtube.com/embed/R8rts7Kai60?rel=0" frameborder="0" allowfullscreen></iframe>
 								
+				<a href="media-gallery.php?type=1">
 				<button type="button" class="btn btn-lg btn-danger">View Video Archive</button>
-
+				</a>
+				
                 </div>
                 <!-- /well -->
             </div>
@@ -226,7 +228,7 @@
 					<img src="img/kaifesh_logo.png" class="img2" alt="Kaifesh for Congress">
 				</div>
 				<div class="col-lg-4 hide-1200minus subfooter-right">
-                    <p><a href="#">Privacy Policy</a> | <a href="contact-us.php">Contact</a></p>
+                    <p><a href="privacy_policy.php">Privacy Policy</a> | <a href="contact-us.php">Contact</a></p>
 					</div>
 				
 				 <div class="col-md-4 col-md-push-4 hide-1200plus text-center">
