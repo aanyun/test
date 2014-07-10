@@ -31,7 +31,7 @@
 		  <li>
           <a href="get-involved.php">Get Involved</a>
           </li>
-		   <li><a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">Contribute</a></li>
+		   <li><a href="contribute.php" target="_blank">Contribute</a></li>
 		   <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media<b class="caret"></b></a>
           <ul class="dropdown-menu">

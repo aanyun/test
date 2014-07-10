@@ -194,7 +194,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 						
 						
 		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-		<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+		<a href="contribute.php" target="_blank">
   		<button class="btn btn-lg btn-primary btn-block" type="reset" style="width: 158px;">Contribute</button>
 		</a>
 		</div>

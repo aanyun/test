@@ -82,7 +82,7 @@
                 </a>
 				<p>We appreciate every contribution to the Kaifesh for Congress campaign!</p>
 				<div class="click">
-				<form action="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+				<form action="contribute.php" target="_blank">
 					<button type="submit button" class="btn btn-lg btn-danger click-btn">Contribute</button>
 				</form>
 				</div>
