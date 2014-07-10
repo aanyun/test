@@ -84,8 +84,9 @@ switch ($command) {
 			$size = $_FILES['photoimg']['size'];
 			
 			if(strlen($name))
-				{
-					list($txt, $ext) = explode(".", $name);
+				{	$ext = substr($name, strrpos($name, '.') + 1);
+					$txt = substr($name,0,-strrpos($name, '.'));
+					//list($txt, $ext) = explode(".", $name);
 					if(in_array($ext,$valid_formats))
 					{
 					if($size<1048576)
