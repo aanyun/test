@@ -51,8 +51,8 @@
 	            <div class="row">
 				
 				
-				<a href="img/ssl-security.gif" target="_blank">
-				<img src="img/kaifesh_logo.png"><br />
+				<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+				<img src="img/ssl-security.gif"><br />
 				<h3>Click here to pay with<br />The Offician Kaifesh for Congress<br />
 				Secured Online Contribution Form</h2>
 				</a>
@@ -63,7 +63,7 @@
 				
 				</div>
 				
-				<div class="col-lg-4 col-md-12 col-lg-12">
+				<div class="col-lg-3 col-md-12 col-lg-12">
 				
 	            <div class="row">
 				<div class="paypal-submit">
@@ -96,7 +96,7 @@
 				
 				</div>
 				
-				<div class="col-lg-4 col-md-12 col-lg-12 text-center">
+				<div class="col-lg-3 col-md-12 col-lg-12 text-center">
 				
 				<div class="row">
 				
