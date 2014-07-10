@@ -46,18 +46,17 @@
 			</div>
 			
 			
-			    <div class="col-lg-3 col-md-12 col-lg-12 text-center" style="padding-right: 10px;">
+			    <div class="col-lg-3 col-md-12 col-lg-12 text-center">
 
 	            <div class="row">
 				
+				<h2><strong>Secured Form:</strong></h2>
 				
 				<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 				<img src="img/ssl-security.gif"><br />
-				<h3>Click here to pay with<br />The Offician Kaifesh for Congress<br />
+				<h3>Click here to pay with The Offician Kaifesh for Congress
 				Secured Online Contribution Form</h2>
 				</a>
-				
-				<hr>
 				
 				</div>
 				
@@ -68,7 +67,7 @@
 	            <div class="row">
 				<div class="paypal-submit">
 				
-				<img src="img/paypal-title.png" alt="Paypal" style="text-center">
+				<img src="img/paypal-title.png" alt="Paypal" style="margin-left: 70px;">
 				
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				<form class="form-inline form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -78,7 +77,7 @@
 				<tr><td><input type="hidden" name="on0" value="Employer">Employer</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
 				<tr><td><input type="hidden" name="on1" value="Occupation">Occupation</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
 				</table>
-				<input type="image" src="http://hstrial-kkaifesh1111.homestead.com/red-submit-button-hi1.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<input type="image" src="http://hstrial-kkaifesh1111.homestead.com/red-submit-button-hi1.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="padding-top: 10px;">
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>
 				</div>
@@ -89,7 +88,7 @@
 				
 				</div>
 				
-				<img src="img/paypal-elements.png" alt="Paypal Secured Payments" style="text-center;">
+				<img src="img/paypal-elements.png" alt="Paypal Secured Payments" style="margin-left: 20px;">
 				
 				</div>
 				</div>
@@ -100,8 +99,10 @@
 				
 				<div class="row">
 				
+				<h2><strong>Check:</strong></h2>
+				
 				<h3 style="color: #333;">Please make checks payable to "Kaifesh for Congress"<br />
-				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
+				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br /><br />
 				Please <a href="img/contribution_form.jpg" target="_blank" style="text-decoration: underline;">download this form</a>, fill it out, and send it with your contribution.</h2><br />
 				
 				</div>
