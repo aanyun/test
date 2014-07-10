@@ -167,7 +167,7 @@
 						
 						
 		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 0;">
-		<a href="contribute.php" target="_blank">
+		<a href="contribute.php">
   		<button class="btn btn-lg btn-primary btn-block" type="reset" style="width: 158px;">Contribute</button>
 		</a>
 		</div>
