@@ -3,8 +3,8 @@
 if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
-			// $email_to = "shadyandlucky@gmail.com";
-			$email_to = "anyunww@gmail.com";
+			$email_to = "shadyandlucky@gmail.com";
+			//$email_to = "larry@kaifeshforcongress.com";
 			$email_subject = "Kaifesh for Congress Contact Us form request";
 			
 			$fname  = $_POST['fname']; // required
@@ -16,7 +16,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 			$comments  = $_POST['comments']; // required
 			
 			
-			$header = "From: anyunww@gmail.com\r\n";
+			$header = "From: ". $contact_email ."\r\n";
 			$header .= "Reply-To: larry@kaifeshforcongress.com\r\n";
 			$header .= "Return-Path: larry@kaifeshforcongress.com\r\n";
 			$header = "MIME-Version: 1.0\r\n";
@@ -35,7 +35,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 				empty($_POST['lname']) ||
 				empty($_POST['addr1']) ||
 				empty($_POST['city']) ||
-				//empty($_POST['zip']) ||
+				empty($_POST['zip']) ||
 				empty($_POST['contact_email']) ||
 				empty($_POST['comments'])) 
 				{
