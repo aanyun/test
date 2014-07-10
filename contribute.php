@@ -64,29 +64,37 @@
 				
 				
 	            <div class="row">
-			
+				<div class="paypal-submit">
+				
+				<div class="col-lg-6 col-md-6 col-sm-6">
 				<form class="form-inline form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="QRTMGGHF8QHSS">
-<table>
-<tr><td><input type="hidden" name="on0" value="Employer">Employer</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
-<tr><td><input type="hidden" name="on1" value="Occupation">Occupation</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-</table>
-<input type="image" src="http://hstrial-kkaifesh1111.homestead.com/red-submit-button-hi1.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-</div>
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="QRTMGGHF8QHSS">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Employer">Employer</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+				<tr><td><input type="hidden" name="on1" value="Occupation">Occupation</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+				</table>
+				<input type="image" src="http://hstrial-kkaifesh1111.homestead.com/red-submit-button-hi1.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				</div>
+				
+				<div class="col-lg-6 col-md-6 col-sm-6">
+				<p>*Required fields</p>
+				<p>**By law, we are required to collect and report the following information of your contribution.</p>
+				
+				</div>
+				
+				
+				</div>
+				</div>
 				
 				
 				<div class="row">
 				
 				<h2>Please make checks payable to "Kaifesh for Congress"<br />
 				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
-				Please fill out this form and send it with your contribution.</h2><br />
-				
-				<img src="img/contribution_form.jpg">
-				
+				Please <a href="img/contribution_form.jpg" target="_blank">download this form</a>, fill it out, and send it with your contribution.</h2><br />
 				
 				</div>
 				
