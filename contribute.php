@@ -66,7 +66,7 @@
 	            <div class="row">
 				<div class="paypal-submit">
 				
-				<img src="img/paypal-header.png" alt="Paypal">
+				<img src="img/paypal-title.png" alt="Paypal">
 				
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				<form class="form-inline form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -95,7 +95,7 @@
 				
 				<div class="row">
 				
-				<h2>Please make checks payable to "Kaifesh for Congress"<br />
+				<h2 style="color: >Please make checks payable to "Kaifesh for Congress"<br />
 				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
 				Please <a href="img/contribution_form.jpg" target="_blank">download this form</a>, fill it out, and send it with your contribution.</h2><br />
 				
