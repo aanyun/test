@@ -46,14 +46,14 @@
 			</div>
 			
 			
-			    <div class="col-lg-4 text-center">
+			    <div class="col-lg-4 col-md-12 col-lg-12 text-center">
 
 	            <div class="row">
 				
 				
-				<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+				<a href="img/ssl-security.gif" target="_blank">
 				<img src="img/kaifesh_logo.png"><br />
-				<h2>Click here to pay with<br />The Offician Kaifesh for Congress<br />
+				<h3>Click here to pay with<br />The Offician Kaifesh for Congress<br />
 				Secured Online Contribution Form</h2>
 				</a>
 				
@@ -63,12 +63,12 @@
 				
 				</div>
 				
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-12 col-lg-12">
 				
 	            <div class="row">
 				<div class="paypal-submit">
 				
-				<img src="img/paypal-title.png" alt="Paypal">
+				<img src="img/paypal-title.png" alt="Paypal" style="text-center">
 				
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				<form class="form-inline form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -89,20 +89,20 @@
 				
 				</div>
 				
-				<img src="img/paypal-elements.png" alt="Paypal Secured Payments">
+				<img src="img/paypal-elements.png" alt="Paypal Secured Payments" style="text-center;">
 				
 				</div>
 				</div>
 				
 				</div>
 				
-				<div class="col-lg-4 text-center">
+				<div class="col-lg-4 col-md-12 col-lg-12 text-center">
 				
 				<div class="row">
 				
-				<h2 style="color: #333;">Please make checks payable to "Kaifesh for Congress"<br />
+				<h3 style="color: #333;">Please make checks payable to "Kaifesh for Congress"<br />
 				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
-				Please <a href="img/contribution_form.jpg" target="_blank">download this form</a>, fill it out, and send it with your contribution.</h2><br />
+				Please <a href="img/contribution_form.jpg" target="_blank" style="text-decoration: underline;">download this form</a>, fill it out, and send it with your contribution.</h2><br />
 				
 				</div>
 				
