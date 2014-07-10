@@ -137,7 +137,8 @@ switch ($command) {
 			$size = $_FILES['add-press-release-file']['size'];
 			if(strlen($name))
 				{
-					list($txt, $ext) = explode(".", $name);
+					$ext = substr($name, strrpos($name, '.') + 1);
+					$txt = substr($name,0,-strrpos($name, '.'));
 					if(in_array($ext,$valid_formats))
 					{
 					if($size<(1024*1024))
@@ -175,7 +176,8 @@ switch ($command) {
 			$size = $_FILES['add-press-release-file']['size'];
 			if(strlen($name))
 				{
-					list($txt, $ext) = explode(".", $name);
+					$ext = substr($name, strrpos($name, '.') + 1);
+					$txt = substr($name,0,-strrpos($name, '.'));
 					if(in_array($ext,$valid_formats))
 					{
 					if($size<(1024*1024))
@@ -213,7 +215,8 @@ switch ($command) {
 			$size = $_FILES['add-press-release-file']['size'];
 			if(strlen($name))
 				{
-					list($txt, $ext) = explode(".", $name);
+					$ext = substr($name, strrpos($name, '.') + 1);
+					$txt = substr($name,0,-strrpos($name, '.'));
 					if(in_array($ext,$valid_formats))
 					{
 					if($size<(1024*1024))
@@ -251,7 +254,8 @@ switch ($command) {
 			$size = $_FILES['add-press-release-file']['size'];
 			if(strlen($name))
 				{
-					list($txt, $ext) = explode(".", $name);
+					$ext = substr($name, strrpos($name, '.') + 1);
+					$txt = substr($name,0,-strrpos($name, '.'));
 					if(in_array($ext,$valid_formats))
 					{
 					if($size<(1024*1024))
