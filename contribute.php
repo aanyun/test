@@ -52,7 +52,7 @@
 				
 				
 				<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
-				<img src="kaifesh_logo.png"><br />
+				<img src="img/kaifesh_logo.png"><br />
 				<h2>The Offician Kaifesh for Congress<br />
 				Secured Online Contribution Form</h2>
 				</a>
@@ -84,7 +84,10 @@
 				
 				<h2>Please make checks payable to "Kaifesh for Congress"<br />
 				Send to our Headquarters at 804 E Nerge Rd., Roselle IL 60172<br />
-				Please fill out this form and send it with your contribution.</h2>
+				Please fill out this form and send it with your contribution.</h2><br />
+				
+				<img src="img/contribution_form.jpg">
+				
 				
 				</div>
 				
