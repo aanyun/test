@@ -53,7 +53,7 @@
 				
 				<a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
 				<img src="img/kaifesh_logo.png"><br />
-				<h2>The Offician Kaifesh for Congress<br />
+				<h2>Click here to pay with<br />The Offician Kaifesh for Congress<br />
 				Secured Online Contribution Form</h2>
 				</a>
 				
