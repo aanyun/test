@@ -66,6 +66,8 @@
 	            <div class="row">
 				<div class="paypal-submit">
 				
+				<img src="img/paypal-header.png" alt="Paypal">
+				
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				<form class="form-inline form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -85,6 +87,7 @@
 				
 				</div>
 				
+				<img src="img/paypal-elements.png" alt="Paypal Secured Payments">
 				
 				</div>
 				</div>
