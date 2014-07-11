@@ -21,7 +21,7 @@
           <ul class="dropdown-menu">
             <li><a href="about-larry.php" class="custom">About</a></li>
             <li class="divider"></li>
-            <li><a href="#">Issues</a></li>
+            <li><a href="issues.php">Issues</a></li>
             <li class="divider"></li>
             <li><a href="endorsements.php">Endorsements</a></li>
 			<li class="divider"></li>
