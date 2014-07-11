@@ -44,15 +44,16 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 				returnArray($return);			
 				} else {
 			
-					$email_message = "<html><body>";
-					$email_message = "<table>";
-					$email_message = "<tr style='background: #eee;'><td align='center' colspan='2'>Form details below.</td></tr> \n\n\n";
+
 					
 					function clean_string($string) {
 						$bad = array("content-type","bcc:","to:","cc:","href");
 						return str_replace($bad,"",$string);
 					}    
 					
+					$email_message = "<html><body>";
+					$email_message = "<table>";
+					$email_message = "<tr style='background: #eee;'><td align='center' colspan='2'>Form details below.</td></tr> \n\n\n";					
 					$email_message .= "<tr><td><strong>First Name:</strong></td><td>".clean_string($fname)."</td></tr> \r\n";
 					$email_message .= "<tr><td><strong>Last Name:</strong></td><td>".clean_string($lname)."</td></tr> \r\n";
 					$email_message .= "<tr><td><strong>Contact E-Mail:</strong></td><td>".clean_string($contact_email)."</td></tr> \r\n";
