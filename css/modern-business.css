@@ -231,7 +231,7 @@ ul.tab.light {
 	background-color:none;
 	position:relative;
 	margin-left: 70%;
-	top: 6px;
+	top: 4px;
 	}
 .reglink a {
 	font-family: 'open_sansbold';
@@ -256,7 +256,7 @@ padding-bottom: 7px;
 	background: #fff;
 	color: #494949;
 	padding: 15px;
-	line-height: 1.25;
+	line-height: 1.2;
 }
 
 .tab-open {
