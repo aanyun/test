@@ -78,7 +78,7 @@
 				
 				<p>Finally, and most importantly, we need a return to the fundamental principles that made this country great.  When I read the Constitution, I feel it. Its words have special, enduring meaning, from which our Founding Fathers communicated a brilliant method of governance.</p>
 				
-				<p>As your Representative, I will again take an oath of office to uphold our founding document. And I promise you that I will live out that oath to the letter. I will judge my votes against the standard of our Constitution and the will of ‘We The People.' There will be no pandering to special interest groups when I make decisions. This is an important time for our nation. It is a time to solve problems, work together and not abdicate our core, Constitutional principles.</p>
+				<p>As your Representative, I will again take an oath of office to uphold our founding document. And I promise you that I will live out that oath to the letter. I will judge my votes against the standard of our Constitution and the will of 'We The People.' There will be no pandering to special interest groups when I make decisions. This is an important time for our nation. It is a time to solve problems, work together and not abdicate our core, Constitutional principles.</p>
 				
 				<h2>Peace Through Strength</h2>	
 
