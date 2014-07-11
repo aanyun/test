@@ -150,7 +150,7 @@
 						<p class="test_guy">&mdash; John Kline, 25-year veteran of the U.S. Marine Corps, Member 
 						of Congress (MN-2), and Chairman of the House Committee on Education and the Workforce. </p>-->
 
-					<div class="flex-video" style="padding-left: 30px; padding-right: 30px;">
+					<div class="flex-video" style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
 					<iframe width="455" height="256" src="//www.youtube.com/embed/J2YVSAubiEg?rel=0" frameborder="0" allowfullscreen></iframe>
 					</div>
 					
