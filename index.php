@@ -150,6 +150,10 @@
 						<p class="test_guy">&mdash; John Kline, 25-year veteran of the U.S. Marine Corps, Member 
 						of Congress (MN-2), and Chairman of the House Committee on Education and the Workforce. </p>-->
 
+					<div class="flex-video" style="margin: 0 auto;">
+					<iframe width="455" height="256" src="//www.youtube.com/embed/J2YVSAubiEg?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
 					<div style="text-align: center; padding-top: 12px;">
 					<a href="about-larry.php">
 					<button type="button" class="btn btn-lg btn-primary" style="margin-right: 25px;">More About Larry</button>
@@ -158,9 +162,6 @@
 					<button type="button" class="btn btn-lg btn-danger">Issues & Viewpoints</button>
 					</a>
 					
-					<div class="flex-video" style="margin: 0 auto;">
-					<iframe width="455" height="256" src="//www.youtube.com/embed/J2YVSAubiEg?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
 					
 					
 					</div>					
