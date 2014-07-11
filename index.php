@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 issues">
 						<ul class="tab light">
-							<li id="tablink">
+							<!--<li id="tablink">
 								<a class="about" href="javascript:void(0)">Immigration Reform</a>
 								<p style="margin: 0;">
 								I have never supported amnesty for Illegal Immigrants. My position is as follows:<br />
@@ -87,25 +87,39 @@
 								   <span style="margin-left: 35px;">contributing to society.</span>
 								  <br />
 								  <span class="reglink">
-								  <a href="www.google.com">Read More ></a>
+								  <a href="issues.php">Read More ></a>
 								  </span>
 								
 								</p>
-							</li>
+							</li> -->
 
 							<li id="tablink">
-								<a class="history" href="javascript:void(0)">Foreign Policy</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus, minima, impedit ratione dolor nulla ullam eum inventore aspernatur nihil quaerat vitae consequuntur debitis aliquam voluptates tenetur nisi rem corporis.</p>
-							</li>
+								<a class="history" href="javascript:void(0)">Demonstrating Honest Leadership</a>
+
+								<p>My life has been built on honest leadership and selfless service; exactly what I intend to give to the constituents of the IL-8 Congressional District. I am committed to bold leadership to ensure we have a thriving economy, where jobs are plentiful, pride is prominent and the quality of life for our children and grandchildren is better than our own!</p>
+									
+								</li>
+								
+								
+							<li id="tablink">
+								<a class="history" href="javascript:void(0)">Breaking the Gridlock</a>
+
+								<p>Breaking the gridlock requires selfless service.  My service in Washington, DC would be marked by direct, pragmatic, and honest engagement with my constituents and colleagues, regardless of party label, to come together to achieve meaningful solutions for our district and our country.</p>
+								
+								</li>
 
 							<li id="tablink">
-								<a class="contact" href="javascript:void(0)">Healthcare / PPACA</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus, minima, impedit ratione dolor nulla ullam eum inventore aspernatur nihil quaerat vitae consequuntur debitis aliquam voluptates tenetur nisi rem corporis.</p>
-							</li>
+								<a class="contact" href="javascript:void(0)">Real Health Care Reform</a>
+
+								<p>The Affordable Care Act (ACA) has proven to be the biggest job killer we have faced in modern history and it must go.  I believe that we must reform our health care system to reduce costs and enhance the well being of all Americans.  But such a plan does not require a government mandate.</p>
+								
+								</li>
 							<li id="tablink">
-								<a class="contact" href="javascript:void(0)">Jobs and the Economy</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus, minima, impedit ratione dolor nulla ullam eum inventore aspernatur nihil quaerat vitae consequuntur debitis aliquam voluptates tenetur nisi rem corporis.</p>
-							</li>
+								<a class="contact" href="javascript:void(0)">Getting America Back</a>
+
+								<p>America cannot tax, borrow and spend our way to prosperity.  To get America back on track we need to simplify and reform the tax code.  The tax code is too long, too complex and rates are too high.  By simplifying the tax code we will create more jobs, open the world markets to American goods and create a fair and level playing field for all American businesses.</p>
+								
+								</li>
 
 						</ul>
                 </div>
