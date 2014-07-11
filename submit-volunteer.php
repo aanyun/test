@@ -3,7 +3,7 @@
 if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
-			$email_to = "shadyandlucky@gmail.com";
+			$email_to = "drivera@ignitorlabs.com";
 			//$email_to = "volunteer@kaifeshforcongress.com";
 			$email_subject = "Kaifesh for Congress Volunteer form request";
 			
@@ -51,15 +51,17 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 						return str_replace($bad,"",$string);
 					}    
 					
-					$email_message .= "First Name: ".clean_string($fname)."\r\n";
-					$email_message .= "Last Name: ".clean_string($lname)."\r\n";
-					$email_message .= "Contact E-Mail: ".clean_string($contact_email)."\r\n";
-					$email_message .= "\n";
-					$email_message .= "Address: ".clean_string($addr1)."\r\n";
-					$email_message .= "City: ".clean_string($city)."\r\n";
-					$email_message .= "Zip Code: ".clean_string($zip)."\r\n";
-					$email_message .= "\n";
-					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
+					$email_message .= "<html><body>";
+					$email_message .= "<table>";
+					$email_message .= "<tr style='background: #eee;'><td align='center' colspan='2'>Volunteer Sign-up details below.</td></tr> \n\n\n";					
+					$email_message .= "<tr><td><strong>First Name:</strong></td><td>".clean_string($fname)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Last Name:</strong></td><td>".clean_string($lname)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Contact E-Mail:</strong></td><td>".clean_string($contact_email)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Address:</strong></td><td>".clean_string($addr1)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>City:</strong></td><td>".clean_string($city)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Zip Code:</strong></td><td>".clean_string($zip)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Comments/Questions:</strong></td><td>".clean_string($comments)."</td></tr> \r\n";
+					$email_message .= "</table>";
 					
 					mail($email_to, $email_subject, $email_message, $header);
 					

@@ -46,7 +46,7 @@
 			</div>
 			
 			
-			    <div class="col-lg-3 col-md-12 col-lg-12 text-center">
+			    <div class="col-lg-3 col-md-12 col-lg-12 text-center" style="padding: 30px">
 
 	            <div class="row">
 				
@@ -95,7 +95,7 @@
 				
 				</div>
 				
-				<div class="col-lg-3 col-md-12 col-lg-12 text-center" style="padding-left: 10px;">
+				<div class="col-lg-3 col-md-12 col-lg-12 text-center" style="padding: 30px">
 				
 				<div class="row">
 				
