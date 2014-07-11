@@ -148,7 +148,7 @@
 							make him an outstanding candidate, and he will fight for the issues important to voters in 
 							Illinois' 8th congressional district."</p>
 						<p class="test_guy">&mdash; John Kline, 25-year veteran of the U.S. Marine Corps, Member 
-						of Congress (MN-2), and Chairman of the House Committee on Education and the Workforce. </p>
+						of Congress (MN-2), and Chairman of the House Committee on Education and the Workforce. </p>-->
 
 					<div style="text-align: center; padding-top: 12px;">
 					<a href="about-larry.php">
@@ -156,10 +156,11 @@
 					</a>
 					<a href="issues.php">
 					<button type="button" class="btn btn-lg btn-danger">Issues & Viewpoints</button>
-					</a>-->
+					</a>
 					
+					<div class="flex-video" style="margin: 0 auto;">
 					<iframe width="455" height="256" src="//www.youtube.com/embed/J2YVSAubiEg?rel=0" frameborder="0" allowfullscreen></iframe>
-					
+					</div>
 					
 					
 					</div>					
