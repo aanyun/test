@@ -44,22 +44,26 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 				returnArray($return);			
 				} else {
 			
-					$email_message = "Form details below. \n\n\n";
+					$email_message = "<html><body>";
+					$email_message = "<table>";
+					$email_message = "<tr style='background: #eee;'><td align='center' colspan='2'>Form details below.</td></tr> \n\n\n";
 					
 					function clean_string($string) {
 						$bad = array("content-type","bcc:","to:","cc:","href");
 						return str_replace($bad,"",$string);
 					}    
 					
-					$email_message .= "First Name: ".clean_string($fname)."\r\n";
-					$email_message .= "Last Name: ".clean_string($lname)."\r\n";
-					$email_message .= "Contact E-Mail: ".clean_string($contact_email)."\r\n";
-					$email_message .= "\n";
-					$email_message .= "Address: ".clean_string($addr1)."\r\n";
-					$email_message .= "City: ".clean_string($city)."\r\n";
-					$email_message .= "Zip Code: ".clean_string($zip)."\r\n";
-					$email_message .= "\n";
-					$email_message .= "Comments/Questions: ".clean_string($comments)."\r\n";
+					$email_message .= "<tr><td><strong>First Name:</strong></td><td>".clean_string($fname)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Last Name:</strong></td><td>".clean_string($lname)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Contact E-Mail:</strong></td><td>".clean_string($contact_email)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Address:</strong></td><td>".clean_string($addr1)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>City:</strong></td><td>".clean_string($city)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Zip Code:</strong></td><td>".clean_string($zip)."</td></tr> \r\n";
+					$email_message .= "<tr><td><strong>Comments/Questions:</strong></td><td>".clean_string($comments)."</td></tr> \r\n";
+					$email_message = "</table>";
+					$email_message = "</html></body>";
+					
+					
 					ini_set('sendmail_from', $_POST['contact_email']);
 					    $headers = 'From: '.$_POST['fname'].$_POST['lname']."\r\n" ;
 					    $headers .='X-Mailer: PHP/' . phpversion();
