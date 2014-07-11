@@ -68,7 +68,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 					    $headers = 'From: '.$_POST['fname'].$_POST['lname']."\r\n" ;
 					    $headers .='X-Mailer: PHP/' . phpversion();
 					    $headers .= "MIME-Version: 1.0\r\n";
-					    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+					    $headers .= "Content-type: text/html; charset=utf-8\r\n"; 
 					mail($email_to, $email_subject, $email_message, $headers,"-f ".$_POST['contact_email']);
 					
 			}
