@@ -51,7 +51,7 @@
 	            <div class="row">
 
             <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item">
-                <a href="volunteer.php">
+                <a href="volunteer-signup.php">
                     <img class="img-responsive" src="img/involved1.png">
                 </a>
 				<p>Come be a part of Team Kaifesh! We are looking for callers, walkers, and more!</p>
@@ -77,7 +77,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item">
-                <a href="https://secure.jotform.us/larrykaifesh/kaifeshforcongress" target="_blank">
+                <a href="contribute.php">
                     <img class="img-responsive" src="img/involved3.png">
                 </a>
 				<p>We appreciate every contribution to the Kaifesh for Congress campaign!</p>
@@ -120,7 +120,7 @@
             </div>
 
             <div class="col-md-4 col-md-6 col-sm-6 portfolio-item">
-                <a href="portfolio-item.html">
+                <a href="endorsements.php">
                     <img class="img-responsive" src="img/involved6.png">
                 </a>
                 <p>View the list of our endorsements. We truely appreciate all of the support!.</p>				
