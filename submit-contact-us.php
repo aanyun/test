@@ -20,7 +20,7 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
 			$header .= "Reply-To: larry@kaifeshforcongress.com\r\n";
 			$header .= "Return-Path: larry@kaifeshforcongress.com\r\n";
 			$header = "MIME-Version: 1.0\r\n";
-			$header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+			$header .= "Content-Type: text/html; charset=utf-8\r\n";
 			
 			
 			function died($error) {
