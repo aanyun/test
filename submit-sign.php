@@ -3,8 +3,7 @@
 if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
-			$email_to = "drivera@ignitorlabs.com";
-			//$email_to = "volunteer@kaifeshforcongress.com";
+			$email_to = "volunteer@kaifeshforcongress.com";
 			$email_subject = "Kaifesh for Congress Request a Yard Sign";
 			
 			$fname  = $_POST['fname']; // required

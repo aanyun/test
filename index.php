@@ -36,6 +36,7 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
 			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -52,7 +53,9 @@
 			<div class="item">
                 <div class="fill" style="background-image:url('img/slide4.jpg');"></div>
             </div>
-			
+			<div class="item">
+                <div class="fill" style="background-image:url('img/slide5.jpg');"></div>
+            </div>
         </div>
 
         <!-- Controls -->

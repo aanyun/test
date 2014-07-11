@@ -3,8 +3,7 @@
 if( empty($_POST['noBot']) && isset($_POST['contact_email'])) { 
 		   
 			// Where it goes
-			$email_to = "drivera@ignitorlabs.com";
-			//$email_to = "volunteer@kaifeshforcongress.com";
+			$email_to = "volunteer@kaifeshforcongress.com";
 			$email_subject = "Kaifesh for Congress Volunteer form request";
 			
 			$fname  = $_POST['fname']; // required
@@ -43,8 +42,6 @@ if( empty($_POST['noBot']) && isset($_POST['contact_email'])) {
                 $return['msg'] = "Please fill in all required sections. If the section does not apply, please put N/A.";	
 				returnArray($return);			
 				} else {
-			
-					$email_message = "Form details below. \n\n\n";
 					
 					function clean_string($string) {
 						$bad = array("content-type","bcc:","to:","cc:","href");
